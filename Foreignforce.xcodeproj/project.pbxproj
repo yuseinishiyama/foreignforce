@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E3510B720B1D77E0006EE8D /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3510B620B1D77E0006EE8D /* Entry.swift */; };
 		7E4ABDD620B1D51300683DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4ABDD520B1D51300683DF7 /* AppDelegate.swift */; };
 		7E4ABDD820B1D51300683DF7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4ABDD720B1D51300683DF7 /* FirstViewController.swift */; };
 		7E4ABDDA20B1D51300683DF7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4ABDD920B1D51300683DF7 /* SecondViewController.swift */; };
@@ -15,6 +14,14 @@
 		7E4ABDDF20B1D51500683DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ABDDE20B1D51500683DF7 /* Assets.xcassets */; };
 		7E4ABDE220B1D51500683DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ABDE020B1D51500683DF7 /* LaunchScreen.storyboard */; };
 		7E4ABDED20B1D51500683DF7 /* ForeignforceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4ABDEC20B1D51500683DF7 /* ForeignforceTests.swift */; };
+		AB4A6C7C20B22E5100F3856B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C7B20B22E5100F3856B /* APIClient.swift */; };
+		AB4A6C7E20B22E5C00F3856B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C7D20B22E5C00F3856B /* Environment.swift */; };
+		AB4A6C8020B22E6E00F3856B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C7F20B22E6E00F3856B /* Endpoint.swift */; };
+		AB4A6C8620B22F1C00F3856B /* Entries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C8520B22F1C00F3856B /* Entries.swift */; };
+		AB4A6C8820B22F3700F3856B /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C8720B22F3700F3856B /* Language.swift */; };
+		AB4A6C8A20B22F3E00F3856B /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C8920B22F3E00F3856B /* Region.swift */; };
+		AB4A6C8C20B22FA600F3856B /* OxfordDictionaryAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C8B20B22FA600F3856B /* OxfordDictionaryAPIClient.swift */; };
+		AB4A6C8E20B230C400F3856B /* OxfordDictionaryEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C8D20B230C400F3856B /* OxfordDictionaryEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7E3510B620B1D77E0006EE8D /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		7E4ABDD220B1D51300683DF7 /* Foreignforce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foreignforce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4ABDD520B1D51300683DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E4ABDD720B1D51300683DF7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +46,15 @@
 		7E4ABDE820B1D51500683DF7 /* ForeignforceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForeignforceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4ABDEC20B1D51500683DF7 /* ForeignforceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeignforceTests.swift; sourceTree = "<group>"; };
 		7E4ABDEE20B1D51500683DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB4A6C7B20B22E5100F3856B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		AB4A6C7D20B22E5C00F3856B /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		AB4A6C7F20B22E6E00F3856B /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		AB4A6C8520B22F1C00F3856B /* Entries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entries.swift; sourceTree = "<group>"; };
+		AB4A6C8720B22F3700F3856B /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		AB4A6C8920B22F3E00F3856B /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		AB4A6C8B20B22FA600F3856B /* OxfordDictionaryAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryAPIClient.swift; sourceTree = "<group>"; };
+		AB4A6C8D20B230C400F3856B /* OxfordDictionaryEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryEnvironment.swift; sourceTree = "<group>"; };
+		ABD8815220B1EDAC00B7CDDC /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,18 +75,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7E3510B520B1D7590006EE8D /* OxfordDictionaryAPI */ = {
-			isa = PBXGroup;
-			children = (
-				7E3510B620B1D77E0006EE8D /* Entry.swift */,
-			);
-			path = OxfordDictionaryAPI;
-			sourceTree = "<group>";
-		};
 		7E4ABDC920B1D51300683DF7 = {
 			isa = PBXGroup;
 			children = (
-				7E3510B520B1D7590006EE8D /* OxfordDictionaryAPI */,
+				ABD8815220B1EDAC00B7CDDC /* Playground.playground */,
+				AB4A6C7720B22E2600F3856B /* APIClient */,
 				7E4ABDD420B1D51300683DF7 /* Foreignforce */,
 				7E4ABDEB20B1D51500683DF7 /* ForeignforceTests */,
 				7E4ABDD320B1D51300683DF7 /* Products */,
@@ -108,6 +116,53 @@
 				7E4ABDEE20B1D51500683DF7 /* Info.plist */,
 			);
 			path = ForeignforceTests;
+			sourceTree = "<group>";
+		};
+		AB4A6C7720B22E2600F3856B /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				AB4A6C8120B22F0C00F3856B /* OxfordDictionary */,
+				AB4A6C7B20B22E5100F3856B /* APIClient.swift */,
+				AB4A6C7D20B22E5C00F3856B /* Environment.swift */,
+				AB4A6C7F20B22E6E00F3856B /* Endpoint.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		AB4A6C8120B22F0C00F3856B /* OxfordDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				AB4A6C8220B22F0C00F3856B /* Endpoints */,
+				AB4A6C8320B22F0C00F3856B /* Parameters */,
+				AB4A6C8420B22F0C00F3856B /* Entities */,
+				AB4A6C8B20B22FA600F3856B /* OxfordDictionaryAPIClient.swift */,
+				AB4A6C8D20B230C400F3856B /* OxfordDictionaryEnvironment.swift */,
+			);
+			path = OxfordDictionary;
+			sourceTree = "<group>";
+		};
+		AB4A6C8220B22F0C00F3856B /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				AB4A6C8520B22F1C00F3856B /* Entries.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		AB4A6C8320B22F0C00F3856B /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				AB4A6C8720B22F3700F3856B /* Language.swift */,
+				AB4A6C8920B22F3E00F3856B /* Region.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		AB4A6C8420B22F0C00F3856B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,10 +266,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E3510B720B1D77E0006EE8D /* Entry.swift in Sources */,
+				AB4A6C8A20B22F3E00F3856B /* Region.swift in Sources */,
 				7E4ABDDA20B1D51300683DF7 /* SecondViewController.swift in Sources */,
+				AB4A6C8620B22F1C00F3856B /* Entries.swift in Sources */,
+				AB4A6C8C20B22FA600F3856B /* OxfordDictionaryAPIClient.swift in Sources */,
 				7E4ABDD620B1D51300683DF7 /* AppDelegate.swift in Sources */,
 				7E4ABDD820B1D51300683DF7 /* FirstViewController.swift in Sources */,
+				AB4A6C7C20B22E5100F3856B /* APIClient.swift in Sources */,
+				AB4A6C8820B22F3700F3856B /* Language.swift in Sources */,
+				AB4A6C8E20B230C400F3856B /* OxfordDictionaryEnvironment.swift in Sources */,
+				AB4A6C8020B22E6E00F3856B /* Endpoint.swift in Sources */,
+				AB4A6C7E20B22E5C00F3856B /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

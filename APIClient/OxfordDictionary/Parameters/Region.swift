@@ -1,5 +1,5 @@
 //
-//  Entry.swift
+//  Region.swift
 //  Foreignforce
 //
 //  Created by Yusei Nishiyama on 20/05/2018.
@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+enum Region: String {
+    case gb
+    case us
+}

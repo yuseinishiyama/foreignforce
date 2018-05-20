@@ -1,7 +1,9 @@
 import UIKit
+import PlaygroundSupport
 
-var str = "Hello, playgrounda"
+PlaygroundPage.current.needsIndefiniteExecution = true
 
-exit(0)
-
+//let entries = Entries(wordID: "ace")
+//let apiClient = OxfordDictionaryAPIClient()
+//apiClient.request(endpoint: entries)
 
