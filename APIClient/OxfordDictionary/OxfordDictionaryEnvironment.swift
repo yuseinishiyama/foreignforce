@@ -9,6 +9,7 @@
 import Foundation
 
 struct OxfordDictionaryEnvironment: Environment {
+
     let apiVersion = "v1"
 
     var baseURL: URL {

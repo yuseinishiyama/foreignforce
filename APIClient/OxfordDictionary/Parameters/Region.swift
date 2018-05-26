@@ -9,6 +9,7 @@
 import Foundation
 
 enum Region: String {
+
     case gb
     case us
 }

@@ -9,13 +9,16 @@
 import Foundation
 
 struct OxfordDictionaryAPIClient: APIClient {
+
     let environment: Environment
 
     init(environment: Environment = OxfordDictionaryEnvironment()) {
         self.environment = environment
     }
 
-    func request(endpoint: Endpoint) -> URLSessionTask {
+    @discardableResult
+    func request<T: Endpoint>(endpoint: T, completion: @escaping (APIClientResult<T.Response>) -> ()) -> URLSessionTask {
+
         var request = endpoint.build(environment: environment)
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue(environment.appID, forHTTPHeaderField: "app_id")
@@ -23,16 +26,38 @@ struct OxfordDictionaryAPIClient: APIClient {
 
         let session = URLSession.shared
         let task = session.dataTask(with: request) { data, response, error in
-            if let response = response, let data = data, let jsonData = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) {
-                print(response)
-                print(jsonData)
-            } else {
-                print(error ?? "")
-                if let data = data {
-                    print(NSString(data: data, encoding: String.Encoding.utf8.rawValue) ?? "")
+
+            guard let response = response as? HTTPURLResponse else {
+                if let error = error {
+                    completion(.noResponse(error))
+                } else {
+                    completion(.noResponse(APIClientError.unknown))
                 }
+                return
+            }
+
+            switch (response.statusCode, data, error) {
+            case (..<400, data, .none):
+                do {
+                    let object = try endpoint.parse(response: response, data: data)
+                    completion(.hasResponse(response, .success(object)))
+                } catch {
+                    completion(.hasResponse(response, .failure(error)))
+                }
+
+            case (400..., data, .none):
+                do {
+                    let object = try endpoint.parseError(response: response, data: data)
+                    completion(.hasResponse(response, .failure(APIClientError.apiError(object))))
+                } catch {
+                    completion(.hasResponse(response, .failure(error)))
+                }
+
+            default:
+                completion(.hasResponse(response, .failure(APIClientError.unknown)))
             }
         }
+
         task.resume()
         return task
     }

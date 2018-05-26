@@ -9,6 +9,7 @@
 import Foundation
 
 protocol Environment {
+
     var baseURL: URL { get }
     var apiVersion: String { get }
     var appID: String { get }

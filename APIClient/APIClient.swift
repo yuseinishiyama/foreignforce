@@ -9,7 +9,8 @@
 import Foundation
 
 protocol APIClient {
+
     var environment: Environment { get }
 
-    func request(endpoint: Endpoint) -> URLSessionTask
+    func request<T: Endpoint>(endpoint: T, completion: @escaping (APIClientResult<T.Response>) -> ()) -> URLSessionTask
 }

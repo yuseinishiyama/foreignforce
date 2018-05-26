@@ -8,17 +8,21 @@
 
 import Foundation
 
-struct Entries: Endpoint {
+struct Entries: OxfordDictionaryEndpoint {
+
+    typealias Response = RetrieveEntry
+
     let path: String
 
     init(sourceLanguage: Language = .en, wordID: String, region: Region? = nil, filters: [String]? = nil) {
+
         var path = "entries/\(sourceLanguage)/\(wordID)"
 
         if let region = region {
             path.append("/regions=\(region.rawValue)")
         }
 
-        if let filters = filters {
+        if let _ = filters {
             fatalError("filter is not supported yet")
         }
 

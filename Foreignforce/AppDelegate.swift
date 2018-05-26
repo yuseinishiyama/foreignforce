@@ -15,12 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        // TODO: replace with your own app id and app key
-        
         let entries = Entries(wordID: "ace")
         let apiClient = OxfordDictionaryAPIClient()
-        apiClient.request(endpoint: entries)
+        apiClient.request(endpoint: entries) { result in
+            switch result.result {
+            case let .success(T):
+                print(T)
+            case let .failure(E):
+                print(E)
+            }
+        }
 
         return true
     }

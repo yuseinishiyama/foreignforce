@@ -22,6 +22,17 @@
 		AB4A6C8A20B22F3E00F3856B /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C8920B22F3E00F3856B /* Region.swift */; };
 		AB4A6C8C20B22FA600F3856B /* OxfordDictionaryAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C8B20B22FA600F3856B /* OxfordDictionaryAPIClient.swift */; };
 		AB4A6C8E20B230C400F3856B /* OxfordDictionaryEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C8D20B230C400F3856B /* OxfordDictionaryEnvironment.swift */; };
+		AB96625820B9B06100B8F5E3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625720B9B06100B8F5E3 /* Result.swift */; };
+		AB96625A20B9BF4200B8F5E3 /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625920B9BF4200B8F5E3 /* APIClientError.swift */; };
+		AB96625C20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625B20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift */; };
+		AB96625E20BA22AE00B8F5E3 /* OxfordDictionaryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625D20BA22AE00B8F5E3 /* OxfordDictionaryEndpoint.swift */; };
+		AB96626020BA22F200B8F5E3 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625F20BA22F200B8F5E3 /* Empty.swift */; };
+		AB96626220BA230C00B8F5E3 /* APIClientResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96626120BA230C00B8F5E3 /* APIClientResult.swift */; };
+		AB96626420BA23E100B8F5E3 /* RetrieveEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96626320BA23E100B8F5E3 /* RetrieveEntry.swift */; };
+		AB96626620BA23FD00B8F5E3 /* HeadwordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96626520BA23FD00B8F5E3 /* HeadwordEntry.swift */; };
+		AB96626820BA241400B8F5E3 /* LexicalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96626720BA241400B8F5E3 /* LexicalEntry.swift */; };
+		AB96626A20BA242D00B8F5E3 /* Sense.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96626920BA242D00B8F5E3 /* Sense.swift */; };
+		ABC05BAC20B98F1E0040817A /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC05BAB20B98F1E0040817A /* Entry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +65,17 @@
 		AB4A6C8920B22F3E00F3856B /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		AB4A6C8B20B22FA600F3856B /* OxfordDictionaryAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryAPIClient.swift; sourceTree = "<group>"; };
 		AB4A6C8D20B230C400F3856B /* OxfordDictionaryEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryEnvironment.swift; sourceTree = "<group>"; };
+		AB96625720B9B06100B8F5E3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		AB96625920B9BF4200B8F5E3 /* APIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
+		AB96625B20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryError.swift; sourceTree = "<group>"; };
+		AB96625D20BA22AE00B8F5E3 /* OxfordDictionaryEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryEndpoint.swift; sourceTree = "<group>"; };
+		AB96625F20BA22F200B8F5E3 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		AB96626120BA230C00B8F5E3 /* APIClientResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientResult.swift; sourceTree = "<group>"; };
+		AB96626320BA23E100B8F5E3 /* RetrieveEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveEntry.swift; sourceTree = "<group>"; };
+		AB96626520BA23FD00B8F5E3 /* HeadwordEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadwordEntry.swift; sourceTree = "<group>"; };
+		AB96626720BA241400B8F5E3 /* LexicalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexicalEntry.swift; sourceTree = "<group>"; };
+		AB96626920BA242D00B8F5E3 /* Sense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sense.swift; sourceTree = "<group>"; };
+		ABC05BAB20B98F1E0040817A /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		ABD8815220B1EDAC00B7CDDC /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -123,8 +145,12 @@
 			children = (
 				AB4A6C8120B22F0C00F3856B /* OxfordDictionary */,
 				AB4A6C7B20B22E5100F3856B /* APIClient.swift */,
+				AB96625920B9BF4200B8F5E3 /* APIClientError.swift */,
 				AB4A6C7D20B22E5C00F3856B /* Environment.swift */,
 				AB4A6C7F20B22E6E00F3856B /* Endpoint.swift */,
+				AB96625720B9B06100B8F5E3 /* Result.swift */,
+				AB96625F20BA22F200B8F5E3 /* Empty.swift */,
+				AB96626120BA230C00B8F5E3 /* APIClientResult.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -145,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				AB4A6C8520B22F1C00F3856B /* Entries.swift */,
+				AB96625D20BA22AE00B8F5E3 /* OxfordDictionaryEndpoint.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -161,6 +188,12 @@
 		AB4A6C8420B22F0C00F3856B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				ABC05BAB20B98F1E0040817A /* Entry.swift */,
+				AB96625B20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift */,
+				AB96626320BA23E100B8F5E3 /* RetrieveEntry.swift */,
+				AB96626520BA23FD00B8F5E3 /* HeadwordEntry.swift */,
+				AB96626720BA241400B8F5E3 /* LexicalEntry.swift */,
+				AB96626920BA242D00B8F5E3 /* Sense.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -266,6 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC05BAC20B98F1E0040817A /* Entry.swift in Sources */,
+				AB96626420BA23E100B8F5E3 /* RetrieveEntry.swift in Sources */,
+				AB96625820B9B06100B8F5E3 /* Result.swift in Sources */,
+				AB96626820BA241400B8F5E3 /* LexicalEntry.swift in Sources */,
+				AB96626A20BA242D00B8F5E3 /* Sense.swift in Sources */,
+				AB96625E20BA22AE00B8F5E3 /* OxfordDictionaryEndpoint.swift in Sources */,
+				AB96625C20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift in Sources */,
 				AB4A6C8A20B22F3E00F3856B /* Region.swift in Sources */,
 				7E4ABDDA20B1D51300683DF7 /* SecondViewController.swift in Sources */,
 				AB4A6C8620B22F1C00F3856B /* Entries.swift in Sources */,
@@ -275,8 +315,12 @@
 				AB4A6C7C20B22E5100F3856B /* APIClient.swift in Sources */,
 				AB4A6C8820B22F3700F3856B /* Language.swift in Sources */,
 				AB4A6C8E20B230C400F3856B /* OxfordDictionaryEnvironment.swift in Sources */,
+				AB96625A20B9BF4200B8F5E3 /* APIClientError.swift in Sources */,
 				AB4A6C8020B22E6E00F3856B /* Endpoint.swift in Sources */,
 				AB4A6C7E20B22E5C00F3856B /* Environment.swift in Sources */,
+				AB96626220BA230C00B8F5E3 /* APIClientResult.swift in Sources */,
+				AB96626620BA23FD00B8F5E3 /* HeadwordEntry.swift in Sources */,
+				AB96626020BA22F200B8F5E3 /* Empty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
