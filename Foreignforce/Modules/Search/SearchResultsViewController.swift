@@ -11,6 +11,8 @@ import UIKit
 
 class SearchResultsTableViewController: UITableViewController {
 
+    var words: [String] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,12 +20,12 @@ class SearchResultsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return words.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: SearchResultTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.wordLabel.text = "\(indexPath.row)"
+        cell.wordLabel.text = words[indexPath.row]
 
         return cell
     }

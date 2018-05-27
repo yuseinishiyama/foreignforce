@@ -17,8 +17,6 @@ class SearchTableViewController: UITableViewController {
 
     lazy var searchResultsTableViewController = SearchResultsTableViewController()
 
-    // MARK: - View Life Cycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -115,5 +113,24 @@ extension SearchTableViewController: UISearchResultsUpdating {
 
     func updateSearchResults(for searchController: UISearchController) {
 
+        guard let query = searchController.searchBar.text, !query.isEmpty else {
+            return
+        }
+
+        let entries = Entries(wordID: query)
+        let apiClient = OxfordDictionaryAPIClient()
+        apiClient.request(endpoint: entries) { result in
+            switch result.result {
+            case let .success(retrieveEntry):
+                let words = retrieveEntry.results?.map { $0.word } ?? []
+                self.searchResultsTableViewController.words = words
+
+                DispatchQueue.main.async {
+                    self.searchResultsTableViewController.tableView.reloadData()
+                }
+            case let .failure(error):
+                print(error)
+            }
+        }
     }
 }
