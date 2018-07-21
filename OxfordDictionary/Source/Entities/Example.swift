@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Example: Decodable {
+public struct Example: Decodable {
 
     enum CodingKeys: String, CodingKey {
         case definitions
@@ -21,12 +21,12 @@ struct Example: Decodable {
         case translations
     }
 
-    let definitions: [String]?
-    let domains: [String]?
-    let notes: [CategorizedText]?
-    let regions: [String]?
-    let registers: [String]?
-    let senseIDs: [String]?
-    let text: String
-    let translations: [Translation]?
+    public let definitions: [String]?
+    public let domains: [String]?
+    public let notes: [CategorizedText]?
+    public let regions: [String]?
+    public let registers: [String]?
+    public let senseIDs: [String]?
+    public let text: String
+    public let translations: [Translation]?
 }

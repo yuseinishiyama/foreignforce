@@ -9,9 +9,9 @@
 import Foundation
 import APIClient
 
-protocol OxfordDictionaryEndpoint: Endpoint {}
+public protocol OxfordDictionaryEndpoint: Endpoint {}
 
-extension OxfordDictionaryEndpoint {
+public extension OxfordDictionaryEndpoint {
 
     func parseError(response: HTTPURLResponse, data: Data?) throws -> OxfordDictionaryError {
 

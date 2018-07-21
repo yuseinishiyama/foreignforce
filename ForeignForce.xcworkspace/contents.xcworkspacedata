@@ -5,6 +5,9 @@
       location = "group:APIClient/APIClient.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:OxfordDictionary/OxfordDictionary.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:App/App.xcodeproj">
    </FileRef>
 </Workspace>

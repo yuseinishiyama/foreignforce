@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct VariantForm: Decodable {
-    let regions: [String]?
-    let text: String
+public struct VariantForm: Decodable {
+    public let regions: [String]?
+    public let text: String
 }

@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct ThesaurusLink: Decodable {
+public struct ThesaurusLink: Decodable {
 
     enum CodingKeys: String, CodingKey {
         case entryID = "entry_id"
         case senseID = "sense_id"
     }
 
-    let entryID: String
-    let senseID: String
+    public let entryID: String
+    public let senseID: String
 }

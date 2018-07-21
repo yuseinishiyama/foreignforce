@@ -1,5 +1,5 @@
 //
-//  Metadata.swift
+//  CategorizedText.swift
 //  Foreignforce
 //
 //  Created by Yusei Nishiyama on 21/07/2018.
@@ -8,6 +8,8 @@
 
 import Foundation
 
-struct Metadata: Decodable {
-    let provider: String
+public struct CategorizedText: Decodable {
+    public let id: String?
+    public let text: String
+    public let type: String
 }

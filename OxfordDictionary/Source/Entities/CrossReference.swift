@@ -1,5 +1,5 @@
 //
-//  GrammaticalFeature.swift
+//  CrossReference.swift
 //  Foreignforce
 //
 //  Created by Yusei Nishiyama on 21/07/2018.
@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct GrammaticalFeature: Decodable {
-    let text: String
-    let type: String
+public struct CrossReference: Decodable {
+    public let id: String
+    public let text: String
+    public let type: String
 }

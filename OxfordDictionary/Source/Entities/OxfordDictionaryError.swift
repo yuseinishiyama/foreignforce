@@ -1,5 +1,5 @@
 //
-//  RetrieveEntry.swift
+//  OxfordDictionaryError.swift
 //  Foreignforce
 //
 //  Created by Yusei Nishiyama on 27/05/2018.
@@ -8,7 +8,6 @@
 
 import Foundation
 
-struct RetrieveEntry: Decodable {
-    let metadata: Metadata?
-    let results: [HeadwordEntry]?
+public struct OxfordDictionaryError: Error {
+    public let reason: String
 }

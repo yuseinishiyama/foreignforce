@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct Entries: OxfordDictionaryEndpoint {
+public struct Entries: OxfordDictionaryEndpoint {
 
-    typealias Response = RetrieveEntry
+    public typealias Response = RetrieveEntry
 
-    let path: String
+    public let path: String
 
-    init(sourceLanguage: Language = .en, wordID: String, region: Region? = nil, filters: [String]? = nil) {
+    public init(sourceLanguage: Language = .en, wordID: String, region: Region? = nil, filters: [String]? = nil) {
 
         var path = "entries/\(sourceLanguage)/\(wordID)"
 

@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB751EF92103F49D00143541 /* OxfordDictionaryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE12103F49D00143541 /* OxfordDictionaryEndpoint.swift */; };
+		AB751EFA2103F49D00143541 /* Entries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE22103F49D00143541 /* Entries.swift */; };
+		AB751EFB2103F49D00143541 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE42103F49D00143541 /* Language.swift */; };
+		AB751EFC2103F49D00143541 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE52103F49D00143541 /* Region.swift */; };
+		AB751EFD2103F49D00143541 /* OxfordDictionaryEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE62103F49D00143541 /* OxfordDictionaryEnvironment.swift */; };
+		AB751EFE2103F49D00143541 /* OxfordDictionaryAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE72103F49D00143541 /* OxfordDictionaryAPIClient.swift */; };
+		AB751EFF2103F49D00143541 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE92103F49D00143541 /* Metadata.swift */; };
+		AB751F002103F49D00143541 /* Pronunciation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EEA2103F49D00143541 /* Pronunciation.swift */; };
+		AB751F012103F49D00143541 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EEB2103F49D00143541 /* Translation.swift */; };
+		AB751F022103F49D00143541 /* ThesaurusLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EEC2103F49D00143541 /* ThesaurusLink.swift */; };
+		AB751F032103F49D00143541 /* OxfordDictionaryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EED2103F49D00143541 /* OxfordDictionaryError.swift */; };
+		AB751F042103F49D00143541 /* VariantForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EEE2103F49D00143541 /* VariantForm.swift */; };
+		AB751F052103F49D00143541 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EEF2103F49D00143541 /* Example.swift */; };
+		AB751F062103F49D00143541 /* CategorizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EF02103F49D00143541 /* CategorizedText.swift */; };
+		AB751F072103F49D00143541 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EF12103F49D00143541 /* Entry.swift */; };
+		AB751F082103F49D00143541 /* GrammaticalFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EF22103F49D00143541 /* GrammaticalFeature.swift */; };
+		AB751F092103F49D00143541 /* RetrieveEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EF32103F49D00143541 /* RetrieveEntry.swift */; };
+		AB751F0A2103F49D00143541 /* CrossReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EF42103F49D00143541 /* CrossReference.swift */; };
+		AB751F0B2103F49D00143541 /* RelatedEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EF52103F49D00143541 /* RelatedEntry.swift */; };
+		AB751F0C2103F49D00143541 /* HeadwordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EF62103F49D00143541 /* HeadwordEntry.swift */; };
+		AB751F0D2103F49D00143541 /* Sense.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EF72103F49D00143541 /* Sense.swift */; };
+		AB751F0E2103F49D00143541 /* LexicalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EF82103F49D00143541 /* LexicalEntry.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ABBB76382103F3FB0094B6B0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AB751EE12103F49D00143541 /* OxfordDictionaryEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryEndpoint.swift; sourceTree = "<group>"; };
+		AB751EE22103F49D00143541 /* Entries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entries.swift; sourceTree = "<group>"; };
+		AB751EE42103F49D00143541 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		AB751EE52103F49D00143541 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		AB751EE62103F49D00143541 /* OxfordDictionaryEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryEnvironment.swift; sourceTree = "<group>"; };
+		AB751EE72103F49D00143541 /* OxfordDictionaryAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryAPIClient.swift; sourceTree = "<group>"; };
+		AB751EE92103F49D00143541 /* Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
+		AB751EEA2103F49D00143541 /* Pronunciation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pronunciation.swift; sourceTree = "<group>"; };
+		AB751EEB2103F49D00143541 /* Translation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		AB751EEC2103F49D00143541 /* ThesaurusLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThesaurusLink.swift; sourceTree = "<group>"; };
+		AB751EED2103F49D00143541 /* OxfordDictionaryError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryError.swift; sourceTree = "<group>"; };
+		AB751EEE2103F49D00143541 /* VariantForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariantForm.swift; sourceTree = "<group>"; };
+		AB751EEF2103F49D00143541 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		AB751EF02103F49D00143541 /* CategorizedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorizedText.swift; sourceTree = "<group>"; };
+		AB751EF12103F49D00143541 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		AB751EF22103F49D00143541 /* GrammaticalFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrammaticalFeature.swift; sourceTree = "<group>"; };
+		AB751EF32103F49D00143541 /* RetrieveEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrieveEntry.swift; sourceTree = "<group>"; };
+		AB751EF42103F49D00143541 /* CrossReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossReference.swift; sourceTree = "<group>"; };
+		AB751EF52103F49D00143541 /* RelatedEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelatedEntry.swift; sourceTree = "<group>"; };
+		AB751EF62103F49D00143541 /* HeadwordEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadwordEntry.swift; sourceTree = "<group>"; };
+		AB751EF72103F49D00143541 /* Sense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sense.swift; sourceTree = "<group>"; };
+		AB751EF82103F49D00143541 /* LexicalEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LexicalEntry.swift; sourceTree = "<group>"; };
+		ABBB763A2103F3FB0094B6B0 /* libOxfordDictionary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOxfordDictionary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABBB76372103F3FB0094B6B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB751EDF2103F49D00143541 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AB751EE02103F49D00143541 /* Endpoints */,
+				AB751EE32103F49D00143541 /* Parameters */,
+				AB751EE62103F49D00143541 /* OxfordDictionaryEnvironment.swift */,
+				AB751EE72103F49D00143541 /* OxfordDictionaryAPIClient.swift */,
+				AB751EE82103F49D00143541 /* Entities */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		AB751EE02103F49D00143541 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				AB751EE12103F49D00143541 /* OxfordDictionaryEndpoint.swift */,
+				AB751EE22103F49D00143541 /* Entries.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		AB751EE32103F49D00143541 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				AB751EE42103F49D00143541 /* Language.swift */,
+				AB751EE52103F49D00143541 /* Region.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		AB751EE82103F49D00143541 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AB751EE92103F49D00143541 /* Metadata.swift */,
+				AB751EEA2103F49D00143541 /* Pronunciation.swift */,
+				AB751EEB2103F49D00143541 /* Translation.swift */,
+				AB751EEC2103F49D00143541 /* ThesaurusLink.swift */,
+				AB751EED2103F49D00143541 /* OxfordDictionaryError.swift */,
+				AB751EEE2103F49D00143541 /* VariantForm.swift */,
+				AB751EEF2103F49D00143541 /* Example.swift */,
+				AB751EF02103F49D00143541 /* CategorizedText.swift */,
+				AB751EF12103F49D00143541 /* Entry.swift */,
+				AB751EF22103F49D00143541 /* GrammaticalFeature.swift */,
+				AB751EF32103F49D00143541 /* RetrieveEntry.swift */,
+				AB751EF42103F49D00143541 /* CrossReference.swift */,
+				AB751EF52103F49D00143541 /* RelatedEntry.swift */,
+				AB751EF62103F49D00143541 /* HeadwordEntry.swift */,
+				AB751EF72103F49D00143541 /* Sense.swift */,
+				AB751EF82103F49D00143541 /* LexicalEntry.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		ABBB76312103F3FB0094B6B0 = {
+			isa = PBXGroup;
+			children = (
+				AB751EDF2103F49D00143541 /* Source */,
+				ABBB763B2103F3FB0094B6B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABBB763B2103F3FB0094B6B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABBB763A2103F3FB0094B6B0 /* libOxfordDictionary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABBB76392103F3FB0094B6B0 /* OxfordDictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABBB76412103F3FB0094B6B0 /* Build configuration list for PBXNativeTarget "OxfordDictionary" */;
+			buildPhases = (
+				ABBB76362103F3FB0094B6B0 /* Sources */,
+				ABBB76372103F3FB0094B6B0 /* Frameworks */,
+				ABBB76382103F3FB0094B6B0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OxfordDictionary;
+			productName = OxfordDictionary;
+			productReference = ABBB763A2103F3FB0094B6B0 /* libOxfordDictionary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABBB76322103F3FB0094B6B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Yusei Nishiyama";
+				TargetAttributes = {
+					ABBB76392103F3FB0094B6B0 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = ABBB76352103F3FB0094B6B0 /* Build configuration list for PBXProject "OxfordDictionary" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ABBB76312103F3FB0094B6B0;
+			productRefGroup = ABBB763B2103F3FB0094B6B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABBB76392103F3FB0094B6B0 /* OxfordDictionary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABBB76362103F3FB0094B6B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB751F072103F49D00143541 /* Entry.swift in Sources */,
+				AB751F0E2103F49D00143541 /* LexicalEntry.swift in Sources */,
+				AB751F082103F49D00143541 /* GrammaticalFeature.swift in Sources */,
+				AB751F062103F49D00143541 /* CategorizedText.swift in Sources */,
+				AB751F0D2103F49D00143541 /* Sense.swift in Sources */,
+				AB751F092103F49D00143541 /* RetrieveEntry.swift in Sources */,
+				AB751F0A2103F49D00143541 /* CrossReference.swift in Sources */,
+				AB751EFF2103F49D00143541 /* Metadata.swift in Sources */,
+				AB751F042103F49D00143541 /* VariantForm.swift in Sources */,
+				AB751EFB2103F49D00143541 /* Language.swift in Sources */,
+				AB751F052103F49D00143541 /* Example.swift in Sources */,
+				AB751F012103F49D00143541 /* Translation.swift in Sources */,
+				AB751EFA2103F49D00143541 /* Entries.swift in Sources */,
+				AB751F022103F49D00143541 /* ThesaurusLink.swift in Sources */,
+				AB751F032103F49D00143541 /* OxfordDictionaryError.swift in Sources */,
+				AB751EF92103F49D00143541 /* OxfordDictionaryEndpoint.swift in Sources */,
+				AB751EFC2103F49D00143541 /* Region.swift in Sources */,
+				AB751EFD2103F49D00143541 /* OxfordDictionaryEnvironment.swift in Sources */,
+				AB751EFE2103F49D00143541 /* OxfordDictionaryAPIClient.swift in Sources */,
+				AB751F002103F49D00143541 /* Pronunciation.swift in Sources */,
+				AB751F0C2103F49D00143541 /* HeadwordEntry.swift in Sources */,
+				AB751F0B2103F49D00143541 /* RelatedEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ABBB763F2103F3FB0094B6B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABBB76402103F3FB0094B6B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABBB76422103F3FB0094B6B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABBB76432103F3FB0094B6B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABBB76352103F3FB0094B6B0 /* Build configuration list for PBXProject "OxfordDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABBB763F2103F3FB0094B6B0 /* Debug */,
+				ABBB76402103F3FB0094B6B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABBB76412103F3FB0094B6B0 /* Build configuration list for PBXNativeTarget "OxfordDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABBB76422103F3FB0094B6B0 /* Debug */,
+				ABBB76432103F3FB0094B6B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABBB76322103F3FB0094B6B0 /* Project object */;
+}

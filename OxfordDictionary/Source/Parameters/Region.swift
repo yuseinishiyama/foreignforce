@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Region: String {
+public enum Region: String {
 
     case gb
     case us
