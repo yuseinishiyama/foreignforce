@@ -211,7 +211,7 @@
 				AB96625F20BA22F200B8F5E3 /* Empty.swift */,
 			);
 			name = APIClient;
-			path = ../APIClient;
+			path = ../OxfordDictionary;
 			sourceTree = "<group>";
 		};
 		AB4A6C8120B22F0C00F3856B /* OxfordDictionary */ = {
