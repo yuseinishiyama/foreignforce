@@ -12,7 +12,7 @@ struct RelatedEntry: Decodable {
     let domains: [String]
     let id: String
     let language: String
-    let regions: [String]
-    let registers: [String]
+    let regions: [String]?
+    let registers: [String]?
     let text: String
 }
