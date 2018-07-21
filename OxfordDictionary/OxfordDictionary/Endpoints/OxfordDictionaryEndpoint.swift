@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import APIClient
 
 protocol OxfordDictionaryEndpoint: Endpoint {}
 

@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol APIClient {
+public protocol APIClient {
 
     var environment: Environment { get }
 

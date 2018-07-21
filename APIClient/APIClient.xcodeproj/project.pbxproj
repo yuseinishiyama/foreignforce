@@ -6,6 +6,15 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		ABBB76282103F1770094B6B0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBB76222103F1770094B6B0 /* Endpoint.swift */; };
+		ABBB76292103F1770094B6B0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBB76232103F1770094B6B0 /* APIClient.swift */; };
+		ABBB762A2103F1770094B6B0 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBB76242103F1770094B6B0 /* Environment.swift */; };
+		ABBB762B2103F1770094B6B0 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBB76252103F1770094B6B0 /* Result.swift */; };
+		ABBB762C2103F1770094B6B0 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBB76262103F1770094B6B0 /* Empty.swift */; };
+		ABBB762D2103F1770094B6B0 /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBB76272103F1770094B6B0 /* APIClientError.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		AB5184AB2103EDB1006CAA1A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +29,12 @@
 
 /* Begin PBXFileReference section */
 		AB5184AD2103EDB1006CAA1A /* libAPIClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAPIClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABBB76222103F1770094B6B0 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		ABBB76232103F1770094B6B0 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		ABBB76242103F1770094B6B0 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		ABBB76252103F1770094B6B0 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		ABBB76262103F1770094B6B0 /* Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		ABBB76272103F1770094B6B0 /* APIClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +67,12 @@
 		AB5184AF2103EDB1006CAA1A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				ABBB76232103F1770094B6B0 /* APIClient.swift */,
+				ABBB76272103F1770094B6B0 /* APIClientError.swift */,
+				ABBB76262103F1770094B6B0 /* Empty.swift */,
+				ABBB76222103F1770094B6B0 /* Endpoint.swift */,
+				ABBB76242103F1770094B6B0 /* Environment.swift */,
+				ABBB76252103F1770094B6B0 /* Result.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -88,6 +109,7 @@
 				TargetAttributes = {
 					AB5184AC2103EDB1006CAA1A = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -113,6 +135,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABBB76282103F1770094B6B0 /* Endpoint.swift in Sources */,
+				ABBB762A2103F1770094B6B0 /* Environment.swift in Sources */,
+				ABBB762C2103F1770094B6B0 /* Empty.swift in Sources */,
+				ABBB762B2103F1770094B6B0 /* Result.swift in Sources */,
+				ABBB762D2103F1770094B6B0 /* APIClientError.swift in Sources */,
+				ABBB76292103F1770094B6B0 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,10 +264,17 @@
 		AB5184B52103EDB1006CAA1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -248,7 +283,13 @@
 		AB5184B62103EDB1006CAA1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

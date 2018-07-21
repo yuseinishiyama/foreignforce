@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Environment {
+public protocol Environment {
 
     var baseURL: URL { get }
     var apiVersion: String { get }

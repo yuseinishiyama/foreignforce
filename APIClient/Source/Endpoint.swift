@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Endpoint {
+public protocol Endpoint {
 
     associatedtype Response: Decodable
     associatedtype ErrorObject: Error
@@ -21,7 +21,7 @@ protocol Endpoint {
     func parseError(response: HTTPURLResponse, data: Data?) throws -> ErrorObject
 }
 
-extension Endpoint {
+public extension Endpoint {
 
     var parameters: [String: String]? { return nil }
 
@@ -42,7 +42,7 @@ extension Endpoint {
     }
 }
 
-extension Endpoint where Response == Empty {
+public extension Endpoint where Response == Empty {
 
     func parse(response: HTTPURLResponse, data: Data?) throws -> Response {
         return Empty()

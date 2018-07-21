@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum APIClientError: Error {
+public enum APIClientError: Error {
 
     case unknown
     case apiError(Error)

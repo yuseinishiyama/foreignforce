@@ -8,4 +8,4 @@
 
 import Foundation
 
-struct Empty: Decodable {}
+public struct Empty: Decodable {}

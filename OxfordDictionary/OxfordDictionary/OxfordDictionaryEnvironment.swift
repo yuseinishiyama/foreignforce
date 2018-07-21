@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import APIClient
 
 struct OxfordDictionaryEnvironment: Environment {
 
@@ -22,7 +23,7 @@ struct OxfordDictionaryEnvironment: Environment {
     let appID: String = "60dfd7a1"
 
     let appKey: String = {
-        guard let appKey = Bundle.main.object(forInfoDictionaryKey: "Oxford API Application Key") as? String else {
+        guard let appKey = Bundle.main.object(forInfoDictionaryKey: "Oxford API Application Key") as? String, !appKey.isEmpty else {
             fatalError("No API key found")
         }
         return appKey
