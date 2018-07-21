@@ -14,6 +14,7 @@ struct Sense: Decodable {
         case crossReferenceMarkers
         case definitions
         case domains
+        case example
         case id
         case notes
         case pronunciations
@@ -28,7 +29,7 @@ struct Sense: Decodable {
     // let crossReferences: CrossReferencesList?
     let definitions: [String]?
     let domains: [String]?
-    // let example: ExampleList?
+    let example: [Example]?
     let id: String?
     let notes: [CategorizedText]?
     let pronunciations: [Pronunciation]?
