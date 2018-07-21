@@ -20,6 +20,9 @@
 		AB4A6C8A20B22F3E00F3856B /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C8920B22F3E00F3856B /* Region.swift */; };
 		AB4A6C8C20B22FA600F3856B /* OxfordDictionaryAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C8B20B22FA600F3856B /* OxfordDictionaryAPIClient.swift */; };
 		AB4A6C8E20B230C400F3856B /* OxfordDictionaryEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C8D20B230C400F3856B /* OxfordDictionaryEnvironment.swift */; };
+		AB51846521038DC8006CAA1A /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51846421038DC8006CAA1A /* ActionViewController.swift */; };
+		AB51846821038DC8006CAA1A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB51846621038DC8006CAA1A /* MainInterface.storyboard */; };
+		AB51846C21038DC8006CAA1A /* Define.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB51846221038DC8006CAA1A /* Define.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AB96625820B9B06100B8F5E3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625720B9B06100B8F5E3 /* Result.swift */; };
 		AB96625A20B9BF4200B8F5E3 /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625920B9BF4200B8F5E3 /* APIClientError.swift */; };
 		AB96625C20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625B20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift */; };
@@ -47,7 +50,28 @@
 			remoteGlobalIDString = 7E4ABDD120B1D51300683DF7;
 			remoteInfo = Foreignforce;
 		};
+		AB51846A21038DC8006CAA1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E4ABDCA20B1D51300683DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB51846121038DC8006CAA1A;
+			remoteInfo = Define;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB51847021038DC8006CAA1A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AB51846C21038DC8006CAA1A /* Define.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7E4ABDD220B1D51300683DF7 /* Foreignforce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foreignforce.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +91,10 @@
 		AB4A6C8920B22F3E00F3856B /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		AB4A6C8B20B22FA600F3856B /* OxfordDictionaryAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryAPIClient.swift; sourceTree = "<group>"; };
 		AB4A6C8D20B230C400F3856B /* OxfordDictionaryEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryEnvironment.swift; sourceTree = "<group>"; };
+		AB51846221038DC8006CAA1A /* Define.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Define.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB51846421038DC8006CAA1A /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		AB51846721038DC8006CAA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		AB51846921038DC8006CAA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB96625720B9B06100B8F5E3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		AB96625920B9BF4200B8F5E3 /* APIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
 		AB96625B20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryError.swift; sourceTree = "<group>"; };
@@ -102,6 +130,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB51845F21038DC8006CAA1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -112,6 +147,7 @@
 				AB4A6C7720B22E2600F3856B /* APIClient */,
 				7E4ABDD420B1D51300683DF7 /* Foreignforce */,
 				7E4ABDEB20B1D51500683DF7 /* ForeignforceTests */,
+				AB51846321038DC8006CAA1A /* Define */,
 				7E4ABDD320B1D51300683DF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +157,7 @@
 			children = (
 				7E4ABDD220B1D51300683DF7 /* Foreignforce.app */,
 				7E4ABDE820B1D51500683DF7 /* ForeignforceTests.xctest */,
+				AB51846221038DC8006CAA1A /* Define.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,6 +243,16 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		AB51846321038DC8006CAA1A /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				AB51846421038DC8006CAA1A /* ActionViewController.swift */,
+				AB51846621038DC8006CAA1A /* MainInterface.storyboard */,
+				AB51846921038DC8006CAA1A /* Info.plist */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
 		ABE2860920BAE3D10007D418 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,10 +307,12 @@
 				7E4ABDCE20B1D51300683DF7 /* Sources */,
 				7E4ABDCF20B1D51300683DF7 /* Frameworks */,
 				7E4ABDD020B1D51300683DF7 /* Resources */,
+				AB51847021038DC8006CAA1A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AB51846B21038DC8006CAA1A /* PBXTargetDependency */,
 			);
 			name = Foreignforce;
 			productName = Foreignforce;
@@ -288,13 +337,30 @@
 			productReference = 7E4ABDE820B1D51500683DF7 /* ForeignforceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AB51846121038DC8006CAA1A /* Define */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB51846F21038DC8006CAA1A /* Build configuration list for PBXNativeTarget "Define" */;
+			buildPhases = (
+				AB51845E21038DC8006CAA1A /* Sources */,
+				AB51845F21038DC8006CAA1A /* Frameworks */,
+				AB51846021038DC8006CAA1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Define;
+			productName = Define;
+			productReference = AB51846221038DC8006CAA1A /* Define.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7E4ABDCA20B1D51300683DF7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Yusei Nishiyama";
 				TargetAttributes = {
@@ -304,6 +370,9 @@
 					7E4ABDE720B1D51500683DF7 = {
 						CreatedOnToolsVersion = 9.3;
 						TestTargetID = 7E4ABDD120B1D51300683DF7;
+					};
+					AB51846121038DC8006CAA1A = {
+						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
@@ -322,6 +391,7 @@
 			targets = (
 				7E4ABDD120B1D51300683DF7 /* Foreignforce */,
 				7E4ABDE720B1D51500683DF7 /* ForeignforceTests */,
+				AB51846121038DC8006CAA1A /* Define */,
 			);
 		};
 /* End PBXProject section */
@@ -342,6 +412,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB51846021038DC8006CAA1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB51846821038DC8006CAA1A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +466,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB51845E21038DC8006CAA1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB51846521038DC8006CAA1A /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -395,6 +481,11 @@
 			isa = PBXTargetDependency;
 			target = 7E4ABDD120B1D51300683DF7 /* Foreignforce */;
 			targetProxy = 7E4ABDE920B1D51500683DF7 /* PBXContainerItemProxy */;
+		};
+		AB51846B21038DC8006CAA1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB51846121038DC8006CAA1A /* Define */;
+			targetProxy = AB51846A21038DC8006CAA1A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -413,6 +504,14 @@
 				7E4ABDE120B1D51500683DF7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AB51846621038DC8006CAA1A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB51846721038DC8006CAA1A /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -535,6 +634,7 @@
 		7E4ABDF220B1D51500683DF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Foreignforce/Info.plist;
@@ -552,6 +652,7 @@
 		7E4ABDF320B1D51500683DF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Foreignforce/Info.plist;
@@ -606,6 +707,44 @@
 			};
 			name = Release;
 		};
+		AB51846D21038DC8006CAA1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Define/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuseinishiyama.Foreignforce.Define;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB51846E21038DC8006CAA1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Define/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuseinishiyama.Foreignforce.Define;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -632,6 +771,15 @@
 			buildConfigurations = (
 				7E4ABDF520B1D51500683DF7 /* Debug */,
 				7E4ABDF620B1D51500683DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB51846F21038DC8006CAA1A /* Build configuration list for PBXNativeTarget "Define" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB51846D21038DC8006CAA1A /* Debug */,
+				AB51846E21038DC8006CAA1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
