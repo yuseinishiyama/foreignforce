@@ -12,7 +12,7 @@ struct LexicalEntry: Decodable {
     let derivativeOf: [RelatedEntry]?
     let derivatives: [RelatedEntry]?
     let entries: [Entry]?
-    // let grammaticalFeatures: GrammaticalFeaturesList?
+    let grammaticalFeatures: GrammaticalFeature?
     let language: String
     let lexicalCategory: String
     // let notes: CategorizedTextList?
