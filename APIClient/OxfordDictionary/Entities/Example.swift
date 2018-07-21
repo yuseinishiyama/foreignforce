@@ -18,7 +18,7 @@ struct Example: Decodable {
         case registers
         case senseIDs = "senseIds"
         case text
-//        case transltaions
+        case translations
     }
 
     let definitions: [String]?
@@ -28,5 +28,5 @@ struct Example: Decodable {
     let registers: [String]?
     let senseIDs: [String]?
     let text: String
-//    let translations: [Translation]?
+    let translations: [Translation]?
 }
