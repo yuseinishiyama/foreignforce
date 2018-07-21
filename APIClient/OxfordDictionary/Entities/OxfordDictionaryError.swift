@@ -9,6 +9,5 @@
 import Foundation
 
 struct OxfordDictionaryError: Error {
-
     let reason: String
 }

@@ -12,6 +12,7 @@ struct Sense: Decodable {
 
     enum CodingKeys: String, CodingKey {
         case crossReferenceMarkers
+        case crossReferences
         case definitions
         case domains
         case example
@@ -26,7 +27,7 @@ struct Sense: Decodable {
     }
 
     let crossReferenceMarkers: [String]?
-    // let crossReferences: CrossReferencesList?
+    let crossReferences: [CrossReference]?
     let definitions: [String]?
     let domains: [String]?
     let example: [Example]?
