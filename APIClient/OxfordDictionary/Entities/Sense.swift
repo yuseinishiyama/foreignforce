@@ -23,6 +23,7 @@ struct Sense: Decodable {
         case registers
         case shortDefinitions = "short_definition"
         case subsenses
+        case thesaurusLinks
         case translations
         case variantForms
     }
@@ -39,7 +40,7 @@ struct Sense: Decodable {
     let registers: [String]?
     let shortDefinitions: [String]?
     let subsenses: [Sense]?
-    // let thesaurusLinks: [ThesaurusLink]?
+    let thesaurusLinks: [ThesaurusLink]?
     let translations: [Translation]?
     let variantForms: [VariantForm]?
 }
