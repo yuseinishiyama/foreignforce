@@ -10,10 +10,10 @@ import Foundation
 
 struct Entry: Decodable {
     let etymologies: [String]?
-    // let grammaticalFeatures: GrammaticalFeaturesList?
+    let grammaticalFeatures: [GrammaticalFeature]?
     let homographNumber: String?
-    // let notes: CategorizedTextList?
-    // let pronunciations: PronunciationsList?
+    let notes: [CategorizedText]?
+    let pronunciations: [Pronunciation]?
     let senses: [Sense]?
     // let variantForms: VariantFormsList?
 }
