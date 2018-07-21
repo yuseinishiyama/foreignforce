@@ -15,11 +15,11 @@ extension OxfordDictionaryEndpoint {
     func parseError(response: HTTPURLResponse, data: Data?) throws -> OxfordDictionaryError {
 
         guard let data = data else {
-            throw APIClientError.noData
+            throw APIClientError.decodeError(nil)
         }
 
         guard let reason = String(data: data, encoding: String.Encoding.utf8) else {
-            throw APIClientError.invalidData(data)
+            throw APIClientError.decodeError(nil)
         }
 
         return OxfordDictionaryError(reason: reason)

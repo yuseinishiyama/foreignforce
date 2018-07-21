@@ -12,5 +12,5 @@ protocol APIClient {
 
     var environment: Environment { get }
 
-    func request<T: Endpoint>(endpoint: T, completion: @escaping (APIClientResult<T.Response>) -> ()) -> URLSessionTask
+    func request<T: Endpoint>(endpoint: T, completion: @escaping (Result<T.Response, APIClientError>) -> ()) -> URLSessionTask
 }

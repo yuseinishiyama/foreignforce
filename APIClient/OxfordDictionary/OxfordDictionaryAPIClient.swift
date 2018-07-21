@@ -17,7 +17,7 @@ struct OxfordDictionaryAPIClient: APIClient {
     }
 
     @discardableResult
-    func request<T: Endpoint>(endpoint: T, completion: @escaping (APIClientResult<T.Response>) -> ()) -> URLSessionTask {
+    func request<T: Endpoint>(endpoint: T, completion: @escaping (Result<T.Response, APIClientError>) -> ()) -> URLSessionTask {
 
         var request = endpoint.build(environment: environment)
         request.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -29,32 +29,32 @@ struct OxfordDictionaryAPIClient: APIClient {
 
             guard let response = response as? HTTPURLResponse else {
                 if let error = error {
-                    completion(.noResponse(error))
+                    completion(.failure(.networkError(error)))
                 } else {
-                    completion(.noResponse(APIClientError.unknown))
+                    completion(.failure(.unknown))
                 }
                 return
             }
 
             switch (response.statusCode, data, error) {
-            case (..<400, data, .none):
+            case let (..<400, data, .none):
                 do {
                     let object = try endpoint.parse(response: response, data: data)
-                    completion(.hasResponse(response, .success(object)))
+                    completion(.success(object))
                 } catch {
-                    completion(.hasResponse(response, .failure(error)))
+                    completion(.failure(.decodeError(error)))
                 }
 
             case (400..., data, .none):
                 do {
                     let object = try endpoint.parseError(response: response, data: data)
-                    completion(.hasResponse(response, .failure(APIClientError.apiError(object))))
+                    completion(.failure(.apiError(object)))
                 } catch {
-                    completion(.hasResponse(response, .failure(error)))
+                    completion(.failure(.decodeError(error)))
                 }
 
             default:
-                completion(.hasResponse(response, .failure(APIClientError.unknown)))
+                completion(.failure(.unknown))
             }
         }
 

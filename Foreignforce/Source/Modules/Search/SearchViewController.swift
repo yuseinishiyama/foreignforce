@@ -120,7 +120,7 @@ extension SearchTableViewController: UISearchResultsUpdating {
         let entries = Entries(wordID: query)
         let apiClient = OxfordDictionaryAPIClient()
         apiClient.request(endpoint: entries) { result in
-            switch result.result {
+            switch result {
             case let .success(retrieveEntry):
                 let words = retrieveEntry.results?.map { $0.word } ?? []
                 self.searchResultsTableViewController.words = words

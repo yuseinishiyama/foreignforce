@@ -34,7 +34,7 @@ extension Endpoint {
     func parse(response: HTTPURLResponse, data: Data?) throws -> Response {
 
         guard let data = data else {
-            throw APIClientError.noData
+            throw APIClientError.decodeError(nil)
         }
 
         let decoder = JSONDecoder()

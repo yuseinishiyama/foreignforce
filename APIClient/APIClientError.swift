@@ -11,7 +11,7 @@ import Foundation
 enum APIClientError: Error {
 
     case unknown
-    case noData
-    case invalidData(Data)
     case apiError(Error)
+    case networkError(Error)
+    case decodeError(Error?)
 }
