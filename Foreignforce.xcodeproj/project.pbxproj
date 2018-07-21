@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7E4ABDD620B1D51300683DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4ABDD520B1D51300683DF7 /* AppDelegate.swift */; };
-		7E4ABDDD20B1D51300683DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ABDDB20B1D51300683DF7 /* Main.storyboard */; };
-		7E4ABDDF20B1D51500683DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ABDDE20B1D51500683DF7 /* Assets.xcassets */; };
-		7E4ABDE220B1D51500683DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ABDE020B1D51500683DF7 /* LaunchScreen.storyboard */; };
 		7E4ABDED20B1D51500683DF7 /* ForeignforceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4ABDEC20B1D51500683DF7 /* ForeignforceTests.swift */; };
 		AB4A6C7C20B22E5100F3856B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C7B20B22E5100F3856B /* APIClient.swift */; };
 		AB4A6C7E20B22E5C00F3856B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A6C7D20B22E5C00F3856B /* Environment.swift */; };
@@ -24,6 +21,9 @@
 		AB51846821038DC8006CAA1A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB51846621038DC8006CAA1A /* MainInterface.storyboard */; };
 		AB51846C21038DC8006CAA1A /* Define.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB51846221038DC8006CAA1A /* Define.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AB518472210395C9006CAA1A /* Pronunciation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB518471210395C9006CAA1A /* Pronunciation.swift */; };
+		AB51847921039B4C006CAA1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB51847721039B4C006CAA1A /* Assets.xcassets */; };
+		AB51847C21039C93006CAA1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ABDDB20B1D51300683DF7 /* Main.storyboard */; };
+		AB51847D21039CA6006CAA1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ABDE020B1D51500683DF7 /* LaunchScreen.storyboard */; };
 		AB96625820B9B06100B8F5E3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625720B9B06100B8F5E3 /* Result.swift */; };
 		AB96625A20B9BF4200B8F5E3 /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625920B9BF4200B8F5E3 /* APIClientError.swift */; };
 		AB96625C20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625B20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift */; };
@@ -78,9 +78,7 @@
 		7E4ABDD220B1D51300683DF7 /* Foreignforce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foreignforce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4ABDD520B1D51300683DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E4ABDDC20B1D51300683DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7E4ABDDE20B1D51500683DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E4ABDE120B1D51500683DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7E4ABDE320B1D51500683DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E4ABDE820B1D51500683DF7 /* ForeignforceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForeignforceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4ABDEC20B1D51500683DF7 /* ForeignforceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeignforceTests.swift; sourceTree = "<group>"; };
 		7E4ABDEE20B1D51500683DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +95,8 @@
 		AB51846721038DC8006CAA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		AB51846921038DC8006CAA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB518471210395C9006CAA1A /* Pronunciation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pronunciation.swift; sourceTree = "<group>"; };
+		AB51847721039B4C006CAA1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB51847821039B4C006CAA1A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB96625720B9B06100B8F5E3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		AB96625920B9BF4200B8F5E3 /* APIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
 		AB96625B20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryError.swift; sourceTree = "<group>"; };
@@ -167,13 +167,8 @@
 		7E4ABDD420B1D51300683DF7 /* Foreignforce */ = {
 			isa = PBXGroup;
 			children = (
-				ABE2861420BAE4560007D418 /* Shared */,
-				ABE2860920BAE3D10007D418 /* Modules */,
-				7E4ABDD520B1D51300683DF7 /* AppDelegate.swift */,
-				7E4ABDDB20B1D51300683DF7 /* Main.storyboard */,
-				7E4ABDDE20B1D51500683DF7 /* Assets.xcassets */,
-				7E4ABDE020B1D51500683DF7 /* LaunchScreen.storyboard */,
-				7E4ABDE320B1D51500683DF7 /* Info.plist */,
+				AB51847B21039B7D006CAA1A /* Source */,
+				AB51847621039B4C006CAA1A /* SupportingFiles */,
 			);
 			path = Foreignforce;
 			sourceTree = "<group>";
@@ -254,6 +249,27 @@
 				AB51846921038DC8006CAA1A /* Info.plist */,
 			);
 			path = Define;
+			sourceTree = "<group>";
+		};
+		AB51847621039B4C006CAA1A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AB51847721039B4C006CAA1A /* Assets.xcassets */,
+				AB51847821039B4C006CAA1A /* Info.plist */,
+				7E4ABDE020B1D51500683DF7 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AB51847B21039B7D006CAA1A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7E4ABDDB20B1D51300683DF7 /* Main.storyboard */,
+				7E4ABDD520B1D51300683DF7 /* AppDelegate.swift */,
+				ABE2861420BAE4560007D418 /* Shared */,
+				ABE2860920BAE3D10007D418 /* Modules */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		ABE2860920BAE3D10007D418 /* Modules */ = {
@@ -404,10 +420,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E4ABDE220B1D51500683DF7 /* LaunchScreen.storyboard in Resources */,
-				7E4ABDDF20B1D51500683DF7 /* Assets.xcassets in Resources */,
+				AB51847C21039C93006CAA1A /* Main.storyboard in Resources */,
+				AB51847D21039CA6006CAA1A /* LaunchScreen.storyboard in Resources */,
 				ABE2861920BAE9920007D418 /* SearchResultTableViewCell.xib in Resources */,
-				7E4ABDDD20B1D51300683DF7 /* Main.storyboard in Resources */,
+				AB51847921039B4C006CAA1A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,7 +657,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Foreignforce/Info.plist;
+				INFOPLIST_FILE = Foreignforce/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -659,7 +675,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Foreignforce/Info.plist;
+				INFOPLIST_FILE = Foreignforce/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
