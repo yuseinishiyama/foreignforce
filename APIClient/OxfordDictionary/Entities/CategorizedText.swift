@@ -9,7 +9,7 @@
 import Foundation
 
 struct CategorizedText: Decodable {
-    let id: String
+    let id: String?
     let text: String
     let type: String
 }

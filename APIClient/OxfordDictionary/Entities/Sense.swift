@@ -15,8 +15,8 @@ struct Sense: Decodable {
     let domains: [String]?
     // let example: ExampleList?
     let id: String?
-    // let notes: CategorizedTextList?
-    // let pronunciations: PronunciationsList?
+    let notes: [CategorizedText]?
+    let pronunciations: [Pronunciation]?
     let regions: [String]?
     let registers: [String]?
     let shortDefinitions: [String]? // short_definitions
