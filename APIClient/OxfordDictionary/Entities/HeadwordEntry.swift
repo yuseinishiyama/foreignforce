@@ -12,7 +12,7 @@ struct HeadwordEntry: Codable {
     let id: String
     let language: String
     let lexicalEntries: [LexicalEntry]
-    // let pronunciations: PronunciationsList?
+    let pronunciations: [Pronunciation]
     let type: String?
     let word: String
 }

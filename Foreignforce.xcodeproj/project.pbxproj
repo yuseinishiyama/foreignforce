@@ -23,6 +23,7 @@
 		AB51846521038DC8006CAA1A /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51846421038DC8006CAA1A /* ActionViewController.swift */; };
 		AB51846821038DC8006CAA1A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB51846621038DC8006CAA1A /* MainInterface.storyboard */; };
 		AB51846C21038DC8006CAA1A /* Define.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB51846221038DC8006CAA1A /* Define.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AB518472210395C9006CAA1A /* Pronunciation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB518471210395C9006CAA1A /* Pronunciation.swift */; };
 		AB96625820B9B06100B8F5E3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625720B9B06100B8F5E3 /* Result.swift */; };
 		AB96625A20B9BF4200B8F5E3 /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625920B9BF4200B8F5E3 /* APIClientError.swift */; };
 		AB96625C20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625B20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift */; };
@@ -95,6 +96,7 @@
 		AB51846421038DC8006CAA1A /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		AB51846721038DC8006CAA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		AB51846921038DC8006CAA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB518471210395C9006CAA1A /* Pronunciation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pronunciation.swift; sourceTree = "<group>"; };
 		AB96625720B9B06100B8F5E3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		AB96625920B9BF4200B8F5E3 /* APIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
 		AB96625B20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryError.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				AB96626520BA23FD00B8F5E3 /* HeadwordEntry.swift */,
 				AB96626720BA241400B8F5E3 /* LexicalEntry.swift */,
 				AB96626920BA242D00B8F5E3 /* Sense.swift */,
+				AB518471210395C9006CAA1A /* Pronunciation.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				AB96625820B9B06100B8F5E3 /* Result.swift in Sources */,
 				AB96626820BA241400B8F5E3 /* LexicalEntry.swift in Sources */,
 				AB96626A20BA242D00B8F5E3 /* Sense.swift in Sources */,
+				AB518472210395C9006CAA1A /* Pronunciation.swift in Sources */,
 				AB96625E20BA22AE00B8F5E3 /* OxfordDictionaryEndpoint.swift in Sources */,
 				AB96625C20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift in Sources */,
 				AB4A6C8A20B22F3E00F3856B /* Region.swift in Sources */,
