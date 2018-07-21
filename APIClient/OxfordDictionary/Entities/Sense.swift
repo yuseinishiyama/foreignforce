@@ -9,6 +9,20 @@
 import Foundation
 
 struct Sense: Decodable {
+
+    enum CodingKeys: String, CodingKey {
+        case crossReferenceMarkers
+        case definitions
+        case domains
+        case id
+        case notes
+        case pronunciations
+        case regions
+        case registers
+        case shortDefinitions = "short_definition"
+        case subsenses
+    }
+
     let crossReferenceMarkers: [String]?
     // let crossReferences: CrossReferencesList?
     let definitions: [String]?
@@ -19,7 +33,7 @@ struct Sense: Decodable {
     let pronunciations: [Pronunciation]?
     let regions: [String]?
     let registers: [String]?
-    let shortDefinitions: [String]? // short_definitions
+    let shortDefinitions: [String]?
     let subsenses: [Sense]?
     // let thesaurusLinks: [ThesaurusLink]?
     // let translations: TranslationsList?
