@@ -21,6 +21,7 @@ struct Sense: Decodable {
         case registers
         case shortDefinitions = "short_definition"
         case subsenses
+        case variantForms
     }
 
     let crossReferenceMarkers: [String]?
@@ -37,5 +38,5 @@ struct Sense: Decodable {
     let subsenses: [Sense]?
     // let thesaurusLinks: [ThesaurusLink]?
     // let translations: TranslationsList?
-    // let variantForms: VariantFormsList?
+    let variantForms: [VariantForm]?
 }
