@@ -15,5 +15,5 @@ struct Entry: Decodable {
     let notes: [CategorizedText]?
     let pronunciations: [Pronunciation]?
     let senses: [Sense]?
-    // let variantForms: VariantFormsList?
+    let variantForms: [VariantForm]?
 }
