@@ -9,6 +9,6 @@
 import Foundation
 
 struct RetrieveEntry: Decodable {
-    // let metadata: Object?
+    let metadata: Metadata?
     let results: [HeadwordEntry]?
 }

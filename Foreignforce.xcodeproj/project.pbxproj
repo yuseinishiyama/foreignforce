@@ -27,6 +27,7 @@
 		AB5184802103AC4F006CAA1A /* RelatedEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51847F2103AC4F006CAA1A /* RelatedEntry.swift */; };
 		AB5184822103AD06006CAA1A /* GrammaticalFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5184812103AD06006CAA1A /* GrammaticalFeature.swift */; };
 		AB5184842103ADB3006CAA1A /* CategorizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5184832103ADB3006CAA1A /* CategorizedText.swift */; };
+		AB5184862103C212006CAA1A /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5184852103C212006CAA1A /* Metadata.swift */; };
 		AB96625820B9B06100B8F5E3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625720B9B06100B8F5E3 /* Result.swift */; };
 		AB96625A20B9BF4200B8F5E3 /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625920B9BF4200B8F5E3 /* APIClientError.swift */; };
 		AB96625C20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625B20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift */; };
@@ -103,6 +104,7 @@
 		AB51847F2103AC4F006CAA1A /* RelatedEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedEntry.swift; sourceTree = "<group>"; };
 		AB5184812103AD06006CAA1A /* GrammaticalFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammaticalFeature.swift; sourceTree = "<group>"; };
 		AB5184832103ADB3006CAA1A /* CategorizedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorizedText.swift; sourceTree = "<group>"; };
+		AB5184852103C212006CAA1A /* Metadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		AB96625720B9B06100B8F5E3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		AB96625920B9BF4200B8F5E3 /* APIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
 		AB96625B20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryError.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				AB51847F2103AC4F006CAA1A /* RelatedEntry.swift */,
 				AB5184812103AD06006CAA1A /* GrammaticalFeature.swift */,
 				AB5184832103ADB3006CAA1A /* CategorizedText.swift */,
+				AB5184852103C212006CAA1A /* Metadata.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				AB4A6C8820B22F3700F3856B /* Language.swift in Sources */,
 				AB4A6C8E20B230C400F3856B /* OxfordDictionaryEnvironment.swift in Sources */,
 				AB96625A20B9BF4200B8F5E3 /* APIClientError.swift in Sources */,
+				AB5184862103C212006CAA1A /* Metadata.swift in Sources */,
 				AB4A6C8020B22E6E00F3856B /* Endpoint.swift in Sources */,
 				AB4A6C7E20B22E5C00F3856B /* Environment.swift in Sources */,
 				ABE2861120BAE3D20007D418 /* SearchResultsViewController.swift in Sources */,
