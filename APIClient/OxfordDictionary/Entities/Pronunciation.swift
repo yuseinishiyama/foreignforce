@@ -9,9 +9,9 @@
 import Foundation
 
 struct Pronunciation: Decodable {
-    let audioFile: String
+    let audioFile: String?
     let dialects: [String]?
-    let phoneticNotation: String
-    let phoneticSpelling: String
+    let phoneticNotation: String?
+    let phoneticSpelling: String?
     let regions: [String]?
 }
