@@ -83,11 +83,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7E4ABDD220B1D51300683DF7 /* Foreignforce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foreignforce.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4ABDD220B1D51300683DF7 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4ABDD520B1D51300683DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E4ABDDC20B1D51300683DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E4ABDE120B1D51500683DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7E4ABDE820B1D51500683DF7 /* ForeignforceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForeignforceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4ABDE820B1D51500683DF7 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4ABDEC20B1D51500683DF7 /* ForeignforceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeignforceTests.swift; sourceTree = "<group>"; };
 		7E4ABDEE20B1D51500683DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB4A6C7B20B22E5100F3856B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		AB96626720BA241400B8F5E3 /* LexicalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexicalEntry.swift; sourceTree = "<group>"; };
 		AB96626920BA242D00B8F5E3 /* Sense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sense.swift; sourceTree = "<group>"; };
 		ABC05BAB20B98F1E0040817A /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
-		ABD8815220B1EDAC00B7CDDC /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		ABD8815220B1EDAC00B7CDDC /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Playground.playground; path = ../Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		ABE2860B20BAE3D10007D418 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		ABE2860D20BAE3D10007D418 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		ABE2860E20BAE3D10007D418 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
@@ -163,10 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				ABD8815220B1EDAC00B7CDDC /* Playground.playground */,
+				7E4ABDD420B1D51300683DF7 /* App */,
+				AB51846321038DC8006CAA1A /* DefineExtention */,
+				7E4ABDEB20B1D51500683DF7 /* Tests */,
 				AB4A6C7720B22E2600F3856B /* APIClient */,
-				7E4ABDD420B1D51300683DF7 /* Foreignforce */,
-				7E4ABDEB20B1D51500683DF7 /* ForeignforceTests */,
-				AB51846321038DC8006CAA1A /* Define */,
 				7E4ABDD320B1D51300683DF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -174,29 +174,29 @@
 		7E4ABDD320B1D51300683DF7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7E4ABDD220B1D51300683DF7 /* Foreignforce.app */,
-				7E4ABDE820B1D51500683DF7 /* ForeignforceTests.xctest */,
+				7E4ABDD220B1D51300683DF7 /* App.app */,
+				7E4ABDE820B1D51500683DF7 /* Tests.xctest */,
 				AB51846221038DC8006CAA1A /* Define.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7E4ABDD420B1D51300683DF7 /* Foreignforce */ = {
+		7E4ABDD420B1D51300683DF7 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				AB51847B21039B7D006CAA1A /* Source */,
 				AB51847621039B4C006CAA1A /* SupportingFiles */,
 			);
-			path = Foreignforce;
+			path = App;
 			sourceTree = "<group>";
 		};
-		7E4ABDEB20B1D51500683DF7 /* ForeignforceTests */ = {
+		7E4ABDEB20B1D51500683DF7 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				7E4ABDEC20B1D51500683DF7 /* ForeignforceTests.swift */,
 				7E4ABDEE20B1D51500683DF7 /* Info.plist */,
 			);
-			path = ForeignforceTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		AB4A6C7720B22E2600F3856B /* APIClient */ = {
@@ -210,7 +210,8 @@
 				AB96625720B9B06100B8F5E3 /* Result.swift */,
 				AB96625F20BA22F200B8F5E3 /* Empty.swift */,
 			);
-			path = APIClient;
+			name = APIClient;
+			path = ../APIClient;
 			sourceTree = "<group>";
 		};
 		AB4A6C8120B22F0C00F3856B /* OxfordDictionary */ = {
@@ -266,14 +267,15 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		AB51846321038DC8006CAA1A /* Define */ = {
+		AB51846321038DC8006CAA1A /* DefineExtention */ = {
 			isa = PBXGroup;
 			children = (
 				AB51846421038DC8006CAA1A /* ActionViewController.swift */,
 				AB51846621038DC8006CAA1A /* MainInterface.storyboard */,
 				AB51846921038DC8006CAA1A /* Info.plist */,
 			);
-			path = Define;
+			name = DefineExtention;
+			path = DefineExtension;
 			sourceTree = "<group>";
 		};
 		AB51847621039B4C006CAA1A /* SupportingFiles */ = {
@@ -345,9 +347,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7E4ABDD120B1D51300683DF7 /* Foreignforce */ = {
+		7E4ABDD120B1D51300683DF7 /* App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E4ABDF120B1D51500683DF7 /* Build configuration list for PBXNativeTarget "Foreignforce" */;
+			buildConfigurationList = 7E4ABDF120B1D51500683DF7 /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
 				7E4ABDCE20B1D51300683DF7 /* Sources */,
 				7E4ABDCF20B1D51300683DF7 /* Frameworks */,
@@ -359,14 +361,14 @@
 			dependencies = (
 				AB51846B21038DC8006CAA1A /* PBXTargetDependency */,
 			);
-			name = Foreignforce;
+			name = App;
 			productName = Foreignforce;
-			productReference = 7E4ABDD220B1D51300683DF7 /* Foreignforce.app */;
+			productReference = 7E4ABDD220B1D51300683DF7 /* App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7E4ABDE720B1D51500683DF7 /* ForeignforceTests */ = {
+		7E4ABDE720B1D51500683DF7 /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E4ABDF420B1D51500683DF7 /* Build configuration list for PBXNativeTarget "ForeignforceTests" */;
+			buildConfigurationList = 7E4ABDF420B1D51500683DF7 /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
 				7E4ABDE420B1D51500683DF7 /* Sources */,
 				7E4ABDE520B1D51500683DF7 /* Frameworks */,
@@ -377,9 +379,9 @@
 			dependencies = (
 				7E4ABDEA20B1D51500683DF7 /* PBXTargetDependency */,
 			);
-			name = ForeignforceTests;
+			name = Tests;
 			productName = ForeignforceTests;
-			productReference = 7E4ABDE820B1D51500683DF7 /* ForeignforceTests.xctest */;
+			productReference = 7E4ABDE820B1D51500683DF7 /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		AB51846121038DC8006CAA1A /* Define */ = {
@@ -434,8 +436,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7E4ABDD120B1D51300683DF7 /* Foreignforce */,
-				7E4ABDE720B1D51500683DF7 /* ForeignforceTests */,
+				7E4ABDD120B1D51300683DF7 /* App */,
+				7E4ABDE720B1D51500683DF7 /* Tests */,
 				AB51846121038DC8006CAA1A /* Define */,
 			);
 		};
@@ -533,7 +535,7 @@
 /* Begin PBXTargetDependency section */
 		7E4ABDEA20B1D51500683DF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7E4ABDD120B1D51300683DF7 /* Foreignforce */;
+			target = 7E4ABDD120B1D51300683DF7 /* App */;
 			targetProxy = 7E4ABDE920B1D51500683DF7 /* PBXContainerItemProxy */;
 		};
 		AB51846B21038DC8006CAA1A /* PBXTargetDependency */ = {
@@ -692,12 +694,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Foreignforce/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/App/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yuseinishiyama.Foreignforce;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuseinishiyama.foreignforce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -710,12 +712,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Foreignforce/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/App/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yuseinishiyama.Foreignforce;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuseinishiyama.foreignforce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -734,11 +736,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yuseinishiyama.ForeignforceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuseinishiyama.foreignforce.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Foreignforce.app/Foreignforce";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
 			};
 			name = Debug;
 		};
@@ -754,11 +756,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yuseinishiyama.ForeignforceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuseinishiyama.foreignforce.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Foreignforce.app/Foreignforce";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
 			};
 			name = Release;
 		};
@@ -766,14 +768,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Define/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DefineExtension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yuseinishiyama.Foreignforce.Define;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuseinishiyama.foreignforce.define;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -785,14 +787,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Define/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DefineExtension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yuseinishiyama.Foreignforce.Define;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuseinishiyama.foreignforce.define;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -812,7 +814,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E4ABDF120B1D51500683DF7 /* Build configuration list for PBXNativeTarget "Foreignforce" */ = {
+		7E4ABDF120B1D51500683DF7 /* Build configuration list for PBXNativeTarget "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E4ABDF220B1D51500683DF7 /* Debug */,
@@ -821,7 +823,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E4ABDF420B1D51500683DF7 /* Build configuration list for PBXNativeTarget "ForeignforceTests" */ = {
+		7E4ABDF420B1D51500683DF7 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E4ABDF520B1D51500683DF7 /* Debug */,
