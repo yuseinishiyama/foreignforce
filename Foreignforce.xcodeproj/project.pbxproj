@@ -26,6 +26,7 @@
 		AB51847D21039CA6006CAA1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ABDE020B1D51500683DF7 /* LaunchScreen.storyboard */; };
 		AB5184802103AC4F006CAA1A /* RelatedEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51847F2103AC4F006CAA1A /* RelatedEntry.swift */; };
 		AB5184822103AD06006CAA1A /* GrammaticalFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5184812103AD06006CAA1A /* GrammaticalFeature.swift */; };
+		AB5184842103ADB3006CAA1A /* CategorizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5184832103ADB3006CAA1A /* CategorizedText.swift */; };
 		AB96625820B9B06100B8F5E3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625720B9B06100B8F5E3 /* Result.swift */; };
 		AB96625A20B9BF4200B8F5E3 /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625920B9BF4200B8F5E3 /* APIClientError.swift */; };
 		AB96625C20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB96625B20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift */; };
@@ -101,6 +102,7 @@
 		AB51847E21039D12006CAA1A /* env.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = env.xcconfig; sourceTree = "<group>"; };
 		AB51847F2103AC4F006CAA1A /* RelatedEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedEntry.swift; sourceTree = "<group>"; };
 		AB5184812103AD06006CAA1A /* GrammaticalFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammaticalFeature.swift; sourceTree = "<group>"; };
+		AB5184832103ADB3006CAA1A /* CategorizedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorizedText.swift; sourceTree = "<group>"; };
 		AB96625720B9B06100B8F5E3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		AB96625920B9BF4200B8F5E3 /* APIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
 		AB96625B20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryError.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				AB518471210395C9006CAA1A /* Pronunciation.swift */,
 				AB51847F2103AC4F006CAA1A /* RelatedEntry.swift */,
 				AB5184812103AD06006CAA1A /* GrammaticalFeature.swift */,
+				AB5184832103ADB3006CAA1A /* CategorizedText.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				AB96625C20BA1F3D00B8F5E3 /* OxfordDictionaryError.swift in Sources */,
 				AB4A6C8A20B22F3E00F3856B /* Region.swift in Sources */,
 				AB4A6C8620B22F1C00F3856B /* Entries.swift in Sources */,
+				AB5184842103ADB3006CAA1A /* CategorizedText.swift in Sources */,
 				AB4A6C8C20B22FA600F3856B /* OxfordDictionaryAPIClient.swift in Sources */,
 				7E4ABDD620B1D51300683DF7 /* AppDelegate.swift in Sources */,
 				AB4A6C7C20B22E5100F3856B /* APIClient.swift in Sources */,
