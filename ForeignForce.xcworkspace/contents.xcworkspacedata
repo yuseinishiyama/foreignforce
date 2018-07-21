@@ -5,6 +5,6 @@
       location = "group:APIClient/APIClient.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:Foreignforce/Foreignforce.xcodeproj">
+      location = "container:App/App.xcodeproj">
    </FileRef>
 </Workspace>

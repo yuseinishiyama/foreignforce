@@ -163,8 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				ABD8815220B1EDAC00B7CDDC /* Playground.playground */,
-				7E4ABDD420B1D51300683DF7 /* App */,
-				AB51846321038DC8006CAA1A /* DefineExtention */,
+				AB51847B21039B7D006CAA1A /* Source */,
+				AB51847621039B4C006CAA1A /* SupportingFiles */,
 				7E4ABDEB20B1D51500683DF7 /* Tests */,
 				AB4A6C7720B22E2600F3856B /* APIClient */,
 				7E4ABDD320B1D51300683DF7 /* Products */,
@@ -179,15 +179,6 @@
 				AB51846221038DC8006CAA1A /* Define.appex */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		7E4ABDD420B1D51300683DF7 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				AB51847B21039B7D006CAA1A /* Source */,
-				AB51847621039B4C006CAA1A /* SupportingFiles */,
-			);
-			path = App;
 			sourceTree = "<group>";
 		};
 		7E4ABDEB20B1D51500683DF7 /* Tests */ = {
@@ -296,6 +287,7 @@
 				7E4ABDD520B1D51300683DF7 /* AppDelegate.swift */,
 				ABE2861420BAE4560007D418 /* Shared */,
 				ABE2860920BAE3D10007D418 /* Modules */,
+				AB51846321038DC8006CAA1A /* DefineExtention */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -423,7 +415,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7E4ABDCD20B1D51300683DF7 /* Build configuration list for PBXProject "Foreignforce" */;
+			buildConfigurationList = 7E4ABDCD20B1D51300683DF7 /* Build configuration list for PBXProject "App" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -693,8 +685,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/App/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -711,8 +704,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/App/SupportingFiles/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -768,7 +762,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/DefineExtension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/DefineExtension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -787,7 +781,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/DefineExtension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/DefineExtension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -805,7 +799,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7E4ABDCD20B1D51300683DF7 /* Build configuration list for PBXProject "Foreignforce" */ = {
+		7E4ABDCD20B1D51300683DF7 /* Build configuration list for PBXProject "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E4ABDEF20B1D51500683DF7 /* Debug */,
