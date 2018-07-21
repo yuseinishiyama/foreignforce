@@ -19,7 +19,12 @@ struct OxfordDictionaryEnvironment: Environment {
         return url
     }
 
-    let appID: String = ""
+    let appID: String = "60dfd7a1"
 
-    let appKey: String = ""
+    let appKey: String = {
+        guard let appKey = Bundle.main.object(forInfoDictionaryKey: "Oxford API Application Key") as? String else {
+            fatalError("No API key found")
+        }
+        return appKey
+    }()
 }
