@@ -17,6 +17,6 @@ struct LexicalEntry: Decodable {
     let lexicalCategory: String
     let notes: [CategorizedText]?
     let pronunciations: [Pronunciation]?
-    // let text: String
+    let text: String
     // let variantForms: VariantFormsList?
 }
