@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Entry: Codable {
+struct Entry: Decodable {
     let etymologies: [String]?
     // let grammaticalFeatures: GrammaticalFeaturesList?
     let homographNumber: String?

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Pronunciation: Codable {
+struct Pronunciation: Decodable {
     let audioFile: String
     let dialects: [String]
     let phoneticNotation: String

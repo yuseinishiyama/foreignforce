@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct LexicalEntry: Codable {
+struct LexicalEntry: Decodable {
     // let derivativeOf: [RelatedEntry]?
     // let derivatives: [RelatedEntry]?
     let entries: [Entry]?

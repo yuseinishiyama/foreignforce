@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct RetrieveEntry: Codable {
+struct RetrieveEntry: Decodable {
     // let metadata: Object?
     let results: [HeadwordEntry]?
 }

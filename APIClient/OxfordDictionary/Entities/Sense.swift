@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Sense: Codable {
+struct Sense: Decodable {
     let crossReferenceMarkers: [String]?
     // let crossReferences: CrossReferencesList?
     let definitions: [String]?

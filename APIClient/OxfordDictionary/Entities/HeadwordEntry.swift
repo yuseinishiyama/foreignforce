@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct HeadwordEntry: Codable {
+struct HeadwordEntry: Decodable {
     let id: String
     let language: String
     let lexicalEntries: [LexicalEntry]
