@@ -9,14 +9,14 @@
 import Foundation
 
 struct LexicalEntry: Decodable {
-    // let derivativeOf: [RelatedEntry]?
-    // let derivatives: [RelatedEntry]?
+    let derivativeOf: [RelatedEntry]?
+    let derivatives: [RelatedEntry]?
     let entries: [Entry]?
     // let grammaticalFeatures: GrammaticalFeaturesList?
     let language: String
     let lexicalCategory: String
     // let notes: CategorizedTextList?
-    // let pronunciations: PronunciationsList?
+    let pronunciations: [Pronunciation]?
     // let text: String
     // let variantForms: VariantFormsList?
 }

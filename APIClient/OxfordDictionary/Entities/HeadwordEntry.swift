@@ -12,7 +12,7 @@ struct HeadwordEntry: Decodable {
     let id: String
     let language: String
     let lexicalEntries: [LexicalEntry]
-    let pronunciations: [Pronunciation]
+    let pronunciations: [Pronunciation]?
     let type: String?
     let word: String
 }
