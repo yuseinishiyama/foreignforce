@@ -9,11 +9,11 @@
 import Foundation
 import APIClient
 
-public struct OxfordDictionary: APIClientProtocol {
+public struct OxfordDictionaryClient: APIClientProtocol {
 
     public let environment: APIClient.Environment
 
-    public init(environment: APIClient.Environment = Environment()) {
+    public init(environment: APIClient.Environment) {
         self.environment = environment
     }
 

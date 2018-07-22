@@ -16,6 +16,7 @@
 		AB51847C21039C93006CAA1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ABDDB20B1D51300683DF7 /* Main.storyboard */; };
 		AB51847D21039CA6006CAA1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ABDE020B1D51500683DF7 /* LaunchScreen.storyboard */; };
 		AB751F102103F7D200143541 /* libOxfordDictionary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB751F0F2103F7D200143541 /* libOxfordDictionary.a */; };
+		AB751F15210403FA00143541 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751F14210403FA00143541 /* Environment.swift */; };
 		ABE2860F20BAE3D20007D418 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2860B20BAE3D10007D418 /* SecondViewController.swift */; };
 		ABE2861020BAE3D20007D418 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2860D20BAE3D10007D418 /* SearchViewController.swift */; };
 		ABE2861120BAE3D20007D418 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2860E20BAE3D10007D418 /* SearchResultsViewController.swift */; };
@@ -70,6 +71,7 @@
 		AB51847721039B4C006CAA1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB51847821039B4C006CAA1A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB751F0F2103F7D200143541 /* libOxfordDictionary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libOxfordDictionary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB751F14210403FA00143541 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		ABBB76212103F0BA0094B6B0 /* env.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = env.xcconfig; sourceTree = "<group>"; };
 		ABBB762F2103F1BC0094B6B0 /* libAPIClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAPIClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD8815220B1EDAC00B7CDDC /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Playground.playground; path = ../Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				ABE2861520BAE4560007D418 /* Extensions */,
+				AB751F14210403FA00143541 /* Environment.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				ABE2861320BAE3EE0007D418 /* SearchResultTableViewCell.swift in Sources */,
 				7E4ABDD620B1D51300683DF7 /* AppDelegate.swift in Sources */,
 				ABE2861020BAE3D20007D418 /* SearchViewController.swift in Sources */,
+				AB751F15210403FA00143541 /* Environment.swift in Sources */,
 				ABE2861120BAE3D20007D418 /* SearchResultsViewController.swift in Sources */,
 				ABE2860F20BAE3D20007D418 /* SecondViewController.swift in Sources */,
 			);

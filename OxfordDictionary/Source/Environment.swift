@@ -9,9 +9,11 @@
 import Foundation
 import APIClient
 
-public struct Environment: APIClient.Environment {
+public protocol Environment: APIClient.Environment {}
 
-    public let apiVersion = "v1"
+public extension Environment {
+
+    public var apiVersion: String { return "v1" }
 
     public var baseURL: URL {
         guard let url = URL(string: "https://od-api.oxforddictionaries.com/api")?.appendingPathComponent(apiVersion) else {
@@ -19,15 +21,4 @@ public struct Environment: APIClient.Environment {
         }
         return url
     }
-
-    public let appID: String = "60dfd7a1"
-
-    public let appKey: String = {
-        guard let appKey = Bundle.main.object(forInfoDictionaryKey: "Oxford API Application Key") as? String, !appKey.isEmpty else {
-            fatalError("No API key found")
-        }
-        return appKey
-    }()
-
-    public init() {}
 }
