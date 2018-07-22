@@ -70,11 +70,11 @@
 		AB51846921038DC8006CAA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB51847721039B4C006CAA1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB51847821039B4C006CAA1A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB713D482105184700420C20 /* Sandbox.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sandbox.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AB751F0F2103F7D200143541 /* libOxfordDictionary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libOxfordDictionary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB751F14210403FA00143541 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		ABBB76212103F0BA0094B6B0 /* env.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = env.xcconfig; sourceTree = "<group>"; };
 		ABBB762F2103F1BC0094B6B0 /* libAPIClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAPIClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABD8815220B1EDAC00B7CDDC /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Playground.playground; path = ../Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		ABE2860B20BAE3D10007D418 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		ABE2860D20BAE3D10007D418 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		ABE2860E20BAE3D10007D418 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		7E4ABDC920B1D51300683DF7 = {
 			isa = PBXGroup;
 			children = (
-				ABD8815220B1EDAC00B7CDDC /* Playground.playground */,
+				AB713D482105184700420C20 /* Sandbox.playground */,
 				AB51847B21039B7D006CAA1A /* Source */,
 				AB51847621039B4C006CAA1A /* SupportingFiles */,
 				7E4ABDEB20B1D51500683DF7 /* Tests */,
