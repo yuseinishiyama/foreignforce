@@ -16,7 +16,6 @@
 		AB51847C21039C93006CAA1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ABDDB20B1D51300683DF7 /* Main.storyboard */; };
 		AB51847D21039CA6006CAA1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ABDE020B1D51500683DF7 /* LaunchScreen.storyboard */; };
 		AB751F102103F7D200143541 /* libOxfordDictionary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB751F0F2103F7D200143541 /* libOxfordDictionary.a */; };
-		ABBB76302103F1BC0094B6B0 /* libAPIClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABBB762F2103F1BC0094B6B0 /* libAPIClient.a */; };
 		ABE2860F20BAE3D20007D418 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2860B20BAE3D10007D418 /* SecondViewController.swift */; };
 		ABE2861020BAE3D20007D418 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2860D20BAE3D10007D418 /* SearchViewController.swift */; };
 		ABE2861120BAE3D20007D418 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2860E20BAE3D10007D418 /* SearchResultsViewController.swift */; };
@@ -88,7 +87,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB751F102103F7D200143541 /* libOxfordDictionary.a in Frameworks */,
-				ABBB76302103F1BC0094B6B0 /* libAPIClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

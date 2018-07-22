@@ -9,18 +9,18 @@
 import Foundation
 import APIClient
 
-public protocol OxfordDictionaryEndpoint: Endpoint {}
+public protocol Endpoint: APIClient.Endpoint {}
 
-public extension OxfordDictionaryEndpoint {
+public extension Endpoint {
 
     func parseError(response: HTTPURLResponse, data: Data?) throws -> OxfordDictionaryError {
 
         guard let data = data else {
-            throw APIClientError.decodeError(nil)
+            throw APIClient.Error.decodeError(nil)
         }
 
         guard let reason = String(data: data, encoding: String.Encoding.utf8) else {
-            throw APIClientError.decodeError(nil)
+            throw APIClient.Error.decodeError(nil)
         }
 
         return OxfordDictionaryError(reason: reason)

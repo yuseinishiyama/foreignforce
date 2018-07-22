@@ -11,7 +11,7 @@ import Foundation
 public protocol Endpoint {
 
     associatedtype Response: Decodable
-    associatedtype ErrorObject: Error
+    associatedtype ErrorObject: Swift.Error
 
     var path: String { get }
     var parameters: [String: String]? { get }
@@ -34,7 +34,7 @@ public extension Endpoint {
     func parse(response: HTTPURLResponse, data: Data?) throws -> Response {
 
         guard let data = data else {
-            throw APIClientError.decodeError(nil)
+            throw Error.decodeError(nil)
         }
 
         let decoder = JSONDecoder()

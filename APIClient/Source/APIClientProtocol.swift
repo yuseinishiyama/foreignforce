@@ -8,9 +8,9 @@
 
 import Foundation
 
-public protocol APIClient {
+public protocol APIClientProtocol { // Name it protocol to avoid naming conflict with module
 
     var environment: Environment { get }
 
-    func request<T: Endpoint>(endpoint: T, completion: @escaping (Result<T.Response, APIClientError>) -> ()) -> URLSessionTask
+    func request<T: Endpoint>(endpoint: T, completion: @escaping (Result<T.Response, Error>) -> ()) -> URLSessionTask
 }

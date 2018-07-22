@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB751EF92103F49D00143541 /* OxfordDictionaryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE12103F49D00143541 /* OxfordDictionaryEndpoint.swift */; };
+		AB751EF92103F49D00143541 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE12103F49D00143541 /* Endpoint.swift */; };
 		AB751EFA2103F49D00143541 /* Entries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE22103F49D00143541 /* Entries.swift */; };
 		AB751EFB2103F49D00143541 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE42103F49D00143541 /* Language.swift */; };
 		AB751EFC2103F49D00143541 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE52103F49D00143541 /* Region.swift */; };
-		AB751EFD2103F49D00143541 /* OxfordDictionaryEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE62103F49D00143541 /* OxfordDictionaryEnvironment.swift */; };
-		AB751EFE2103F49D00143541 /* OxfordDictionaryAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE72103F49D00143541 /* OxfordDictionaryAPIClient.swift */; };
+		AB751EFD2103F49D00143541 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE62103F49D00143541 /* Environment.swift */; };
+		AB751EFE2103F49D00143541 /* OxfordDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE72103F49D00143541 /* OxfordDictionary.swift */; };
 		AB751EFF2103F49D00143541 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE92103F49D00143541 /* Metadata.swift */; };
 		AB751F002103F49D00143541 /* Pronunciation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EEA2103F49D00143541 /* Pronunciation.swift */; };
 		AB751F012103F49D00143541 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EEB2103F49D00143541 /* Translation.swift */; };
@@ -29,6 +29,7 @@
 		AB751F0C2103F49D00143541 /* HeadwordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EF62103F49D00143541 /* HeadwordEntry.swift */; };
 		AB751F0D2103F49D00143541 /* Sense.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EF72103F49D00143541 /* Sense.swift */; };
 		AB751F0E2103F49D00143541 /* LexicalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EF82103F49D00143541 /* LexicalEntry.swift */; };
+		AB751F132103FBD700143541 /* libAPIClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB751F122103FBD700143541 /* libAPIClient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,12 +45,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AB751EE12103F49D00143541 /* OxfordDictionaryEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryEndpoint.swift; sourceTree = "<group>"; };
+		AB751EE12103F49D00143541 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		AB751EE22103F49D00143541 /* Entries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entries.swift; sourceTree = "<group>"; };
 		AB751EE42103F49D00143541 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		AB751EE52103F49D00143541 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
-		AB751EE62103F49D00143541 /* OxfordDictionaryEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryEnvironment.swift; sourceTree = "<group>"; };
-		AB751EE72103F49D00143541 /* OxfordDictionaryAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OxfordDictionaryAPIClient.swift; sourceTree = "<group>"; };
+		AB751EE62103F49D00143541 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		AB751EE72103F49D00143541 /* OxfordDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OxfordDictionary.swift; sourceTree = "<group>"; };
 		AB751EE92103F49D00143541 /* Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		AB751EEA2103F49D00143541 /* Pronunciation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pronunciation.swift; sourceTree = "<group>"; };
 		AB751EEB2103F49D00143541 /* Translation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 		AB751EF62103F49D00143541 /* HeadwordEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadwordEntry.swift; sourceTree = "<group>"; };
 		AB751EF72103F49D00143541 /* Sense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sense.swift; sourceTree = "<group>"; };
 		AB751EF82103F49D00143541 /* LexicalEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LexicalEntry.swift; sourceTree = "<group>"; };
+		AB751F122103FBD700143541 /* libAPIClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAPIClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABBB763A2103F3FB0094B6B0 /* libOxfordDictionary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOxfordDictionary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB751F132103FBD700143541 /* libAPIClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,10 +86,10 @@
 		AB751EDF2103F49D00143541 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				AB751EE62103F49D00143541 /* Environment.swift */,
+				AB751EE72103F49D00143541 /* OxfordDictionary.swift */,
 				AB751EE02103F49D00143541 /* Endpoints */,
 				AB751EE32103F49D00143541 /* Parameters */,
-				AB751EE62103F49D00143541 /* OxfordDictionaryEnvironment.swift */,
-				AB751EE72103F49D00143541 /* OxfordDictionaryAPIClient.swift */,
 				AB751EE82103F49D00143541 /* Entities */,
 			);
 			path = Source;
@@ -95,7 +98,7 @@
 		AB751EE02103F49D00143541 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
-				AB751EE12103F49D00143541 /* OxfordDictionaryEndpoint.swift */,
+				AB751EE12103F49D00143541 /* Endpoint.swift */,
 				AB751EE22103F49D00143541 /* Entries.swift */,
 			);
 			path = Endpoints;
@@ -133,11 +136,20 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		AB751F112103FBD700143541 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB751F122103FBD700143541 /* libAPIClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ABBB76312103F3FB0094B6B0 = {
 			isa = PBXGroup;
 			children = (
 				AB751EDF2103F49D00143541 /* Source */,
 				ABBB763B2103F3FB0094B6B0 /* Products */,
+				AB751F112103FBD700143541 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,10 +233,10 @@
 				AB751EFA2103F49D00143541 /* Entries.swift in Sources */,
 				AB751F022103F49D00143541 /* ThesaurusLink.swift in Sources */,
 				AB751F032103F49D00143541 /* OxfordDictionaryError.swift in Sources */,
-				AB751EF92103F49D00143541 /* OxfordDictionaryEndpoint.swift in Sources */,
+				AB751EF92103F49D00143541 /* Endpoint.swift in Sources */,
 				AB751EFC2103F49D00143541 /* Region.swift in Sources */,
-				AB751EFD2103F49D00143541 /* OxfordDictionaryEnvironment.swift in Sources */,
-				AB751EFE2103F49D00143541 /* OxfordDictionaryAPIClient.swift in Sources */,
+				AB751EFD2103F49D00143541 /* Environment.swift in Sources */,
+				AB751EFE2103F49D00143541 /* OxfordDictionary.swift in Sources */,
 				AB751F002103F49D00143541 /* Pronunciation.swift in Sources */,
 				AB751F0C2103F49D00143541 /* HeadwordEntry.swift in Sources */,
 				AB751F0B2103F49D00143541 /* RelatedEntry.swift in Sources */,

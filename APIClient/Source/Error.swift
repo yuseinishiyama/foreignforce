@@ -8,10 +8,10 @@
 
 import Foundation
 
-public enum APIClientError: Error {
+public enum Error: Swift.Error {
 
     case unknown
-    case apiError(Error)
-    case networkError(Error)
-    case decodeError(Error?)
+    case apiError(Swift.Error)
+    case networkError(Swift.Error)
+    case decodeError(Swift.Error?)
 }

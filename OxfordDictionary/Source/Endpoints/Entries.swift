@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Entries: OxfordDictionaryEndpoint {
+public struct Entries: Endpoint {
 
     public typealias Response = RetrieveEntry
 

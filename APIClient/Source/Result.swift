@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum Result<T, E: Error> {
+public enum Result<T, E: Swift.Error> {
 
     case success(T)
     case failure(E)

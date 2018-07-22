@@ -9,7 +9,7 @@
 import Foundation
 import APIClient
 
-public struct OxfordDictionaryEnvironment: Environment {
+public struct Environment: APIClient.Environment {
 
     public let apiVersion = "v1"
 

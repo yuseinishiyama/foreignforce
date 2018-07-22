@@ -9,16 +9,16 @@
 import Foundation
 import APIClient
 
-public struct OxfordDictionaryAPIClient: APIClient {
+public struct OxfordDictionary: APIClientProtocol {
 
-    public let environment: Environment
+    public let environment: APIClient.Environment
 
-    public init(environment: Environment = OxfordDictionaryEnvironment()) {
+    public init(environment: APIClient.Environment = Environment()) {
         self.environment = environment
     }
 
     @discardableResult
-    public func request<T: Endpoint>(endpoint: T, completion: @escaping (Result<T.Response, APIClientError>) -> ()) -> URLSessionTask {
+    public func request<T: APIClient.Endpoint>(endpoint: T, completion: @escaping (Result<T.Response, APIClient.Error>) -> ()) -> URLSessionTask {
 
         var request = endpoint.build(environment: environment)
         request.addValue("application/json", forHTTPHeaderField: "Accept")
