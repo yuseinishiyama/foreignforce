@@ -8,6 +8,6 @@
 
 import Foundation
 
-public struct OxfordDictionaryError: Error {
+public struct Error: Swift.Error {
     public let reason: String
 }

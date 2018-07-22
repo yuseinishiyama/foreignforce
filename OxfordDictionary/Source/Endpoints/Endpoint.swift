@@ -13,7 +13,7 @@ public protocol Endpoint: APIClient.Endpoint {}
 
 public extension Endpoint {
 
-    func parseError(response: HTTPURLResponse, data: Data?) throws -> OxfordDictionaryError {
+    func parseError(response: HTTPURLResponse, data: Data?) throws -> Error {
 
         guard let data = data else {
             throw APIClient.Error.decodeError(nil)
@@ -23,6 +23,6 @@ public extension Endpoint {
             throw APIClient.Error.decodeError(nil)
         }
 
-        return OxfordDictionaryError(reason: reason)
+        return Error(reason: reason)
     }
 }
