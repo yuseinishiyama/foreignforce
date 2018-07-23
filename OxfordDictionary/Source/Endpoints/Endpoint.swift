@@ -13,7 +13,17 @@ public protocol Endpoint: APIClient.Endpoint {}
 
 public extension Endpoint {
 
-    func parseError(response: HTTPURLResponse, data: Data?) throws -> Error {
+    public func build(environment: APIClient.Environment) -> URLRequest {
+
+        let url = environment.baseURL.appendingPathComponent(path)
+        var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false)
+        let parameters = self.parameters.flatMap { $0.map(URLQueryItem.init) }
+        urlComponents?.queryItems = parameters
+
+        return URLRequest(url: urlComponents!.url!)
+    }
+
+    public func parseError(response: HTTPURLResponse, data: Data?) throws -> Error {
 
         guard let data = data else {
             throw APIClient.Error.decodeError(nil)

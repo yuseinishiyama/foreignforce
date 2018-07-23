@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1E402C210688390079ED94 /* FoundWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402B210688390079ED94 /* FoundWord.swift */; };
+		AB1E402E2106885C0079ED94 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402D2106885C0079ED94 /* WordList.swift */; };
+		AB1E4030210688E60079ED94 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402F210688E60079ED94 /* Search.swift */; };
+		AB1E403221068B580079ED94 /* Entries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E403121068B580079ED94 /* Entries.swift */; };
 		AB751EF92103F49D00143541 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE12103F49D00143541 /* Endpoint.swift */; };
-		AB751EFA2103F49D00143541 /* Entries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE22103F49D00143541 /* Entries.swift */; };
 		AB751EFB2103F49D00143541 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE42103F49D00143541 /* Language.swift */; };
 		AB751EFC2103F49D00143541 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE52103F49D00143541 /* Region.swift */; };
 		AB751EFD2103F49D00143541 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751EE62103F49D00143541 /* Environment.swift */; };
@@ -45,8 +48,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AB1E402B210688390079ED94 /* FoundWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundWord.swift; sourceTree = "<group>"; };
+		AB1E402D2106885C0079ED94 /* WordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
+		AB1E402F210688E60079ED94 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		AB1E403121068B580079ED94 /* Entries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entries.swift; sourceTree = "<group>"; };
 		AB751EE12103F49D00143541 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		AB751EE22103F49D00143541 /* Entries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entries.swift; sourceTree = "<group>"; };
 		AB751EE42103F49D00143541 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		AB751EE52103F49D00143541 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		AB751EE62103F49D00143541 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -99,7 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				AB751EE12103F49D00143541 /* Endpoint.swift */,
-				AB751EE22103F49D00143541 /* Entries.swift */,
+				AB1E403121068B580079ED94 /* Entries.swift */,
+				AB1E402F210688E60079ED94 /* Search.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -132,6 +139,8 @@
 				AB751EF62103F49D00143541 /* HeadwordEntry.swift */,
 				AB751EF72103F49D00143541 /* Sense.swift */,
 				AB751EF82103F49D00143541 /* LexicalEntry.swift */,
+				AB1E402B210688390079ED94 /* FoundWord.swift */,
+				AB1E402D2106885C0079ED94 /* WordList.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -218,8 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1E403221068B580079ED94 /* Entries.swift in Sources */,
 				AB751F072103F49D00143541 /* Entry.swift in Sources */,
 				AB751F0E2103F49D00143541 /* LexicalEntry.swift in Sources */,
+				AB1E402C210688390079ED94 /* FoundWord.swift in Sources */,
 				AB751F082103F49D00143541 /* GrammaticalFeature.swift in Sources */,
 				AB751F062103F49D00143541 /* CategorizedText.swift in Sources */,
 				AB751F0D2103F49D00143541 /* Sense.swift in Sources */,
@@ -230,14 +241,15 @@
 				AB751EFB2103F49D00143541 /* Language.swift in Sources */,
 				AB751F052103F49D00143541 /* Example.swift in Sources */,
 				AB751F012103F49D00143541 /* Translation.swift in Sources */,
-				AB751EFA2103F49D00143541 /* Entries.swift in Sources */,
 				AB751F022103F49D00143541 /* ThesaurusLink.swift in Sources */,
 				AB751F032103F49D00143541 /* Error.swift in Sources */,
 				AB751EF92103F49D00143541 /* Endpoint.swift in Sources */,
+				AB1E402E2106885C0079ED94 /* WordList.swift in Sources */,
 				AB751EFC2103F49D00143541 /* Region.swift in Sources */,
 				AB751EFD2103F49D00143541 /* Environment.swift in Sources */,
 				AB751EFE2103F49D00143541 /* OxfordDictionaryClient.swift in Sources */,
 				AB751F002103F49D00143541 /* Pronunciation.swift in Sources */,
+				AB1E4030210688E60079ED94 /* Search.swift in Sources */,
 				AB751F0C2103F49D00143541 /* HeadwordEntry.swift in Sources */,
 				AB751F0B2103F49D00143541 /* RelatedEntry.swift in Sources */,
 			);

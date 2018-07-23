@@ -118,12 +118,12 @@ extension SearchTableViewController: UISearchResultsUpdating {
             return
         }
 
-        let entries = Entries(wordID: query)
+        let entries = Search(query: query)
         let apiClient = OxfordDictionaryClient(environment: Environment())
         apiClient.request(endpoint: entries) { result in
             switch result {
-            case let .success(retrieveEntry):
-                let words = retrieveEntry.results?.map { $0.word } ?? []
+            case let .success(wordList):
+                let words = wordList.results?.map { $0.word } ?? []
                 self.searchResultsTableViewController.words = words
 
                 DispatchQueue.main.async {
@@ -133,5 +133,6 @@ extension SearchTableViewController: UISearchResultsUpdating {
                 print(error)
             }
         }
+
     }
 }

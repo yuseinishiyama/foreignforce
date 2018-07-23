@@ -1,8 +1,8 @@
 //
 //  Entries.swift
-//  Foreignforce
+//  OxfordDictionary
 //
-//  Created by Yusei Nishiyama on 20/05/2018.
+//  Created by Yusei Nishiyama on 23/07/2018.
 //  Copyright © 2018 Yusei Nishiyama. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import Foundation
 
 public struct Entries: Endpoint {
 
-    public typealias Response = RetrieveEntry
+    public typealias Response = WordList
 
     public let path: String
 

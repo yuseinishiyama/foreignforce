@@ -7,13 +7,28 @@
 //
 
 import UIKit
+import OxfordDictionary
 
 class DefineViewController: UITableViewController {
+
+    var query: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         clearsSelectionOnViewWillAppear = false
+
+        let entries = Entries(wordID: query)
+        let apiClient = OxfordDictionaryClient(environment: Environment())
+        apiClient.request(endpoint: entries) { result in
+            switch result {
+            case let .success(retrieveEntry):
+                let words = retrieveEntry.results?.map { $0.word } ?? []
+
+            case let .failure(error):
+                print(error)
+            }
+        }
     }
 
     // MARK: - Table view data source
