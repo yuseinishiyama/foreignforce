@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Search-->
         <scene sceneID="UCN-Ha-AJI">
             <objects>
                 <tableViewController id="VNY-KJ-rwW" customClass="SearchTableViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,13 +36,13 @@
                             <outlet property="delegate" destination="VNY-KJ-rwW" id="AHa-2Z-ugY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="qgG-g2-N2d"/>
+                    <navigationItem key="navigationItem" title="Search" id="qgG-g2-N2d"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rp7-AN-aHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1810" y="-600"/>
         </scene>
-        <!--Define View Controller-->
+        <!--Define-->
         <scene sceneID="CaE-cD-a2H">
             <objects>
                 <tableViewController id="S1u-u7-Ha7" customClass="DefineViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
@@ -220,6 +220,7 @@
                             <outlet property="delegate" destination="S1u-u7-Ha7" id="wKQ-oT-Wgv"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Define" id="aIk-D1-g5C"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOx-t6-YMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
