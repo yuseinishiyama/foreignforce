@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		7E4ABDD620B1D51300683DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4ABDD520B1D51300683DF7 /* AppDelegate.swift */; };
 		7E4ABDED20B1D51500683DF7 /* ForeignforceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4ABDEC20B1D51500683DF7 /* ForeignforceTests.swift */; };
+		AB1E402421067F5A0079ED94 /* EntryHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402321067F5A0079ED94 /* EntryHeaderTableViewCell.swift */; };
+		AB1E402821067FBD0079ED94 /* DefineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402721067FBD0079ED94 /* DefineViewController.swift */; };
+		AB1E402A2106817F0079ED94 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40292106817F0079ED94 /* ViewModel.swift */; };
 		AB51846521038DC8006CAA1A /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51846421038DC8006CAA1A /* ActionViewController.swift */; };
 		AB51846821038DC8006CAA1A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB51846621038DC8006CAA1A /* MainInterface.storyboard */; };
 		AB51846C21038DC8006CAA1A /* Define.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB51846221038DC8006CAA1A /* Define.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -64,6 +67,9 @@
 		7E4ABDE820B1D51500683DF7 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4ABDEC20B1D51500683DF7 /* ForeignforceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeignforceTests.swift; sourceTree = "<group>"; };
 		7E4ABDEE20B1D51500683DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB1E402321067F5A0079ED94 /* EntryHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		AB1E402721067FBD0079ED94 /* DefineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineViewController.swift; sourceTree = "<group>"; };
+		AB1E40292106817F0079ED94 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		AB51846221038DC8006CAA1A /* Define.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Define.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB51846421038DC8006CAA1A /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		AB51846721038DC8006CAA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -140,6 +146,15 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		AB1E402221067EF40079ED94 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				AB1E402321067F5A0079ED94 /* EntryHeaderTableViewCell.swift */,
+				AB1E402721067FBD0079ED94 /* DefineViewController.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
 		AB51846321038DC8006CAA1A /* DefineExtention */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +201,7 @@
 		ABE2860920BAE3D10007D418 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AB1E402221067EF40079ED94 /* Define */,
 				ABE2860A20BAE3D10007D418 /* Flashcards */,
 				ABE2860C20BAE3D10007D418 /* Search */,
 			);
@@ -216,6 +232,7 @@
 			children = (
 				ABE2861520BAE4560007D418 /* Extensions */,
 				AB751F14210403FA00143541 /* Environment.swift */,
+				AB1E40292106817F0079ED94 /* ViewModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -361,13 +378,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1E402A2106817F0079ED94 /* ViewModel.swift in Sources */,
 				ABE2861720BAE4690007D418 /* UITableView+CellRegistration.swift in Sources */,
 				ABE2861320BAE3EE0007D418 /* SearchResultTableViewCell.swift in Sources */,
 				7E4ABDD620B1D51300683DF7 /* AppDelegate.swift in Sources */,
+				AB1E402821067FBD0079ED94 /* DefineViewController.swift in Sources */,
 				ABE2861020BAE3D20007D418 /* SearchViewController.swift in Sources */,
 				AB751F15210403FA00143541 /* Environment.swift in Sources */,
 				ABE2861120BAE3D20007D418 /* SearchResultsViewController.swift in Sources */,
 				ABE2860F20BAE3D20007D418 /* SecondViewController.swift in Sources */,
+				AB1E402421067F5A0079ED94 /* EntryHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
