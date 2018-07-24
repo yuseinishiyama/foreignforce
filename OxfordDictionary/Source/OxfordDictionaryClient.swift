@@ -18,14 +18,15 @@ public struct OxfordDictionaryClient: APIClientProtocol {
     }
 
     @discardableResult
-    public func request<T: APIClient.Endpoint>(endpoint: T, completion: @escaping (Result<T.Response, APIClient.Error>) -> ()) -> URLSessionTask {
+    public func request<T: APIClient.Endpoint>(endpoint: T,
+                                               session: URLSession = .shared,
+                                               completion: @escaping (Result<T.Response, APIClient.Error>) -> ()) -> URLSessionTask {
 
         var request = endpoint.build(environment: environment)
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue(environment.appID, forHTTPHeaderField: "app_id")
         request.addValue(environment.appKey, forHTTPHeaderField: "app_key")
 
-        let session = URLSession.shared
         let task = session.dataTask(with: request) { data, response, error in
 
             guard let response = response as? HTTPURLResponse else {

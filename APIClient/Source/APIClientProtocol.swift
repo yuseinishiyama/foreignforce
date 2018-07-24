@@ -12,5 +12,5 @@ public protocol APIClientProtocol { // Name it protocol to avoid naming conflict
 
     var environment: Environment { get }
 
-    func request<T: Endpoint>(endpoint: T, completion: @escaping (Result<T.Response, Error>) -> ()) -> URLSessionTask
+    func request<T: Endpoint>(endpoint: T, session: URLSession, completion: @escaping (Result<T.Response, Error>) -> ()) -> URLSessionTask
 }
