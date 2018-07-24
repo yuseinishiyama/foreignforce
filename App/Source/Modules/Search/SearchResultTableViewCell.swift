@@ -12,6 +12,4 @@ import UIKit
 class SearchResultTableViewCell: UITableViewCell {
     
     @IBOutlet weak var wordLabel: UILabel!
-
-    @IBOutlet weak var summaryLabel: UILabel!
 }

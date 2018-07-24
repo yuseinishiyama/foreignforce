@@ -18,6 +18,17 @@ class SearchTableViewController: UITableViewController {
 
     lazy var searchResultsTableViewController = SearchResultsTableViewController()
 
+    private var foundWords: [FoundWord] = [] {
+        didSet {
+            let words = foundWords.map { $0.word }
+            self.searchResultsTableViewController.words = words
+
+            DispatchQueue.main.async {
+                self.searchResultsTableViewController.tableView.reloadData()
+            }
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,22 +56,21 @@ class SearchTableViewController: UITableViewController {
          */
         definesPresentationContext = true
     }
-}
 
-// MARK: - UITableViewDataSource
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedIndex = searchResultsTableViewController.tableView.indexPathForSelectedRow?.row else {
+            fatalError()
+        }
 
-extension SearchTableViewController {
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        switch segue.destination {
+        case let vc as DefineViewController:
+            let wordID = foundWords[selectedIndex].id
+            vc.wordID = wordID
+            print(wordID)
+        default:
+            fatalError()
+        }
     }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "identifier", for: indexPath)
-        cell.textLabel?.text = "\(indexPath.row)"
-
-        return cell
-    }
-
 }
 
 // MARK: - UITableViewDelegate
@@ -68,7 +78,7 @@ extension SearchTableViewController {
 extension SearchTableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
+        performSegue(withIdentifier: "segue", sender: nil)
     }
 }
 
@@ -118,17 +128,12 @@ extension SearchTableViewController: UISearchResultsUpdating {
             return
         }
 
-        let entries = Search(query: query)
+        let search = Search(query: query)
         let apiClient = OxfordDictionaryClient(environment: Environment())
-        apiClient.request(endpoint: entries) { result in
+        apiClient.request(endpoint: search) { result in
             switch result {
             case let .success(wordList):
-                let words = wordList.results?.map { $0.word } ?? []
-                self.searchResultsTableViewController.words = words
-
-                DispatchQueue.main.async {
-                    self.searchResultsTableViewController.tableView.reloadData()
-                }
+                self.foundWords = wordList.results ?? []
             case let .failure(error):
                 print(error)
             }

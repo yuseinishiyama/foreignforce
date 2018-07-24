@@ -10,7 +10,7 @@ import Foundation
 
 public struct Entries: Endpoint {
 
-    public typealias Response = WordList
+    public typealias Response = RetrieveEntry
 
     public let path: String
 

@@ -11,20 +11,27 @@ import OxfordDictionary
 
 class DefineViewController: UITableViewController {
 
-    var query: String!
+    var wordID: String!
+
+    private var headwordEntry: [HeadwordEntry] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         clearsSelectionOnViewWillAppear = false
 
-        let entries = Entries(wordID: query)
+        let entries = Entries(wordID: wordID)
         let apiClient = OxfordDictionaryClient(environment: Environment())
         apiClient.request(endpoint: entries) { result in
             switch result {
             case let .success(retrieveEntry):
-                let words = retrieveEntry.results?.map { $0.word } ?? []
-
+                self.headwordEntry = retrieveEntry.results ?? []
             case let .failure(error):
                 print(error)
             }
@@ -38,12 +45,14 @@ class DefineViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return headwordEntry.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: EntryHeaderTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-        let viewModel = EntryHeaderTableViewCell.ViewModel(word: "word", pronunciation: "pronunciation")
+        let word = headwordEntry[0].word
+        let pronunciation = headwordEntry[0].pronunciations?[0].phoneticSpelling ?? ""
+        let viewModel = EntryHeaderTableViewCell.ViewModel(word: word, pronunciation: pronunciation)
         cell.configure(viewModel: viewModel)
 
         return cell
