@@ -8,13 +8,18 @@
 
 import Foundation
 
+public enum ParameterEncoding {
+    case url
+}
+
 public protocol Endpoint {
 
     associatedtype Response: Decodable
     associatedtype ErrorObject: Swift.Error
 
     var path: String { get }
-    var parameters: [String: String]? { get }
+    var parameters: [String: String] { get }
+    var parameterEncoding: ParameterEncoding { get }
 
     func build(environment: Environment) -> URLRequest
     func parse(response: HTTPURLResponse, data: Data?) throws -> Response
@@ -23,12 +28,26 @@ public protocol Endpoint {
 
 public extension Endpoint {
 
-    var parameters: [String: String]? { return nil }
+    var parameters: [String: String] { return [:] }
+
+    var parameterEncoding: ParameterEncoding { return .url }
 
     func build(environment: Environment) -> URLRequest {
 
         let url = environment.baseURL.appendingPathComponent(path)
-        return URLRequest(url: url)
+        var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false)
+
+        switch parameterEncoding {
+        case .url:
+            let parameters = self.parameters.map(URLQueryItem.init)
+            urlComponents?.queryItems = parameters
+        }
+
+        guard let urlWithQuery = urlComponents?.url else {
+            fatalError("Invalid URL")
+        }
+
+        return URLRequest(url: urlWithQuery)
     }
 
     func parse(response: HTTPURLResponse, data: Data?) throws -> Response {
