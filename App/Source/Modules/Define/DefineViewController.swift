@@ -9,9 +9,11 @@
 import UIKit
 import OxfordDictionary
 
+import APIClient
+
 class DefineViewController: UITableViewController {
 
-    var wordID: String!
+    var wordID: String! = "ace"
 
     private var headwordEntry: [HeadwordEntry] = [] {
         didSet {
@@ -26,16 +28,7 @@ class DefineViewController: UITableViewController {
 
         clearsSelectionOnViewWillAppear = false
 
-        let entries = Entries(wordID: wordID)
-        let apiClient = OxfordDictionaryClient(environment: Environment())
-        apiClient.request(endpoint: entries) { result in
-            switch result {
-            case let .success(retrieveEntry):
-                self.headwordEntry = retrieveEntry.results ?? []
-            case let .failure(error):
-                print(error)
-            }
-        }
+        EntryService().headwordEntry { _ in }
     }
 
     // MARK: - Table view data source

@@ -12,11 +12,13 @@
 		AB1E402421067F5A0079ED94 /* EntryHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402321067F5A0079ED94 /* EntryHeaderTableViewCell.swift */; };
 		AB1E402821067FBD0079ED94 /* DefineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402721067FBD0079ED94 /* DefineViewController.swift */; };
 		AB1E402A2106817F0079ED94 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40292106817F0079ED94 /* ViewModel.swift */; };
-		AB1E40352107DB7F0079ED94 /* HeadWordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40342107DB7E0079ED94 /* HeadWordEntry.swift */; };
+		AB1E40352107DB7F0079ED94 /* HeadwordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40342107DB7E0079ED94 /* HeadwordEntry.swift */; };
 		AB1E40372107DDEF0079ED94 /* Homograph.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40362107DDEF0079ED94 /* Homograph.swift */; };
 		AB1E40392107DE080079ED94 /* LexicalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40382107DE080079ED94 /* LexicalEntry.swift */; };
 		AB1E403B2107DE2D0079ED94 /* Sense.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E403A2107DE2D0079ED94 /* Sense.swift */; };
 		AB1E403D2107DE440079ED94 /* Subsense.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E403C2107DE440079ED94 /* Subsense.swift */; };
+		AB1E40402107DED00079ED94 /* EntryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E403F2107DED00079ED94 /* EntryService.swift */; };
+		AB1E40432107DF190079ED94 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40422107DF190079ED94 /* Service.swift */; };
 		AB51846521038DC8006CAA1A /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51846421038DC8006CAA1A /* ActionViewController.swift */; };
 		AB51846821038DC8006CAA1A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB51846621038DC8006CAA1A /* MainInterface.storyboard */; };
 		AB51846C21038DC8006CAA1A /* Define.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB51846221038DC8006CAA1A /* Define.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -75,11 +77,13 @@
 		AB1E402321067F5A0079ED94 /* EntryHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		AB1E402721067FBD0079ED94 /* DefineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineViewController.swift; sourceTree = "<group>"; };
 		AB1E40292106817F0079ED94 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		AB1E40342107DB7E0079ED94 /* HeadWordEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadWordEntry.swift; sourceTree = "<group>"; };
+		AB1E40342107DB7E0079ED94 /* HeadwordEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadwordEntry.swift; sourceTree = "<group>"; };
 		AB1E40362107DDEF0079ED94 /* Homograph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homograph.swift; sourceTree = "<group>"; };
 		AB1E40382107DE080079ED94 /* LexicalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexicalEntry.swift; sourceTree = "<group>"; };
 		AB1E403A2107DE2D0079ED94 /* Sense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sense.swift; sourceTree = "<group>"; };
 		AB1E403C2107DE440079ED94 /* Subsense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subsense.swift; sourceTree = "<group>"; };
+		AB1E403F2107DED00079ED94 /* EntryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryService.swift; sourceTree = "<group>"; };
+		AB1E40422107DF190079ED94 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		AB51846221038DC8006CAA1A /* Define.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Define.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB51846421038DC8006CAA1A /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		AB51846721038DC8006CAA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -168,13 +172,30 @@
 		AB1E40332107DB4A0079ED94 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AB1E40342107DB7E0079ED94 /* HeadWordEntry.swift */,
+				AB1E40342107DB7E0079ED94 /* HeadwordEntry.swift */,
 				AB1E40362107DDEF0079ED94 /* Homograph.swift */,
 				AB1E40382107DE080079ED94 /* LexicalEntry.swift */,
 				AB1E403A2107DE2D0079ED94 /* Sense.swift */,
 				AB1E403C2107DE440079ED94 /* Subsense.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AB1E403E2107DEB50079ED94 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB1E403F2107DED00079ED94 /* EntryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AB1E40412107DEF80079ED94 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AB1E40292106817F0079ED94 /* ViewModel.swift */,
+				AB1E40422107DF190079ED94 /* Service.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		AB51846321038DC8006CAA1A /* DefineExtention */ = {
@@ -252,10 +273,11 @@
 		ABE2861420BAE4560007D418 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				AB1E40412107DEF80079ED94 /* Protocols */,
+				AB1E403E2107DEB50079ED94 /* Services */,
 				AB1E40332107DB4A0079ED94 /* Models */,
 				ABE2861520BAE4560007D418 /* Extensions */,
 				AB751F14210403FA00143541 /* Environment.swift */,
-				AB1E40292106817F0079ED94 /* ViewModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -411,7 +433,9 @@
 				AB1E403D2107DE440079ED94 /* Subsense.swift in Sources */,
 				AB1E40372107DDEF0079ED94 /* Homograph.swift in Sources */,
 				ABE2861120BAE3D20007D418 /* SearchResultsViewController.swift in Sources */,
-				AB1E40352107DB7F0079ED94 /* HeadWordEntry.swift in Sources */,
+				AB1E40402107DED00079ED94 /* EntryService.swift in Sources */,
+				AB1E40432107DF190079ED94 /* Service.swift in Sources */,
+				AB1E40352107DB7F0079ED94 /* HeadwordEntry.swift in Sources */,
 				AB1E403B2107DE2D0079ED94 /* Sense.swift in Sources */,
 				AB1E40392107DE080079ED94 /* LexicalEntry.swift in Sources */,
 				ABE2860F20BAE3D20007D418 /* SecondViewController.swift in Sources */,
