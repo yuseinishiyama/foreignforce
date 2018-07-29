@@ -9,7 +9,6 @@
 import Foundation
 
 struct Sense {
-    let index: Int
     let definition: String
     let subsenses: [Subsense]
 }

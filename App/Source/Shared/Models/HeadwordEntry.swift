@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct HeadWordEntry {
-    let homographies: [Homograph]
+struct HeadwordEntry {
+    let homographs: [Homograph]
 }

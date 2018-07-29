@@ -28,7 +28,15 @@ class DefineViewController: UITableViewController {
 
         clearsSelectionOnViewWillAppear = false
 
-        EntryService().headwordEntry { _ in }
+        EntryService().headwordEntry { result in
+
+            switch result {
+            case let .success(entry):
+                print(entry)
+            case let .failure(error):
+                print(error)
+            }
+        }
     }
 
     // MARK: - Table view data source
@@ -43,10 +51,10 @@ class DefineViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: EntryHeaderTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-        let word = headwordEntry[0].word
-        let pronunciation = headwordEntry[0].pronunciations?[0].phoneticSpelling ?? ""
-        let viewModel = EntryHeaderTableViewCell.ViewModel(word: word, pronunciation: pronunciation)
-        cell.configure(viewModel: viewModel)
+//        let word = headwordEntry[0].word
+//        let pronunciation = headwordEntry[0].pronunciations?[0].phoneticSpelling ?? ""
+//        let viewModel = EntryHeaderTableViewCell.ViewModel(word: word, pronunciation: pronunciation)
+//        cell.configure(viewModel: viewModel)
 
         return cell
     }
