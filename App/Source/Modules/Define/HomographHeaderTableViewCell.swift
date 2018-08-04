@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EntryHeaderTableViewCell: UITableViewCell {
+class HomographHeaderTableViewCell: UITableViewCell {
 
     struct ViewModel: ViewModelProtocol {
         let word: String
@@ -24,7 +24,7 @@ class EntryHeaderTableViewCell: UITableViewCell {
     }
 }
 
-extension EntryHeaderTableViewCell: ViewModelConfigurable {
+extension HomographHeaderTableViewCell: ViewModelConfigurable {
     func configure(viewModel: ViewModel) {
         wordLabel.text = viewModel.word
         pronunciationLabel.text = viewModel.pronunciation

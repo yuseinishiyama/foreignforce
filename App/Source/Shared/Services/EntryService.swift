@@ -30,7 +30,8 @@ class EntryService: Service {
             preconditionFailure("Success response should contain one headword")
         }
 
-        let lexicalEntries = headwordEntries[0].lexicalEntries
+        let headwordEntry = headwordEntries[0]
+        let lexicalEntries = headwordEntry.lexicalEntries
         let numberOfHomographs = lexicalEntries.reduce(0) { max($0, $1.entries?.count ?? 0) }
 
         let homographs: [Homograph] = (1..<numberOfHomographs + 1).map { homographIndex in
@@ -86,11 +87,11 @@ class EntryService: Service {
                 return LexicalEntry(lexicalCategory: lexicalEntry.lexicalCategory, senses: availableSenses[0])
             }
 
-            return Homograph.init(word: "", pronunciation: "", lexicalEntries: lexicalEntries)
+            return Homograph.init(word: headwordEntry.word, pronunciation: "", lexicalEntries: lexicalEntries)
         }
 
-        let headwordEntry = HeadwordEntry(homographs: homographs)
-        completion(.success(headwordEntry))
+        let parsedHeadwordEntry = HeadwordEntry(homographs: homographs)
+        completion(.success(parsedHeadwordEntry))
     }
 
     func mockRetrivedEntry() -> RetrieveEntry {

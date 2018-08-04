@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7E4ABDD620B1D51300683DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4ABDD520B1D51300683DF7 /* AppDelegate.swift */; };
 		7E4ABDED20B1D51500683DF7 /* ForeignforceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4ABDEC20B1D51500683DF7 /* ForeignforceTests.swift */; };
-		AB1E402421067F5A0079ED94 /* EntryHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402321067F5A0079ED94 /* EntryHeaderTableViewCell.swift */; };
+		AB1E402421067F5A0079ED94 /* HomographHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402321067F5A0079ED94 /* HomographHeaderTableViewCell.swift */; };
 		AB1E402821067FBD0079ED94 /* DefineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402721067FBD0079ED94 /* DefineViewController.swift */; };
 		AB1E402A2106817F0079ED94 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40292106817F0079ED94 /* ViewModel.swift */; };
 		AB1E40352107DB7F0079ED94 /* HeadwordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40342107DB7E0079ED94 /* HeadwordEntry.swift */; };
@@ -19,6 +19,9 @@
 		AB1E403D2107DE440079ED94 /* Subsense.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E403C2107DE440079ED94 /* Subsense.swift */; };
 		AB1E40402107DED00079ED94 /* EntryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E403F2107DED00079ED94 /* EntryService.swift */; };
 		AB1E40432107DF190079ED94 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40422107DF190079ED94 /* Service.swift */; };
+		AB314496211610BB00E4F4BF /* LexicalEntryHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB314495211610BB00E4F4BF /* LexicalEntryHeaderTableViewCell.swift */; };
+		AB3144982116128C00E4F4BF /* SenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3144972116128C00E4F4BF /* SenseTableViewCell.swift */; };
+		AB31449A2116129600E4F4BF /* SubsenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3144992116129600E4F4BF /* SubsenseTableViewCell.swift */; };
 		AB51846521038DC8006CAA1A /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51846421038DC8006CAA1A /* ActionViewController.swift */; };
 		AB51846821038DC8006CAA1A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB51846621038DC8006CAA1A /* MainInterface.storyboard */; };
 		AB51846C21038DC8006CAA1A /* Define.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB51846221038DC8006CAA1A /* Define.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -74,7 +77,7 @@
 		7E4ABDE820B1D51500683DF7 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4ABDEC20B1D51500683DF7 /* ForeignforceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeignforceTests.swift; sourceTree = "<group>"; };
 		7E4ABDEE20B1D51500683DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB1E402321067F5A0079ED94 /* EntryHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		AB1E402321067F5A0079ED94 /* HomographHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomographHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		AB1E402721067FBD0079ED94 /* DefineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineViewController.swift; sourceTree = "<group>"; };
 		AB1E40292106817F0079ED94 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		AB1E40342107DB7E0079ED94 /* HeadwordEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadwordEntry.swift; sourceTree = "<group>"; };
@@ -84,6 +87,9 @@
 		AB1E403C2107DE440079ED94 /* Subsense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subsense.swift; sourceTree = "<group>"; };
 		AB1E403F2107DED00079ED94 /* EntryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryService.swift; sourceTree = "<group>"; };
 		AB1E40422107DF190079ED94 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		AB314495211610BB00E4F4BF /* LexicalEntryHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexicalEntryHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		AB3144972116128C00E4F4BF /* SenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenseTableViewCell.swift; sourceTree = "<group>"; };
+		AB3144992116129600E4F4BF /* SubsenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsenseTableViewCell.swift; sourceTree = "<group>"; };
 		AB51846221038DC8006CAA1A /* Define.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Define.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB51846421038DC8006CAA1A /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		AB51846721038DC8006CAA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -163,8 +169,11 @@
 		AB1E402221067EF40079ED94 /* Define */ = {
 			isa = PBXGroup;
 			children = (
-				AB1E402321067F5A0079ED94 /* EntryHeaderTableViewCell.swift */,
+				AB1E402321067F5A0079ED94 /* HomographHeaderTableViewCell.swift */,
+				AB314495211610BB00E4F4BF /* LexicalEntryHeaderTableViewCell.swift */,
 				AB1E402721067FBD0079ED94 /* DefineViewController.swift */,
+				AB3144972116128C00E4F4BF /* SenseTableViewCell.swift */,
+				AB3144992116129600E4F4BF /* SubsenseTableViewCell.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -432,14 +441,17 @@
 				AB751F15210403FA00143541 /* Environment.swift in Sources */,
 				AB1E403D2107DE440079ED94 /* Subsense.swift in Sources */,
 				AB1E40372107DDEF0079ED94 /* Homograph.swift in Sources */,
+				AB31449A2116129600E4F4BF /* SubsenseTableViewCell.swift in Sources */,
 				ABE2861120BAE3D20007D418 /* SearchResultsViewController.swift in Sources */,
+				AB3144982116128C00E4F4BF /* SenseTableViewCell.swift in Sources */,
+				AB314496211610BB00E4F4BF /* LexicalEntryHeaderTableViewCell.swift in Sources */,
 				AB1E40402107DED00079ED94 /* EntryService.swift in Sources */,
 				AB1E40432107DF190079ED94 /* Service.swift in Sources */,
 				AB1E40352107DB7F0079ED94 /* HeadwordEntry.swift in Sources */,
 				AB1E403B2107DE2D0079ED94 /* Sense.swift in Sources */,
 				AB1E40392107DE080079ED94 /* LexicalEntry.swift in Sources */,
 				ABE2860F20BAE3D20007D418 /* SecondViewController.swift in Sources */,
-				AB1E402421067F5A0079ED94 /* EntryHeaderTableViewCell.swift in Sources */,
+				AB1E402421067F5A0079ED94 /* HomographHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
