@@ -27,8 +27,11 @@ class RetrieveEntryEntryParser: Parser {
             return max($0, biggestGroupIndex ?? 0)
         }
 
+        // If there's only one homograph its group index is 0
+        let homographIndexRange = numberOfHomographs == 0 ? (0..<numberOfHomographs+1) : (1..<numberOfHomographs+1)
+
         var homographs = [Homograph]()
-        for homographIndex in (0..<numberOfHomographs) {
+        for homographIndex in homographIndexRange {
 
             var parsedLexicalEntries = [LexicalEntry]()
             var phoneticSpelling: String?
@@ -53,7 +56,7 @@ class RetrieveEntryEntryParser: Parser {
                     }
 
                     // Skip entries in different homographs
-                    guard homographGroupIndex == homographIndex+1 else { continue }
+                    guard homographGroupIndex == homographIndex else { continue }
 
                     precondition(availableSenses == nil, "There should be only one set of senses in a lexical entry")
 
@@ -84,7 +87,9 @@ class RetrieveEntryEntryParser: Parser {
                         }
 
                         guard let definitions = sense.definitions, definitions.count == 1 else {
-                            preconditionFailure("Sense should have one definition")
+                            // There sometimes seems to be a debug sense without definition
+                            // preconditionFailure("Sense should have one definition")
+                            continue
                         }
 
                         parsedSenses.append(Sense(definition: definitions[0], subsenses: parsedSubsenses))

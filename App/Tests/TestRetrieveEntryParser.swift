@@ -21,21 +21,29 @@ class TestRetrieveEntryParser: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testHomograph() {
-        let retrieveEntry = loadFixture(OxfordDictionary.RetrieveEntry.self, from: "Homograph")
-        let _ = RetrieveEntryEntryParser.parse(retrieveEntry)
 
-        assert(true, "Successfully parsed")
+    func testSingleHomograph() {
+        let retrieveEntry = loadFixture(OxfordDictionary.RetrieveEntry.self, from: "SingleHomograph")
+        let headwordEntry = RetrieveEntryEntryParser.parse(retrieveEntry)
+
+        XCTAssertEqual(headwordEntry.homographs.count, 1)
+    }
+
+    func testMultipleHomographs() {
+        let retrieveEntry = loadFixture(OxfordDictionary.RetrieveEntry.self, from: "MultipleHomographs")
+        let headwordEntry = RetrieveEntryEntryParser.parse(retrieveEntry)
+
+        XCTAssertEqual(headwordEntry.homographs.count, 2)
     }
 
     func testHeteronym() {
         let retrieveEntry = loadFixture(OxfordDictionary.RetrieveEntry.self, from: "Heteronym")
         let headwordEntry = RetrieveEntryEntryParser.parse(retrieveEntry)
 
-        assert(headwordEntry.homographs[0].pronunciation == "bəʊ")
-        assert(headwordEntry.homographs[1].pronunciation == "baʊ")
-        assert(headwordEntry.homographs[2].pronunciation == "baʊ")
+        XCTAssertEqual(headwordEntry.homographs.count, 3)
+        XCTAssertEqual(headwordEntry.homographs[0].pronunciation, "bəʊ")
+        XCTAssertEqual(headwordEntry.homographs[1].pronunciation, "baʊ")
+        XCTAssertEqual(headwordEntry.homographs[2].pronunciation, "baʊ")
 
         assert(true, "Successfully parsed")
     }

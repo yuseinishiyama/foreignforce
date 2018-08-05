@@ -1,0 +1,629 @@
+{
+    "metadata": {
+        "provider": "Oxford University Press"
+    },
+    "results": [
+                {
+                "id": "single",
+                "language": "en",
+                "lexicalEntries": [
+                                   {
+                                   "derivatives": [
+                                                   {
+                                                   "id": "singledom",
+                                                   "text": "singledom"
+                                                   },
+                                                   {
+                                                   "id": "singleness",
+                                                   "text": "singleness"
+                                                   }
+                                                   ],
+                                   "entries": [
+                                               {
+                                               "etymologies": [
+                                                               "Middle English: via Old French from Latin singulus, related to simplus ‘simple’"
+                                                               ],
+                                               "grammaticalFeatures": [
+                                                                       {
+                                                                       "text": "Positive",
+                                                                       "type": "Degree"
+                                                                       }
+                                                                       ],
+                                               "homographNumber": "000",
+                                               "senses": [
+                                                          {
+                                                          "definitions": [
+                                                                          "only one; not one of several"
+                                                                          ],
+                                                          "examples": [
+                                                                       {
+                                                                       "text": "the kingdom was ruled over by a single family"
+                                                                       },
+                                                                       {
+                                                                       "text": "a single red rose"
+                                                                       }
+                                                                       ],
+                                                          "id": "m_en_gbus0947700.007",
+                                                          "notes": [
+                                                                    {
+                                                                    "text": "attributive",
+                                                                    "type": "grammaticalNote"
+                                                                    }
+                                                                    ],
+                                                          "short_definitions": [
+                                                                                "only one"
+                                                                                ],
+                                                          "subsenses": [
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "regarded as distinct from each other or others in a group"
+                                                                                        ],
+                                                                        "examples": [
+                                                                                     {
+                                                                                     "text": "alcohol is the single most important cause of violence"
+                                                                                     },
+                                                                                     {
+                                                                                     "text": "she wrote down every single word"
+                                                                                     }
+                                                                                     ],
+                                                                        "id": "m_en_gbus0947700.009",
+                                                                        "short_definitions": [
+                                                                                              "regarded as distinct from each other or others in group"
+                                                                                              ],
+                                                                        "thesaurusLinks": [
+                                                                                           {
+                                                                                           "entry_id": "single",
+                                                                                           "sense_id": "t_en_gb0013511.002"
+                                                                                           }
+                                                                                           ]
+                                                                        },
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "even one (used for emphasis)"
+                                                                                        ],
+                                                                        "examples": [
+                                                                                     {
+                                                                                     "text": "they didn't receive a single reply"
+                                                                                     }
+                                                                                     ],
+                                                                        "id": "m_en_gbus0947700.010",
+                                                                        "notes": [
+                                                                                  {
+                                                                                  "text": "with negative",
+                                                                                  "type": "grammaticalNote"
+                                                                                  }
+                                                                                  ],
+                                                                        "short_definitions": [
+                                                                                              "even one"
+                                                                                              ]
+                                                                        },
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "designed or suitable for one person"
+                                                                                        ],
+                                                                        "examples": [
+                                                                                     {
+                                                                                     "text": "a single bed"
+                                                                                     }
+                                                                                     ],
+                                                                        "id": "m_en_gbus0947700.011",
+                                                                        "short_definitions": [
+                                                                                              "designed or suitable for one person"
+                                                                                              ]
+                                                                        },
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "not accompanied by others; alone."
+                                                                                        ],
+                                                                        "id": "m_en_gbus0947700.012",
+                                                                        "registers": [
+                                                                                      "archaic"
+                                                                                      ],
+                                                                        "short_definitions": [
+                                                                                              "not accompanied by others"
+                                                                                              ]
+                                                                        }
+                                                                        ],
+                                                          "thesaurusLinks": [
+                                                                             {
+                                                                             "entry_id": "single",
+                                                                             "sense_id": "t_en_gb0013511.001"
+                                                                             }
+                                                                             ]
+                                                          },
+                                                          {
+                                                          "definitions": [
+                                                                          "unmarried or not involved in a stable sexual relationship"
+                                                                          ],
+                                                          "examples": [
+                                                                       {
+                                                                       "text": "a single mother"
+                                                                       }
+                                                                       ],
+                                                          "id": "m_en_gbus0947700.014",
+                                                          "short_definitions": [
+                                                                                "unmarried or not involved in stable sexual relationship"
+                                                                                ],
+                                                          "thesaurusLinks": [
+                                                                             {
+                                                                             "entry_id": "single",
+                                                                             "sense_id": "t_en_gb0013511.003"
+                                                                             }
+                                                                             ]
+                                                          },
+                                                          {
+                                                          "definitions": [
+                                                                          "consisting of one part"
+                                                                          ],
+                                                          "examples": [
+                                                                       {
+                                                                       "text": "the studio was a single large room"
+                                                                       }
+                                                                       ],
+                                                          "id": "m_en_gbus0947700.016",
+                                                          "notes": [
+                                                                    {
+                                                                    "text": "attributive",
+                                                                    "type": "grammaticalNote"
+                                                                    }
+                                                                    ],
+                                                          "short_definitions": [
+                                                                                "consisting of one part"
+                                                                                ],
+                                                          "subsenses": [
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "(of a ticket) valid for an outward journey only, not for the return"
+                                                                                        ],
+                                                                        "examples": [
+                                                                                     {
+                                                                                     "text": "a first-class single ticket"
+                                                                                     }
+                                                                                     ],
+                                                                        "id": "m_en_gbus0947700.017",
+                                                                        "regions": [
+                                                                                    "British"
+                                                                                    ],
+                                                                        "short_definitions": [
+                                                                                              "valid for outward journey only, not for return"
+                                                                                              ]
+                                                                        },
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "(of a flower) having only one whorl of petals"
+                                                                                        ],
+                                                                        "domains": [
+                                                                                    "Botany"
+                                                                                    ],
+                                                                        "examples": [
+                                                                                     {
+                                                                                     "text": "the individual blooms can be single, semi-double, or fully double"
+                                                                                     }
+                                                                                     ],
+                                                                        "id": "m_en_gbus0947700.018",
+                                                                        "short_definitions": [
+                                                                                              "(of flower) having only one whorl of petals"
+                                                                                              ]
+                                                                        },
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "denoting an alcoholic drink that consists of one measure of spirits"
+                                                                                        ],
+                                                                        "domains": [
+                                                                                    "Alcoholic"
+                                                                                    ],
+                                                                        "examples": [
+                                                                                     {
+                                                                                     "text": "a single whisky"
+                                                                                     }
+                                                                                     ],
+                                                                        "id": "m_en_gbus0947700.019",
+                                                                        "short_definitions": [
+                                                                                              "denoting alcoholic drink that consists of one measure of spirits"
+                                                                                              ]
+                                                                        }
+                                                                        ]
+                                                          },
+                                                          {
+                                                          "definitions": [
+                                                                          "free from duplicity or deceit; ingenuous"
+                                                                          ],
+                                                          "examples": [
+                                                                       {
+                                                                       "text": "a pure and single heart"
+                                                                       }
+                                                                       ],
+                                                          "id": "m_en_gbus0947700.021",
+                                                          "registers": [
+                                                                        "archaic"
+                                                                        ],
+                                                          "short_definitions": [
+                                                                                "free from duplicity or deceit"
+                                                                                ]
+                                                          }
+                                                          ]
+                                               }
+                                               ],
+                                   "language": "en",
+                                   "lexicalCategory": "Adjective",
+                                   "pronunciations": [
+                                                      {
+                                                      "audioFile": "http://audio.oxforddictionaries.com/en/mp3/single_gb_1.mp3",
+                                                      "dialects": [
+                                                                   "British English"
+                                                                   ],
+                                                      "phoneticNotation": "IPA",
+                                                      "phoneticSpelling": "ˈsɪŋɡ(ə)l"
+                                                      }
+                                                      ],
+                                   "text": "single"
+                                   },
+                                   {
+                                   "derivatives": [
+                                                   {
+                                                   "id": "singleness",
+                                                   "text": "singleness"
+                                                   },
+                                                   {
+                                                   "id": "singledom",
+                                                   "text": "singledom"
+                                                   }
+                                                   ],
+                                   "entries": [
+                                               {
+                                               "grammaticalFeatures": [
+                                                                       {
+                                                                       "text": "Singular",
+                                                                       "type": "Number"
+                                                                       }
+                                                                       ],
+                                               "homographNumber": "001",
+                                               "senses": [
+                                                          {
+                                                          "definitions": [
+                                                                          "an individual person or thing rather than part of a pair or a group."
+                                                                          ],
+                                                          "id": "m_en_gbus0947700.024",
+                                                          "short_definitions": [
+                                                                                "individual person or thing rather than part of pair"
+                                                                                ],
+                                                          "subsenses": [
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "a short record or CD featuring one main song or track."
+                                                                                        ],
+                                                                        "id": "m_en_gbus0947700.027",
+                                                                        "short_definitions": [
+                                                                                              "short record or CD featuring one main song or track"
+                                                                                              ]
+                                                                        },
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "people who are unmarried or not involved in a stable sexual relationship"
+                                                                                        ],
+                                                                        "examples": [
+                                                                                     {
+                                                                                     "text": "a singles holiday"
+                                                                                     },
+                                                                                     {
+                                                                                     "text": "the divorce rate is rising so you'll see more singles in their late 30s and early 40s"
+                                                                                     }
+                                                                                     ],
+                                                                        "id": "m_en_gbus0947700.028",
+                                                                        "notes": [
+                                                                                  {
+                                                                                  "text": "\"singles\"",
+                                                                                  "type": "wordFormNote"
+                                                                                  }
+                                                                                  ],
+                                                                        "short_definitions": [
+                                                                                              "people who are unmarried or not involved in stable sexual relationship"
+                                                                                              ]
+                                                                        },
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "a ticket that is valid only for an outward journey."
+                                                                                        ],
+                                                                        "id": "m_en_gbus0947700.030",
+                                                                        "regions": [
+                                                                                    "British"
+                                                                                    ],
+                                                                        "short_definitions": [
+                                                                                              "ticket that is valid only for outward journey"
+                                                                                              ]
+                                                                        },
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "a bedroom, especially in a hotel, that is suitable for one person."
+                                                                                        ],
+                                                                        "domains": [
+                                                                                    "Hotels"
+                                                                                    ],
+                                                                        "id": "m_en_gbus0947700.031",
+                                                                        "short_definitions": [
+                                                                                              "bedroom that is suitable for one person"
+                                                                                              ]
+                                                                        },
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "a single measure of spirits."
+                                                                                        ],
+                                                                        "id": "m_en_gbus0947700.032",
+                                                                        "short_definitions": [
+                                                                                              "single measure of spirits"
+                                                                                              ]
+                                                                        },
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "a one-dollar note."
+                                                                                        ],
+                                                                        "domains": [
+                                                                                    "Numismatics"
+                                                                                    ],
+                                                                        "id": "m_en_gbus0947700.033",
+                                                                        "regions": [
+                                                                                    "US"
+                                                                                    ],
+                                                                        "registers": [
+                                                                                      "informal"
+                                                                                      ],
+                                                                        "short_definitions": [
+                                                                                              "one-dollar note"
+                                                                                              ]
+                                                                        }
+                                                                        ]
+                                                          },
+                                                          {
+                                                          "definitions": [
+                                                                          "a hit for one run."
+                                                                          ],
+                                                          "domains": [
+                                                                      "Cricket"
+                                                                      ],
+                                                          "id": "m_en_gbus0947700.035",
+                                                          "short_definitions": [
+                                                                                "hit for one run"
+                                                                                ],
+                                                          "subsenses": [
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "a hit which allows the batter to proceed safely to first base."
+                                                                                        ],
+                                                                        "domains": [
+                                                                                    "Baseball"
+                                                                                    ],
+                                                                        "id": "m_en_gbus0947700.036",
+                                                                        "short_definitions": [
+                                                                                              "hit which allows batter to proceed safely to first base"
+                                                                                              ]
+                                                                        }
+                                                                        ]
+                                                          },
+                                                          {
+                                                          "definitions": [
+                                                                          "(especially in tennis and badminton) a game or competition for individual players, not pairs or teams."
+                                                                          ],
+                                                          "domains": [
+                                                                      "Sport"
+                                                                      ],
+                                                          "id": "m_en_gbus0947700.038",
+                                                          "notes": [
+                                                                    {
+                                                                    "text": "\"singles\"",
+                                                                    "type": "wordFormNote"
+                                                                    }
+                                                                    ],
+                                                          "short_definitions": [
+                                                                                "game for individual players"
+                                                                                ]
+                                                          },
+                                                          {
+                                                          "definitions": [
+                                                                          "a system of change-ringing in which one pair of bells changes places at each round."
+                                                                          ],
+                                                          "domains": [
+                                                                      "Bellringing"
+                                                                      ],
+                                                          "id": "m_en_gbus0947700.040",
+                                                          "notes": [
+                                                                    {
+                                                                    "text": "usually \"singles\"",
+                                                                    "type": "wordFormNote"
+                                                                    }
+                                                                    ],
+                                                          "short_definitions": [
+                                                                                "system of change-ringing in which one pair of bells changes places at each round"
+                                                                                ]
+                                                          }
+                                                          ]
+                                               }
+                                               ],
+                                   "language": "en",
+                                   "lexicalCategory": "Noun",
+                                   "pronunciations": [
+                                                      {
+                                                      "audioFile": "http://audio.oxforddictionaries.com/en/mp3/single_gb_1.mp3",
+                                                      "dialects": [
+                                                                   "British English"
+                                                                   ],
+                                                      "phoneticNotation": "IPA",
+                                                      "phoneticSpelling": "ˈsɪŋɡ(ə)l"
+                                                      }
+                                                      ],
+                                   "text": "single"
+                                   },
+                                   {
+                                   "derivatives": [
+                                                   {
+                                                   "id": "singledom",
+                                                   "text": "singledom"
+                                                   },
+                                                   {
+                                                   "id": "singleness",
+                                                   "text": "singleness"
+                                                   }
+                                                   ],
+                                   "entries": [
+                                               {
+                                               "grammaticalFeatures": [
+                                                                       {
+                                                                       "text": "Transitive",
+                                                                       "type": "Subcategorization"
+                                                                       },
+                                                                       {
+                                                                       "text": "Present",
+                                                                       "type": "Tense"
+                                                                       }
+                                                                       ],
+                                               "homographNumber": "002",
+                                               "senses": [
+                                                          {
+                                                          "definitions": [
+                                                                          "choose someone or something from a group for special treatment"
+                                                                          ],
+                                                          "examples": [
+                                                                       {
+                                                                       "text": "one newspaper was singled out for criticism"
+                                                                       }
+                                                                       ],
+                                                          "id": "m_en_gbus0947700.043",
+                                                          "notes": [
+                                                                    {
+                                                                    "text": "\"single someone/something out\"",
+                                                                    "type": "wordFormNote"
+                                                                    }
+                                                                    ],
+                                                          "short_definitions": [
+                                                                                "choose person or thing from group for special treatment"
+                                                                                ],
+                                                          "thesaurusLinks": [
+                                                                             {
+                                                                             "entry_id": "single_someone%2Fsomething_out",
+                                                                             "sense_id": "t_en_gb0013511.004"
+                                                                             }
+                                                                             ]
+                                                          },
+                                                          {
+                                                          "definitions": [
+                                                                          "thin out (seedlings or saplings)"
+                                                                          ],
+                                                          "domains": [
+                                                                      "Horticulture"
+                                                                      ],
+                                                          "examples": [
+                                                                       {
+                                                                       "text": "hand hoes are used for singling roots"
+                                                                       }
+                                                                       ],
+                                                          "id": "m_en_gbus0947700.051",
+                                                          "short_definitions": [
+                                                                                "thin out"
+                                                                                ],
+                                                          "thesaurusLinks": [
+                                                                             {
+                                                                             "entry_id": "thin",
+                                                                             "sense_id": "t_en_gb0014800.013"
+                                                                             }
+                                                                             ]
+                                                          },
+                                                          {
+                                                          "definitions": [
+                                                                          "reduce (a railway track) to a single line"
+                                                                          ],
+                                                          "domains": [
+                                                                      "Railways"
+                                                                      ],
+                                                          "examples": [
+                                                                       {
+                                                                       "text": "the South Western line was singled west of Salisbury"
+                                                                       }
+                                                                       ],
+                                                          "id": "m_en_gbus0947700.053",
+                                                          "short_definitions": [
+                                                                                "reduce railway track to single line"
+                                                                                ]
+                                                          },
+                                                          {
+                                                          "definitions": [
+                                                                          "hit a single"
+                                                                          ],
+                                                          "domains": [
+                                                                      "Baseball"
+                                                                      ],
+                                                          "examples": [
+                                                                       {
+                                                                       "text": "Cohen singled to centre"
+                                                                       }
+                                                                       ],
+                                                          "id": "m_en_gbus0947700.055",
+                                                          "notes": [
+                                                                    {
+                                                                    "text": "no object",
+                                                                    "type": "grammaticalNote"
+                                                                    }
+                                                                    ],
+                                                          "short_definitions": [
+                                                                                "hit single"
+                                                                                ],
+                                                          "subsenses": [
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "cause (a run) to be scored by hitting a single."
+                                                                                        ],
+                                                                        "domains": [
+                                                                                    "Baseball"
+                                                                                    ],
+                                                                        "id": "m_en_gbus0947700.056",
+                                                                        "notes": [
+                                                                                  {
+                                                                                  "text": "with object",
+                                                                                  "type": "grammaticalNote"
+                                                                                  }
+                                                                                  ],
+                                                                        "short_definitions": [
+                                                                                              "cause run to be scored by hitting single"
+                                                                                              ]
+                                                                        },
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "advance (a runner) by hitting a single."
+                                                                                        ],
+                                                                        "domains": [
+                                                                                    "Baseball"
+                                                                                    ],
+                                                                        "id": "m_en_gbus0947700.058",
+                                                                        "notes": [
+                                                                                  {
+                                                                                  "text": "with object",
+                                                                                  "type": "grammaticalNote"
+                                                                                  }
+                                                                                  ],
+                                                                        "short_definitions": [
+                                                                                              "advance runner by hitting single"
+                                                                                              ]
+                                                                        }
+                                                                        ]
+                                                          }
+                                                          ]
+                                               }
+                                               ],
+                                   "language": "en",
+                                   "lexicalCategory": "Verb",
+                                   "pronunciations": [
+                                                      {
+                                                      "audioFile": "http://audio.oxforddictionaries.com/en/mp3/single_gb_1.mp3",
+                                                      "dialects": [
+                                                                   "British English"
+                                                                   ],
+                                                      "phoneticNotation": "IPA",
+                                                      "phoneticSpelling": "ˈsɪŋɡ(ə)l"
+                                                      }
+                                                      ],
+                                   "text": "single"
+                                   }
+                                   ],
+                "type": "headword",
+                "word": "single"
+                }
+                ]
+}

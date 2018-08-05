@@ -9,9 +9,9 @@
 import Foundation
 
 public struct RelatedEntry: Decodable {
-    public let domains: [String]
+    public let domains: [String]?
     public let id: String
-    public let language: String
+    public let language: String?
     public let regions: [String]?
     public let registers: [String]?
     public let text: String

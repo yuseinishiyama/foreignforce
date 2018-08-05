@@ -63,7 +63,6 @@ class SearchTableViewController: UITableViewController {
         case let vc as DefineViewController:
             let wordID = foundWords[selectedIndex].id
             vc.wordID = wordID
-            print(wordID)
         default:
             fatalError()
         }

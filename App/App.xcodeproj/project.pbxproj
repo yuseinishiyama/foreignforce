@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7E4ABDD620B1D51300683DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4ABDD520B1D51300683DF7 /* AppDelegate.swift */; };
-		7E4ABDED20B1D51500683DF7 /* ForeignforceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4ABDEC20B1D51500683DF7 /* ForeignforceTests.swift */; };
 		AB1E402421067F5A0079ED94 /* HomographHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402321067F5A0079ED94 /* HomographHeaderTableViewCell.swift */; };
 		AB1E402821067FBD0079ED94 /* DefineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402721067FBD0079ED94 /* DefineViewController.swift */; };
 		AB1E402A2106817F0079ED94 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40292106817F0079ED94 /* ViewModel.swift */; };
@@ -24,13 +23,14 @@
 		AB31449A2116129600E4F4BF /* SubsenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3144992116129600E4F4BF /* SubsenseTableViewCell.swift */; };
 		AB31449C2117419400E4F4BF /* RetrieveEntryEntryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31449B2117419400E4F4BF /* RetrieveEntryEntryParser.swift */; };
 		AB31449E2117422600E4F4BF /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31449D2117422600E4F4BF /* Parser.swift */; };
-		AB3144A1211745D900E4F4BF /* Homograph.json in Resources */ = {isa = PBXBuildFile; fileRef = AB3144A0211745D900E4F4BF /* Homograph.json */; };
+		AB3144A1211745D900E4F4BF /* MultipleHomographs.json in Resources */ = {isa = PBXBuildFile; fileRef = AB3144A0211745D900E4F4BF /* MultipleHomographs.json */; };
 		AB3144A42117472F00E4F4BF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3144A32117472F00E4F4BF /* Helper.swift */; };
 		AB3144A62117491800E4F4BF /* TestRetrieveEntryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3144A52117491800E4F4BF /* TestRetrieveEntryParser.swift */; };
 		AB3144A8211750FC00E4F4BF /* Heteronym.json in Resources */ = {isa = PBXBuildFile; fileRef = AB3144A7211750FC00E4F4BF /* Heteronym.json */; };
 		AB3144A9211765ED00E4F4BF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3144A32117472F00E4F4BF /* Helper.swift */; };
-		AB3144AA211765F000E4F4BF /* Homograph.json in Resources */ = {isa = PBXBuildFile; fileRef = AB3144A0211745D900E4F4BF /* Homograph.json */; };
+		AB3144AA211765F000E4F4BF /* MultipleHomographs.json in Resources */ = {isa = PBXBuildFile; fileRef = AB3144A0211745D900E4F4BF /* MultipleHomographs.json */; };
 		AB3144AB211765F300E4F4BF /* Heteronym.json in Resources */ = {isa = PBXBuildFile; fileRef = AB3144A7211750FC00E4F4BF /* Heteronym.json */; };
+		AB3144AF2117B1B900E4F4BF /* SingleHomograph.json in Resources */ = {isa = PBXBuildFile; fileRef = AB3144AE2117B1B900E4F4BF /* SingleHomograph.json */; };
 		AB51846521038DC8006CAA1A /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51846421038DC8006CAA1A /* ActionViewController.swift */; };
 		AB51846821038DC8006CAA1A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB51846621038DC8006CAA1A /* MainInterface.storyboard */; };
 		AB51846C21038DC8006CAA1A /* Define.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB51846221038DC8006CAA1A /* Define.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -84,7 +84,6 @@
 		7E4ABDDC20B1D51300683DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E4ABDE120B1D51500683DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E4ABDE820B1D51500683DF7 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E4ABDEC20B1D51500683DF7 /* ForeignforceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeignforceTests.swift; sourceTree = "<group>"; };
 		7E4ABDEE20B1D51500683DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB1E402321067F5A0079ED94 /* HomographHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomographHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		AB1E402721067FBD0079ED94 /* DefineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineViewController.swift; sourceTree = "<group>"; };
@@ -101,10 +100,11 @@
 		AB3144992116129600E4F4BF /* SubsenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsenseTableViewCell.swift; sourceTree = "<group>"; };
 		AB31449B2117419400E4F4BF /* RetrieveEntryEntryParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveEntryEntryParser.swift; sourceTree = "<group>"; };
 		AB31449D2117422600E4F4BF /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		AB3144A0211745D900E4F4BF /* Homograph.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Homograph.json; sourceTree = "<group>"; };
+		AB3144A0211745D900E4F4BF /* MultipleHomographs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MultipleHomographs.json; sourceTree = "<group>"; };
 		AB3144A32117472F00E4F4BF /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		AB3144A52117491800E4F4BF /* TestRetrieveEntryParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRetrieveEntryParser.swift; sourceTree = "<group>"; };
 		AB3144A7211750FC00E4F4BF /* Heteronym.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Heteronym.json; sourceTree = "<group>"; };
+		AB3144AE2117B1B900E4F4BF /* SingleHomograph.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SingleHomograph.json; sourceTree = "<group>"; };
 		AB51846221038DC8006CAA1A /* Define.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Define.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB51846421038DC8006CAA1A /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		AB51846721038DC8006CAA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -177,7 +177,6 @@
 			children = (
 				AB3144A22117472600E4F4BF /* Shared */,
 				AB31449F2117459C00E4F4BF /* Fixtures */,
-				7E4ABDEC20B1D51500683DF7 /* ForeignforceTests.swift */,
 				AB3144A52117491800E4F4BF /* TestRetrieveEntryParser.swift */,
 				7E4ABDEE20B1D51500683DF7 /* Info.plist */,
 			);
@@ -230,8 +229,9 @@
 		AB31449F2117459C00E4F4BF /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
-				AB3144A0211745D900E4F4BF /* Homograph.json */,
+				AB3144A0211745D900E4F4BF /* MultipleHomographs.json */,
 				AB3144A7211750FC00E4F4BF /* Heteronym.json */,
+				AB3144AE2117B1B900E4F4BF /* SingleHomograph.json */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -442,7 +442,7 @@
 			files = (
 				AB51847C21039C93006CAA1A /* Main.storyboard in Resources */,
 				AB3144AB211765F300E4F4BF /* Heteronym.json in Resources */,
-				AB3144AA211765F000E4F4BF /* Homograph.json in Resources */,
+				AB3144AA211765F000E4F4BF /* MultipleHomographs.json in Resources */,
 				AB51847D21039CA6006CAA1A /* LaunchScreen.storyboard in Resources */,
 				ABE2861920BAE9920007D418 /* SearchResultTableViewCell.xib in Resources */,
 				AB51847921039B4C006CAA1A /* Assets.xcassets in Resources */,
@@ -453,8 +453,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB3144A1211745D900E4F4BF /* Homograph.json in Resources */,
+				AB3144A1211745D900E4F4BF /* MultipleHomographs.json in Resources */,
 				AB3144A8211750FC00E4F4BF /* Heteronym.json in Resources */,
+				AB3144AF2117B1B900E4F4BF /* SingleHomograph.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +504,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E4ABDED20B1D51500683DF7 /* ForeignforceTests.swift in Sources */,
 				AB3144A42117472F00E4F4BF /* Helper.swift in Sources */,
 				AB3144A62117491800E4F4BF /* TestRetrieveEntryParser.swift in Sources */,
 			);
