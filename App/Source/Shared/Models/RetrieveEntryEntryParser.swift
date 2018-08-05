@@ -18,19 +18,22 @@ class RetrieveEntryEntryParser: Parser {
         }
 
         let headwordEntry = headwordEntries[0]
-
         let lexicalEntries = headwordEntry.lexicalEntries
         let numberOfHomographs = lexicalEntries.reduce(0) { max($0, $1.entries?.count ?? 0) }
 
-        let homographs: [Homograph] = (1..<numberOfHomographs + 1).map { homographIndex in
+        var homographs = [Homograph]()
+        for homographIndex in (0..<numberOfHomographs) {
 
-            let lexicalEntries: [LexicalEntry] = lexicalEntries.compactMap { lexicalEntry in
+            var parsedLexicalEntries = [LexicalEntry]()
+            for lexicalEntry in lexicalEntries {
 
                 guard let entries = lexicalEntry.entries else {
                     preconditionFailure("LexicalEntry should have entries")
                 }
 
-                let availableSenses: [[Sense]] = entries.compactMap { entry in
+                var availableSenses: [Sense]?
+
+                for entry in entries {
 
                     guard let homographNumber = entry.homographNumber else {
                         preconditionFailure("Entry should have homograph number")
@@ -38,44 +41,51 @@ class RetrieveEntryEntryParser: Parser {
 
                     let homographNumberDigits = homographNumber.map(String.init)
                     precondition(homographNumberDigits.count == 3, "homographNumber should consist of 3 digits")
+                    precondition(homographNumberDigits[0] <= String(numberOfHomographs), "homographNumber should be smaller than or equal to number of homographs")
 
-                    guard String(homographIndex) == homographNumberDigits[0] else { return nil }
+                    // Skip entries in different homographs
+                    guard homographNumberDigits[0] == String(homographIndex+1) else { continue }
+
+                    precondition(availableSenses == nil, "There should be only one set of senses in a lexical entry")
 
                     guard let senses = entry.senses, senses.count > 0 else {
-                        fatalError("Entry should have at least one sense")
+                        preconditionFailure("Entry should have at least one sense")
                     }
 
-                    let parsedSenses: [Sense] = senses.compactMap { sense in
+                    var parsedSenses = [Sense]()
+                    for sense in senses {
 
-                        let parsedSubsenses: [Subsense] = sense.subsenses?.map { subsense in
+                        var parsedSubsenses = [Subsense]()
+                        for subsense in sense.subsenses ?? [] {
 
                             guard let definitions = subsense.definitions, definitions.count == 1 else {
-                                fatalError("Subsense should have one definition")
+                                preconditionFailure("Subsense should have one definition")
                             }
 
-                            return Subsense(definition: definitions[0])
-                            } ?? []
-
-                        guard let definitions = sense.definitions, definitions.count == 1 else {
-                            fatalError("Sense should have one definition")
+                            parsedSubsenses.append(Subsense(definition: definitions[0]))
                         }
 
-                        return Sense(definition: definitions[0], subsenses: parsedSubsenses)
+                        guard let definitions = sense.definitions, definitions.count == 1 else {
+                            preconditionFailure("Sense should have one definition")
+                        }
+
+                        parsedSenses.append(Sense(definition: definitions[0], subsenses: parsedSubsenses))
                     }
 
-                    return parsedSenses
+                    availableSenses = parsedSenses
                 }
 
-                if availableSenses.count == 0 { return nil } // No sense found in this category
+                // No sense found in this lexical entry
+                guard let senses = availableSenses else { continue }
 
-                guard availableSenses.count == 1 else {
-                    preconditionFailure("There should be only one set of senses in a lexical entry")
-                }
+                precondition(senses.count > 0, "Lexical entry should have at least one sense")
 
-                return LexicalEntry(lexicalCategory: lexicalEntry.lexicalCategory, senses: availableSenses[0])
+                parsedLexicalEntries.append(LexicalEntry(lexicalCategory: lexicalEntry.lexicalCategory, senses: senses))
             }
 
-            return Homograph.init(word: headwordEntry.word, pronunciation: "", lexicalEntries: lexicalEntries)
+            precondition(parsedLexicalEntries.count > 0, "Homograph should have at least one lexical entry")
+
+            homographs.append(Homograph(word: headwordEntry.word, pronunciation: "", lexicalEntries: parsedLexicalEntries))
         }
 
         return HeadwordEntry(homographs: homographs)
