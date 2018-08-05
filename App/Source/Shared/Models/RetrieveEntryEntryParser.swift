@@ -19,7 +19,10 @@ class RetrieveEntryEntryParser: Parser {
 
         let headwordEntry = headwordEntries[0]
         let lexicalEntries = headwordEntry.lexicalEntries
-        let numberOfHomographs = lexicalEntries.reduce(0) { max($0, $1.entries?.count ?? 0) }
+        let numberOfHomographs = lexicalEntries.reduce(0) {
+            let biggestGroupIndex = $1.entries?.reduce(0) { max($0, $1.homographGroupIndex ?? 0 ) }
+            return max($0, biggestGroupIndex ?? 0)
+        }
 
         var homographs = [Homograph]()
         for homographIndex in (0..<numberOfHomographs) {
@@ -35,16 +38,12 @@ class RetrieveEntryEntryParser: Parser {
 
                 for entry in entries {
 
-                    guard let homographNumber = entry.homographNumber else {
+                    guard let homographGroupIndex = entry.homographGroupIndex else {
                         preconditionFailure("Entry should have homograph number")
                     }
 
-                    let homographNumberDigits = homographNumber.map(String.init)
-                    precondition(homographNumberDigits.count == 3, "homographNumber should consist of 3 digits")
-                    precondition(homographNumberDigits[0] <= String(numberOfHomographs), "homographNumber should be smaller than or equal to number of homographs")
-
                     // Skip entries in different homographs
-                    guard homographNumberDigits[0] == String(homographIndex+1) else { continue }
+                    guard homographGroupIndex == homographIndex+1 else { continue }
 
                     precondition(availableSenses == nil, "There should be only one set of senses in a lexical entry")
 
@@ -83,7 +82,9 @@ class RetrieveEntryEntryParser: Parser {
                 parsedLexicalEntries.append(LexicalEntry(lexicalCategory: lexicalEntry.lexicalCategory, senses: senses))
             }
 
-            precondition(parsedLexicalEntries.count > 0, "Homograph should have at least one lexical entry")
+            // Homograph group indices are not always continuous values. For example, headword 'bow' has 5 entries
+            // whose homograph numbers are 100, 101, 200, 201 and 500. In this case, homograph group 3 and 4 have no entries
+            guard parsedLexicalEntries.count > 0 else { continue }
 
             homographs.append(Homograph(word: headwordEntry.word, pronunciation: "", lexicalEntries: parsedLexicalEntries))
         }

@@ -17,3 +17,12 @@ public struct Entry: Decodable {
     public let senses: [Sense]?
     public let variantForms: [VariantForm]?
 }
+
+public extension Entry {
+    public var homographGroupIndex: Int? {
+        guard let homographNumber = homographNumber else { return nil }
+        let homographNumberDigits = homographNumber.map(String.init)
+        precondition(homographNumberDigits.count == 3, "homographNumber should consist of 3 digits")
+        return Int(homographNumberDigits[0])
+    }
+}
