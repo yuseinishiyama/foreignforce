@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Foreignforce
+@testable import App
 
 class ForeignforceTests: XCTestCase {
     

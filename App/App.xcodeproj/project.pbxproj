@@ -22,6 +22,12 @@
 		AB314496211610BB00E4F4BF /* LexicalEntryHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB314495211610BB00E4F4BF /* LexicalEntryHeaderTableViewCell.swift */; };
 		AB3144982116128C00E4F4BF /* SenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3144972116128C00E4F4BF /* SenseTableViewCell.swift */; };
 		AB31449A2116129600E4F4BF /* SubsenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3144992116129600E4F4BF /* SubsenseTableViewCell.swift */; };
+		AB31449C2117419400E4F4BF /* RetrieveEntryEntryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31449B2117419400E4F4BF /* RetrieveEntryEntryParser.swift */; };
+		AB31449E2117422600E4F4BF /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31449D2117422600E4F4BF /* Parser.swift */; };
+		AB3144A1211745D900E4F4BF /* Homograph.json in Resources */ = {isa = PBXBuildFile; fileRef = AB3144A0211745D900E4F4BF /* Homograph.json */; };
+		AB3144A42117472F00E4F4BF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3144A32117472F00E4F4BF /* Helper.swift */; };
+		AB3144A62117491800E4F4BF /* TestRetrieveEntryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3144A52117491800E4F4BF /* TestRetrieveEntryParser.swift */; };
+		AB3144A8211750FC00E4F4BF /* Heteronym.json in Resources */ = {isa = PBXBuildFile; fileRef = AB3144A7211750FC00E4F4BF /* Heteronym.json */; };
 		AB51846521038DC8006CAA1A /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51846421038DC8006CAA1A /* ActionViewController.swift */; };
 		AB51846821038DC8006CAA1A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB51846621038DC8006CAA1A /* MainInterface.storyboard */; };
 		AB51846C21038DC8006CAA1A /* Define.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB51846221038DC8006CAA1A /* Define.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -90,6 +96,12 @@
 		AB314495211610BB00E4F4BF /* LexicalEntryHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexicalEntryHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		AB3144972116128C00E4F4BF /* SenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenseTableViewCell.swift; sourceTree = "<group>"; };
 		AB3144992116129600E4F4BF /* SubsenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsenseTableViewCell.swift; sourceTree = "<group>"; };
+		AB31449B2117419400E4F4BF /* RetrieveEntryEntryParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveEntryEntryParser.swift; sourceTree = "<group>"; };
+		AB31449D2117422600E4F4BF /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		AB3144A0211745D900E4F4BF /* Homograph.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Homograph.json; sourceTree = "<group>"; };
+		AB3144A32117472F00E4F4BF /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		AB3144A52117491800E4F4BF /* TestRetrieveEntryParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRetrieveEntryParser.swift; sourceTree = "<group>"; };
+		AB3144A7211750FC00E4F4BF /* Heteronym.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Heteronym.json; sourceTree = "<group>"; };
 		AB51846221038DC8006CAA1A /* Define.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Define.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB51846421038DC8006CAA1A /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		AB51846721038DC8006CAA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -160,7 +172,10 @@
 		7E4ABDEB20B1D51500683DF7 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				AB3144A22117472600E4F4BF /* Shared */,
+				AB31449F2117459C00E4F4BF /* Fixtures */,
 				7E4ABDEC20B1D51500683DF7 /* ForeignforceTests.swift */,
+				AB3144A52117491800E4F4BF /* TestRetrieveEntryParser.swift */,
 				7E4ABDEE20B1D51500683DF7 /* Info.plist */,
 			);
 			path = Tests;
@@ -186,6 +201,7 @@
 				AB1E40382107DE080079ED94 /* LexicalEntry.swift */,
 				AB1E403A2107DE2D0079ED94 /* Sense.swift */,
 				AB1E403C2107DE440079ED94 /* Subsense.swift */,
+				AB31449B2117419400E4F4BF /* RetrieveEntryEntryParser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,8 +219,26 @@
 			children = (
 				AB1E40292106817F0079ED94 /* ViewModel.swift */,
 				AB1E40422107DF190079ED94 /* Service.swift */,
+				AB31449D2117422600E4F4BF /* Parser.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AB31449F2117459C00E4F4BF /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				AB3144A0211745D900E4F4BF /* Homograph.json */,
+				AB3144A7211750FC00E4F4BF /* Heteronym.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		AB3144A22117472600E4F4BF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AB3144A32117472F00E4F4BF /* Helper.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		AB51846321038DC8006CAA1A /* DefineExtention */ = {
@@ -414,6 +448,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3144A1211745D900E4F4BF /* Homograph.json in Resources */,
+				AB3144A8211750FC00E4F4BF /* Heteronym.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,10 +480,12 @@
 				AB31449A2116129600E4F4BF /* SubsenseTableViewCell.swift in Sources */,
 				ABE2861120BAE3D20007D418 /* SearchResultsViewController.swift in Sources */,
 				AB3144982116128C00E4F4BF /* SenseTableViewCell.swift in Sources */,
+				AB31449E2117422600E4F4BF /* Parser.swift in Sources */,
 				AB314496211610BB00E4F4BF /* LexicalEntryHeaderTableViewCell.swift in Sources */,
 				AB1E40402107DED00079ED94 /* EntryService.swift in Sources */,
 				AB1E40432107DF190079ED94 /* Service.swift in Sources */,
 				AB1E40352107DB7F0079ED94 /* HeadwordEntry.swift in Sources */,
+				AB31449C2117419400E4F4BF /* RetrieveEntryEntryParser.swift in Sources */,
 				AB1E403B2107DE2D0079ED94 /* Sense.swift in Sources */,
 				AB1E40392107DE080079ED94 /* LexicalEntry.swift in Sources */,
 				ABE2860F20BAE3D20007D418 /* SecondViewController.swift in Sources */,
@@ -460,6 +498,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E4ABDED20B1D51500683DF7 /* ForeignforceTests.swift in Sources */,
+				AB3144A42117472F00E4F4BF /* Helper.swift in Sources */,
+				AB3144A62117491800E4F4BF /* TestRetrieveEntryParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,7 +605,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -619,7 +659,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -675,7 +715,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ForeignforceTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -695,7 +735,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ForeignforceTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

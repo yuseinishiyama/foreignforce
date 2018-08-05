@@ -1,0 +1,436 @@
+{
+    "metadata": {
+        "provider": "Oxford University Press"
+    },
+    "results": [
+                {
+                "id": "bow",
+                "language": "en",
+                "lexicalEntries": [
+                                   {
+                                   "entries": [
+                                               {
+                                               "etymologies": [
+                                                               "Old English boga ‘bend, bow, arch’, of Germanic origin; related to Dutch boog and German Bogen, also to bow"
+                                                               ],
+                                               "grammaticalFeatures": [
+                                                                       {
+                                                                       "text": "Singular",
+                                                                       "type": "Number"
+                                                                       }
+                                                                       ],
+                                               "homographNumber": "100",
+                                               "pronunciations": [
+                                                                  {
+                                                                  "audioFile": "http://audio.oxforddictionaries.com/en/mp3/bow_gb_2.mp3",
+                                                                  "dialects": [
+                                                                               "British English"
+                                                                               ],
+                                                                  "phoneticNotation": "IPA",
+                                                                  "phoneticSpelling": "bəʊ"
+                                                                  }
+                                                                  ],
+                                               "senses": [
+                                                          {
+                                                          "definitions": [
+                                                                          "a knot tied with two loops and two loose ends, used especially for tying shoelaces and decorative ribbons"
+                                                                          ],
+                                                          "examples": [
+                                                                       {
+                                                                       "text": "a girl with long hair tied back in a bow"
+                                                                       }
+                                                                       ],
+                                                          "id": "m_en_gbus0118370.007",
+                                                          "short_definitions": [
+                                                                                "simple knot"
+                                                                                ],
+                                                          "subsenses": [
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "a decorative ribbon tied in a bow."
+                                                                                        ],
+                                                                        "id": "m_en_gbus0118370.010",
+                                                                        "short_definitions": [
+                                                                                              "ribbon tied in bow"
+                                                                                              ],
+                                                                        "thesaurusLinks": [
+                                                                                           {
+                                                                                           "entry_id": "bow",
+                                                                                           "sense_id": "t_en_gb0001668.001"
+                                                                                           }
+                                                                                           ]
+                                                                        }
+                                                                        ],
+                                                          "thesaurusLinks": [
+                                                                             {
+                                                                             "entry_id": "bow",
+                                                                             "sense_id": "t_en_gb0001668.001"
+                                                                             }
+                                                                             ]
+                                                          },
+                                                          {
+                                                          "definitions": [
+                                                                          "a weapon for shooting arrows, typically made of a curved piece of wood joined at both ends by a taut string."
+                                                                          ],
+                                                          "domains": [
+                                                                      "Archery"
+                                                                      ],
+                                                          "id": "m_en_gbus0118370.012",
+                                                          "short_definitions": [
+                                                                                "weapon for shooting arrows"
+                                                                                ],
+                                                          "thesaurusLinks": [
+                                                                             {
+                                                                             "entry_id": "bow",
+                                                                             "sense_id": "t_en_gb0001668.003"
+                                                                             }
+                                                                             ]
+                                                          },
+                                                          {
+                                                          "definitions": [
+                                                                          "a long, partially curved rod with horsehair stretched along its length, used for playing the violin and other stringed instruments."
+                                                                          ],
+                                                          "domains": [
+                                                                      "Instrument"
+                                                                      ],
+                                                          "id": "m_en_gbus0118370.015",
+                                                          "short_definitions": [
+                                                                                "rod used for playing violin"
+                                                                                ],
+                                                          "subsenses": [
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "a single passage of a bow over the strings of an instrument."
+                                                                                        ],
+                                                                        "domains": [
+                                                                                    "Music"
+                                                                                    ],
+                                                                        "id": "m_en_gbus0118370.016",
+                                                                        "short_definitions": [
+                                                                                              "single passage of such rod over strings"
+                                                                                              ]
+                                                                        }
+                                                                        ]
+                                                          },
+                                                          {
+                                                          "definitions": [
+                                                                          "a curved stroke forming part of a letter (e.g. b, p)."
+                                                                          ],
+                                                          "domains": [
+                                                                      "Handwriting"
+                                                                      ],
+                                                          "id": "m_en_gbus0118370.018",
+                                                          "short_definitions": [
+                                                                                "curved part of letter"
+                                                                                ]
+                                                          },
+                                                          {
+                                                          "definitions": [
+                                                                          "a metal ring forming the handle of a key or pair of scissors."
+                                                                          ],
+                                                          "id": "m_en_gbus0118370.020",
+                                                          "short_definitions": [
+                                                                                "curved part of scissors etc."
+                                                                                ],
+                                                          "subsenses": [
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "a side piece or lens frame of a pair of glasses."
+                                                                                        ],
+                                                                        "id": "m_en_gbus0118370.021",
+                                                                        "regions": [
+                                                                                    "North American"
+                                                                                    ],
+                                                                        "short_definitions": [
+                                                                                              "curved part of glasses frame"
+                                                                                              ]
+                                                                        }
+                                                                        ]
+                                                          }
+                                                          ]
+                                               },
+                                               {
+                                               "grammaticalFeatures": [
+                                                                       {
+                                                                       "text": "Singular",
+                                                                       "type": "Number"
+                                                                       }
+                                                                       ],
+                                               "homographNumber": "201",
+                                               "pronunciations": [
+                                                                  {
+                                                                  "audioFile": "http://audio.oxforddictionaries.com/en/mp3/bow_gb_1.mp3",
+                                                                  "dialects": [
+                                                                               "British English"
+                                                                               ],
+                                                                  "phoneticNotation": "IPA",
+                                                                  "phoneticSpelling": "baʊ"
+                                                                  }
+                                                                  ],
+                                               "senses": [
+                                                          {
+                                                          "definitions": [
+                                                                          "an act of bending the head or upper body as a sign of respect or greeting"
+                                                                          ],
+                                                          "examples": [
+                                                                       {
+                                                                       "text": "the man gave a little bow"
+                                                                       }
+                                                                       ],
+                                                          "id": "m_en_gbus0118380.022",
+                                                          "short_definitions": [
+                                                                                "act of bowing"
+                                                                                ],
+                                                          "thesaurusLinks": [
+                                                                             {
+                                                                             "entry_id": "bow",
+                                                                             "sense_id": "t_en_gb0001666.005"
+                                                                             }
+                                                                             ]
+                                                          }
+                                                          ]
+                                               },
+                                               {
+                                               "etymologies": [
+                                                               "late Middle English: from Low German boog, Dutch boeg, ‘shoulder or ship's bow’; related to bough"
+                                                               ],
+                                               "grammaticalFeatures": [
+                                                                       {
+                                                                       "text": "Singular",
+                                                                       "type": "Number"
+                                                                       }
+                                                                       ],
+                                               "homographNumber": "500",
+                                               "pronunciations": [
+                                                                  {
+                                                                  "audioFile": "http://audio.oxforddictionaries.com/en/mp3/bow_gb_1.mp3",
+                                                                  "dialects": [
+                                                                               "British English"
+                                                                               ],
+                                                                  "phoneticNotation": "IPA",
+                                                                  "phoneticSpelling": "baʊ"
+                                                                  }
+                                                                  ],
+                                               "senses": [
+                                                          {
+                                                          "definitions": [
+                                                                          "the front end of a ship"
+                                                                          ],
+                                                          "domains": [
+                                                                      "Nautical"
+                                                                      ],
+                                                          "examples": [
+                                                                       {
+                                                                       "text": "water sprayed high over her bows"
+                                                                       }
+                                                                       ],
+                                                          "id": "m_en_gbus0118390.007",
+                                                          "short_definitions": [
+                                                                                "front end of ship"
+                                                                                ],
+                                                          "thesaurusLinks": [
+                                                                             {
+                                                                             "entry_id": "bow",
+                                                                             "sense_id": "t_en_gb0001667.001"
+                                                                             }
+                                                                             ]
+                                                          }
+                                                          ],
+                                               "variantForms": [
+                                                                {
+                                                                "text": "bows"
+                                                                }
+                                                                ]
+                                               }
+                                               ],
+                                   "language": "en",
+                                   "lexicalCategory": "Noun",
+                                   "text": "bow"
+                                   },
+                                   {
+                                   "entries": [
+                                               {
+                                               "grammaticalFeatures": [
+                                                                       {
+                                                                       "text": "Transitive",
+                                                                       "type": "Subcategorization"
+                                                                       },
+                                                                       {
+                                                                       "text": "Present",
+                                                                       "type": "Tense"
+                                                                       }
+                                                                       ],
+                                               "homographNumber": "101",
+                                               "pronunciations": [
+                                                                  {
+                                                                  "audioFile": "http://audio.oxforddictionaries.com/en/mp3/bow_gb_2.mp3",
+                                                                  "dialects": [
+                                                                               "British English"
+                                                                               ],
+                                                                  "phoneticNotation": "IPA",
+                                                                  "phoneticSpelling": "bəʊ"
+                                                                  }
+                                                                  ],
+                                               "senses": [
+                                                          {
+                                                          "definitions": [
+                                                                          "play (a stringed instrument or music) using a bow"
+                                                                          ],
+                                                          "examples": [
+                                                                       {
+                                                                       "text": "the techniques by which the pieces were bowed"
+                                                                       }
+                                                                       ],
+                                                          "id": "m_en_gbus0118370.023",
+                                                          "short_definitions": [
+                                                                                "play violin with bow"
+                                                                                ]
+                                                          }
+                                                          ]
+                                               },
+                                               {
+                                               "etymologies": [
+                                                               "Old English būgan ‘bend, stoop’, of Germanic origin; related to German biegen, also to bow"
+                                                               ],
+                                               "grammaticalFeatures": [
+                                                                       {
+                                                                       "text": "Intransitive",
+                                                                       "type": "Subcategorization"
+                                                                       },
+                                                                       {
+                                                                       "text": "Present",
+                                                                       "type": "Tense"
+                                                                       }
+                                                                       ],
+                                               "homographNumber": "200",
+                                               "pronunciations": [
+                                                                  {
+                                                                  "audioFile": "http://audio.oxforddictionaries.com/en/mp3/bow_gb_1.mp3",
+                                                                  "dialects": [
+                                                                               "British English"
+                                                                               ],
+                                                                  "phoneticNotation": "IPA",
+                                                                  "phoneticSpelling": "baʊ"
+                                                                  }
+                                                                  ],
+                                               "senses": [
+                                                          {
+                                                          "definitions": [
+                                                                          "bend the head or upper part of the body as a sign of respect, greeting, or shame"
+                                                                          ],
+                                                          "examples": [
+                                                                       {
+                                                                       "text": "he turned and bowed to his father"
+                                                                       },
+                                                                       {
+                                                                       "text": "she knelt and bowed her head"
+                                                                       },
+                                                                       {
+                                                                       "text": "councillors stood with heads bowed"
+                                                                       }
+                                                                       ],
+                                                          "id": "m_en_gbus0118380.006",
+                                                          "short_definitions": [
+                                                                                "bend head as sign of respect etc."
+                                                                                ],
+                                                          "subsenses": [
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "express (thanks, agreement, or other sentiments) by bending one's head respectfully"
+                                                                                        ],
+                                                                        "examples": [
+                                                                                     {
+                                                                                     "text": "he looked at Hector before bowing grave thanks"
+                                                                                     }
+                                                                                     ],
+                                                                        "id": "m_en_gbus0118380.012",
+                                                                        "notes": [
+                                                                                  {
+                                                                                  "text": "with object",
+                                                                                  "type": "grammaticalNote"
+                                                                                  }
+                                                                                  ],
+                                                                        "short_definitions": [
+                                                                                              "express by bowing"
+                                                                                              ]
+                                                                        }
+                                                                        ],
+                                                          "thesaurusLinks": [
+                                                                             {
+                                                                             "entry_id": "bow",
+                                                                             "sense_id": "t_en_gb0001666.001"
+                                                                             }
+                                                                             ]
+                                                          },
+                                                          {
+                                                          "definitions": [
+                                                                          "bend with age or under pressure"
+                                                                          ],
+                                                          "examples": [
+                                                                       {
+                                                                       "text": "the creepers were bowed down with flowers"
+                                                                       },
+                                                                       {
+                                                                       "text": "the roof trusses bowed as the wind fought to rip the roof free"
+                                                                       }
+                                                                       ],
+                                                          "id": "m_en_gbus0118380.017",
+                                                          "short_definitions": [
+                                                                                "bend with age or pressure"
+                                                                                ],
+                                                          "subsenses": [
+                                                                        {
+                                                                        "definitions": [
+                                                                                        "submit to pressure or demands"
+                                                                                        ],
+                                                                        "examples": [
+                                                                                     {
+                                                                                     "text": "the government has bowed to pressure from farmers to increase compensation"
+                                                                                     }
+                                                                                     ],
+                                                                        "id": "m_en_gbus0118380.018",
+                                                                        "short_definitions": [
+                                                                                              "submit to pressure or demands"
+                                                                                              ],
+                                                                        "thesaurusLinks": [
+                                                                                           {
+                                                                                           "entry_id": "bow",
+                                                                                           "sense_id": "t_en_gb0001666.002"
+                                                                                           }
+                                                                                           ]
+                                                                        }
+                                                                        ]
+                                                          },
+                                                          {
+                                                          "definitions": [
+                                                                          "(of a new film or product) be premiered or launched"
+                                                                          ],
+                                                          "examples": [
+                                                                       {
+                                                                       "text": "the trailer bowed in theaters nationwide on December 23"
+                                                                       },
+                                                                       {
+                                                                       "text": "the Pentium III bowed in early 1999"
+                                                                       }
+                                                                       ],
+                                                          "id": "m_en_gbus0118380.020",
+                                                          "regions": [
+                                                                      "North American"
+                                                                      ],
+                                                          "short_definitions": [
+                                                                                "be premiered or launched"
+                                                                                ]
+                                                          }
+                                                          ]
+                                               }
+                                               ],
+                                   "language": "en",
+                                   "lexicalCategory": "Verb",
+                                   "text": "bow"
+                                   }
+                                   ],
+                "type": "headword",
+                "word": "bow"
+                }
+                ]
+}
