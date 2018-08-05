@@ -21,11 +21,8 @@ class SearchTableViewController: UITableViewController {
     private var foundWords: [FoundWord] = [] {
         didSet {
             let words = foundWords.map { $0.word }
-            self.searchResultsTableViewController.words = words
-
-            DispatchQueue.main.async {
-                self.searchResultsTableViewController.tableView.reloadData()
-            }
+            let viewModel = SearchResultsTableViewController.ViewModel(words: words)
+            self.searchResultsTableViewController.configure(viewModel: viewModel)
         }
     }
 
@@ -76,6 +73,10 @@ class SearchTableViewController: UITableViewController {
 // MARK: - UITableViewDelegate
 
 extension SearchTableViewController {
+
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44
+    }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "segue", sender: nil)

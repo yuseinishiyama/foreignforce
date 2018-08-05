@@ -11,7 +11,11 @@ import UIKit
 
 class SearchResultsTableViewController: UITableViewController {
 
-    var words: [String] = []
+    struct ViewModel: ViewModelProtocol {
+        let words: [String]
+    }
+
+    private var viewModel = ViewModel(words: [])
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,13 +24,22 @@ class SearchResultsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return words.count
+        return viewModel.words.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: SearchResultTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.wordLabel.text = words[indexPath.row]
+        cell.wordLabel.text = viewModel.words[indexPath.row]
 
         return cell
+    }
+}
+
+extension SearchResultsTableViewController: ViewModelConfigurable {
+    func configure(viewModel: SearchResultsTableViewController.ViewModel) {
+        self.viewModel = viewModel
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 }
