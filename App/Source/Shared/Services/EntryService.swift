@@ -12,20 +12,17 @@ import OxfordDictionary
 
 class EntryService: Service {
 
-    func headwordEntry(completion: (Result<HeadwordEntry, APIClient.Error>) -> ()) {
-
-//        let entries = Entries(wordID: wordID)
-//        let apiClient = OxfordDictionaryClient(environment: Environment())
-//        apiClient.request(endpoint: entries) { result in
-//            switch result {
-//            case let .success(retrieveEntry):
-//                self.headwordEntry = retrieveEntry.results ?? []
-//            case let .failure(error):
-//                print(error)
-//            }
-//        }
-
-//        let parsedHeadwordEntry = RetrieveEntryEntryParser.parse(retriveEntry)
-//        completion(.success(parsedHeadwordEntry))
+    func headwordEntry(wordID: String, completion: @escaping (Result<HeadwordEntry, APIClient.Error>) -> ()) {
+        let entries = Entries(wordID: wordID)
+        let apiClient = OxfordDictionaryClient(environment: Environment())
+        apiClient.request(endpoint: entries) { result in
+            switch result {
+            case let .success(retrieveEntry):
+                let headwordEntry = RetrieveEntryEntryParser.parse(retrieveEntry)
+                completion(.success(headwordEntry))
+            case let .failure(error):
+                completion(.failure(error))
+            }
+        }
     }
 }

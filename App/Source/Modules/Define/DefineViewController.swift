@@ -34,14 +34,14 @@ class DefineViewController: UITableViewController {
         }
     }
 
-    var wordID: String! = "ace"
+    var wordID: String! = "bow"
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         clearsSelectionOnViewWillAppear = false
 
-        EntryService().headwordEntry { result in
+        EntryService().headwordEntry(wordID: wordID) { result in
 
             switch result {
             case let .success(entry):
@@ -64,7 +64,7 @@ class DefineViewController: UITableViewController {
                         }
                     }
                 }
-                viewModel = .loaded(sections)
+                self.viewModel = .loaded(sections)
             case let .failure(error):
                 print(error)
             }
