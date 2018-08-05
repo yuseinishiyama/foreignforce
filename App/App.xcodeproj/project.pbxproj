@@ -28,6 +28,9 @@
 		AB3144A42117472F00E4F4BF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3144A32117472F00E4F4BF /* Helper.swift */; };
 		AB3144A62117491800E4F4BF /* TestRetrieveEntryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3144A52117491800E4F4BF /* TestRetrieveEntryParser.swift */; };
 		AB3144A8211750FC00E4F4BF /* Heteronym.json in Resources */ = {isa = PBXBuildFile; fileRef = AB3144A7211750FC00E4F4BF /* Heteronym.json */; };
+		AB3144A9211765ED00E4F4BF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3144A32117472F00E4F4BF /* Helper.swift */; };
+		AB3144AA211765F000E4F4BF /* Homograph.json in Resources */ = {isa = PBXBuildFile; fileRef = AB3144A0211745D900E4F4BF /* Homograph.json */; };
+		AB3144AB211765F300E4F4BF /* Heteronym.json in Resources */ = {isa = PBXBuildFile; fileRef = AB3144A7211750FC00E4F4BF /* Heteronym.json */; };
 		AB51846521038DC8006CAA1A /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51846421038DC8006CAA1A /* ActionViewController.swift */; };
 		AB51846821038DC8006CAA1A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB51846621038DC8006CAA1A /* MainInterface.storyboard */; };
 		AB51846C21038DC8006CAA1A /* Define.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB51846221038DC8006CAA1A /* Define.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -438,6 +441,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB51847C21039C93006CAA1A /* Main.storyboard in Resources */,
+				AB3144AB211765F300E4F4BF /* Heteronym.json in Resources */,
+				AB3144AA211765F000E4F4BF /* Homograph.json in Resources */,
 				AB51847D21039CA6006CAA1A /* LaunchScreen.storyboard in Resources */,
 				ABE2861920BAE9920007D418 /* SearchResultTableViewCell.xib in Resources */,
 				AB51847921039B4C006CAA1A /* Assets.xcassets in Resources */,
@@ -488,6 +493,7 @@
 				AB31449C2117419400E4F4BF /* RetrieveEntryEntryParser.swift in Sources */,
 				AB1E403B2107DE2D0079ED94 /* Sense.swift in Sources */,
 				AB1E40392107DE080079ED94 /* LexicalEntry.swift in Sources */,
+				AB3144A9211765ED00E4F4BF /* Helper.swift in Sources */,
 				ABE2860F20BAE3D20007D418 /* SecondViewController.swift in Sources */,
 				AB1E402421067F5A0079ED94 /* HomographHeaderTableViewCell.swift in Sources */,
 			);
