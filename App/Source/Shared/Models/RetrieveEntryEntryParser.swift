@@ -18,6 +18,9 @@ class RetrieveEntryEntryParser: Parser {
         }
 
         let headwordEntry = headwordEntries[0]
+
+        precondition(headwordEntry.pronunciations == nil, "There shouldn't be headword-level pronunciations")
+
         let lexicalEntries = headwordEntry.lexicalEntries
         let numberOfHomographs = lexicalEntries.reduce(0) {
             let biggestGroupIndex = $1.entries?.reduce(0) { max($0, $1.homographGroupIndex ?? 0 ) }
@@ -28,10 +31,17 @@ class RetrieveEntryEntryParser: Parser {
         for homographIndex in (0..<numberOfHomographs) {
 
             var parsedLexicalEntries = [LexicalEntry]()
+            var phoneticSpelling: String?
+
             for lexicalEntry in lexicalEntries {
 
                 guard let entries = lexicalEntry.entries else {
                     preconditionFailure("LexicalEntry should have entries")
+                }
+
+                if let pronunciations = lexicalEntry.pronunciations {
+                    precondition(pronunciations.count == 1)
+                    phoneticSpelling = pronunciations[0].phoneticSpelling
                 }
 
                 var availableSenses: [Sense]?
@@ -51,11 +61,20 @@ class RetrieveEntryEntryParser: Parser {
                         preconditionFailure("Entry should have at least one sense")
                     }
 
+                    if let pronunciations = entry.pronunciations {
+                        precondition(pronunciations.count == 1)
+                        phoneticSpelling = pronunciations[0].phoneticSpelling
+                    }
+
                     var parsedSenses = [Sense]()
                     for sense in senses {
 
+                         precondition(sense.pronunciations == nil, "There shouldn't be sense-level pronunciations")
+
                         var parsedSubsenses = [Subsense]()
                         for subsense in sense.subsenses ?? [] {
+
+                             precondition(headwordEntry.pronunciations == nil, "There shouldn't be subsense-level pronunciations")
 
                             guard let definitions = subsense.definitions, definitions.count == 1 else {
                                 preconditionFailure("Subsense should have one definition")
@@ -86,7 +105,11 @@ class RetrieveEntryEntryParser: Parser {
             // whose homograph numbers are 100, 101, 200, 201 and 500. In this case, homograph group 3 and 4 have no entries
             guard parsedLexicalEntries.count > 0 else { continue }
 
-            homographs.append(Homograph(word: headwordEntry.word, pronunciation: "", lexicalEntries: parsedLexicalEntries))
+            guard let _phoneticSpelling = phoneticSpelling else {
+                preconditionFailure("Homograph should have a phonetic spelling")
+            }
+
+            homographs.append(Homograph(word: headwordEntry.word, pronunciation: _phoneticSpelling, lexicalEntries: parsedLexicalEntries))
         }
 
         return HeadwordEntry(homographs: homographs)

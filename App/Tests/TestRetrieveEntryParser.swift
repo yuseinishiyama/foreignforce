@@ -31,7 +31,11 @@ class TestRetrieveEntryParser: XCTestCase {
 
     func testHeteronym() {
         let retrieveEntry = loadFixture(OxfordDictionary.RetrieveEntry.self, from: "Heteronym")
-        let _ = RetrieveEntryEntryParser.parse(retrieveEntry)
+        let headwordEntry = RetrieveEntryEntryParser.parse(retrieveEntry)
+
+        assert(headwordEntry.homographs[0].pronunciation == "bəʊ")
+        assert(headwordEntry.homographs[1].pronunciation == "baʊ")
+        assert(headwordEntry.homographs[2].pronunciation == "baʊ")
 
         assert(true, "Successfully parsed")
     }
