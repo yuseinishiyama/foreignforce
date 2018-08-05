@@ -19,6 +19,6 @@ public struct Search: Endpoint {
     public init(sourceLanguage: Language = .en, query: String) {
 
         self.path = "search/\(sourceLanguage)"
-        self.parameters = ["q" : query]
+        self.parameters = ["q" : query, "prefix": "true"]
     }
 }
