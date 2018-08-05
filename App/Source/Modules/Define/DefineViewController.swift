@@ -34,7 +34,7 @@ class DefineViewController: UITableViewController {
         }
     }
 
-    var wordID: String! = "ace"
+    var wordID: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()

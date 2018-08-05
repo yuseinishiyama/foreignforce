@@ -14,7 +14,7 @@ public struct Search: Endpoint {
 
     public let path: String
 
-    public var parameters: [String : String]?
+    public var parameters: [String : String]
 
     public init(sourceLanguage: Language = .en, query: String) {
 

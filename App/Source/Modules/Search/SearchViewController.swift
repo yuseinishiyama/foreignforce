@@ -124,6 +124,13 @@ extension SearchTableViewController: UISearchResultsUpdating {
 
     func updateSearchResults(for searchController: UISearchController) {
 
+        let updateSelector = #selector(update(for:))
+        NSObject.cancelPreviousPerformRequests(withTarget: self, selector: updateSelector, object: searchController.searchBar)
+        perform(updateSelector, with: searchController.searchBar, afterDelay: 1)
+    }
+
+    @objc func update(for searchbar: UISearchBar) {
+
         guard let query = searchController.searchBar.text, !query.isEmpty else {
             return
         }
@@ -138,6 +145,5 @@ extension SearchTableViewController: UISearchResultsUpdating {
                 print(error)
             }
         }
-
     }
 }
