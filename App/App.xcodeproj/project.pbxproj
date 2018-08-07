@@ -8,6 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		7E4ABDD620B1D51300683DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4ABDD520B1D51300683DF7 /* AppDelegate.swift */; };
+		AB1CBA112119745D00472E7F /* DefineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402721067FBD0079ED94 /* DefineViewController.swift */; };
+		AB1CBA12211975B500472E7F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40292106817F0079ED94 /* ViewModel.swift */; };
+		AB1CBA13211975BD00472E7F /* HomographHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402321067F5A0079ED94 /* HomographHeaderTableViewCell.swift */; };
+		AB1CBA14211975C300472E7F /* LexicalEntryHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB314495211610BB00E4F4BF /* LexicalEntryHeaderTableViewCell.swift */; };
+		AB1CBA15211975C600472E7F /* SenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3144972116128C00E4F4BF /* SenseTableViewCell.swift */; };
+		AB1CBA16211975CB00472E7F /* SubsenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3144992116129600E4F4BF /* SubsenseTableViewCell.swift */; };
+		AB1CBA17211975D200472E7F /* EntryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E403F2107DED00079ED94 /* EntryService.swift */; };
+		AB1CBA18211975E500472E7F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40422107DF190079ED94 /* Service.swift */; };
+		AB1CBA19211975EB00472E7F /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB751F14210403FA00143541 /* Environment.swift */; };
+		AB1CBA1A211975F500472E7F /* HeadwordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40342107DB7E0079ED94 /* HeadwordEntry.swift */; };
+		AB1CBA1B211975FB00472E7F /* UITableView+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE2861620BAE4690007D418 /* UITableView+CellRegistration.swift */; };
+		AB1CBA1C2119760100472E7F /* Homograph.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40362107DDEF0079ED94 /* Homograph.swift */; };
+		AB1CBA1D2119760600472E7F /* RetrieveEntryEntryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31449B2117419400E4F4BF /* RetrieveEntryEntryParser.swift */; };
+		AB1CBA1E2119760C00472E7F /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31449D2117422600E4F4BF /* Parser.swift */; };
+		AB1CBA1F2119761100472E7F /* LexicalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40382107DE080079ED94 /* LexicalEntry.swift */; };
+		AB1CBA202119761600472E7F /* Subsense.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E403C2107DE440079ED94 /* Subsense.swift */; };
+		AB1CBA212119762800472E7F /* Sense.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E403A2107DE2D0079ED94 /* Sense.swift */; };
+		AB1CBA232119763F00472E7F /* libOxfordDictionary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1CBA222119763F00472E7F /* libOxfordDictionary.a */; };
+		AB1CBA24211976B500472E7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4ABDDB20B1D51300683DF7 /* Main.storyboard */; };
 		AB1E402421067F5A0079ED94 /* HomographHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402321067F5A0079ED94 /* HomographHeaderTableViewCell.swift */; };
 		AB1E402821067FBD0079ED94 /* DefineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E402721067FBD0079ED94 /* DefineViewController.swift */; };
 		AB1E402A2106817F0079ED94 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E40292106817F0079ED94 /* ViewModel.swift */; };
@@ -85,6 +104,7 @@
 		7E4ABDE120B1D51500683DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E4ABDE820B1D51500683DF7 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4ABDEE20B1D51500683DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB1CBA222119763F00472E7F /* libOxfordDictionary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libOxfordDictionary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1E402321067F5A0079ED94 /* HomographHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomographHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		AB1E402721067FBD0079ED94 /* DefineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineViewController.swift; sourceTree = "<group>"; };
 		AB1E40292106817F0079ED94 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
@@ -144,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1CBA232119763F00472E7F /* libOxfordDictionary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +302,7 @@
 		ABBB762E2103F1BC0094B6B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB1CBA222119763F00472E7F /* libOxfordDictionary.a */,
 				AB751F0F2103F7D200143541 /* libOxfordDictionary.a */,
 				ABBB762F2103F1BC0094B6B0 /* libAPIClient.a */,
 			);
@@ -464,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB51846821038DC8006CAA1A /* MainInterface.storyboard in Resources */,
+				AB1CBA24211976B500472E7F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +536,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1CBA17211975D200472E7F /* EntryService.swift in Sources */,
+				AB1CBA1F2119761100472E7F /* LexicalEntry.swift in Sources */,
 				AB51846521038DC8006CAA1A /* ActionViewController.swift in Sources */,
+				AB1CBA202119761600472E7F /* Subsense.swift in Sources */,
+				AB1CBA1E2119760C00472E7F /* Parser.swift in Sources */,
+				AB1CBA14211975C300472E7F /* LexicalEntryHeaderTableViewCell.swift in Sources */,
+				AB1CBA212119762800472E7F /* Sense.swift in Sources */,
+				AB1CBA15211975C600472E7F /* SenseTableViewCell.swift in Sources */,
+				AB1CBA12211975B500472E7F /* ViewModel.swift in Sources */,
+				AB1CBA18211975E500472E7F /* Service.swift in Sources */,
+				AB1CBA13211975BD00472E7F /* HomographHeaderTableViewCell.swift in Sources */,
+				AB1CBA1A211975F500472E7F /* HeadwordEntry.swift in Sources */,
+				AB1CBA1B211975FB00472E7F /* UITableView+CellRegistration.swift in Sources */,
+				AB1CBA112119745D00472E7F /* DefineViewController.swift in Sources */,
+				AB1CBA16211975CB00472E7F /* SubsenseTableViewCell.swift in Sources */,
+				AB1CBA19211975EB00472E7F /* Environment.swift in Sources */,
+				AB1CBA1D2119760600472E7F /* RetrieveEntryEntryParser.swift in Sources */,
+				AB1CBA1C2119760100472E7F /* Homograph.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,6 +799,7 @@
 		};
 		AB51846D21038DC8006CAA1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABBB76212103F0BA0094B6B0 /* env.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P6TFCTUTGY;

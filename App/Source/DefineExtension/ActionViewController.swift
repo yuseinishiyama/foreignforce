@@ -11,36 +11,33 @@ import MobileCoreServices
 
 class ActionViewController: UIViewController {
 
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var containerView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        // Get the item[s] we're handling from the extension context.
-        
-        // For example, look for an image and place it into an image view.
-        // Replace this with something appropriate for the type[s] your extension supports.
+
         var imageFound = false
         for item in self.extensionContext!.inputItems as! [NSExtensionItem] {
             for provider in item.attachments! as! [NSItemProvider] {
-                if provider.hasItemConformingToTypeIdentifier(kUTTypeImage as String) {
-                    // This is an image. We'll load it, then place it in our image view.
-                    weak var weakImageView = self.imageView
-                    provider.loadItem(forTypeIdentifier: kUTTypeImage as String, options: nil, completionHandler: { (imageURL, error) in
+                if provider.hasItemConformingToTypeIdentifier(kUTTypeText as String) {
+
+                    provider.loadItem(forTypeIdentifier: kUTTypeText as String, options: nil, completionHandler: { (query, error) in
                         OperationQueue.main.addOperation {
-                            if let strongImageView = weakImageView {
-                                if let imageURL = imageURL as? URL {
-                                    strongImageView.image = UIImage(data: try! Data(contentsOf: imageURL))
-                                }
-                            }
+                            let storyboard = UIStoryboard(name: "Main", bundle: Bundle(for: DefineViewController.self))
+                            let viewController = storyboard.instantiateViewController(withIdentifier: "DefineViewController") as! DefineViewController
+                            viewController.wordID = query as? String
+                            self.addChildViewController(viewController)
+                            viewController.view.frame = self.containerView.bounds
+                            self.containerView.addSubview(viewController.view)
+                            self.didMove(toParentViewController: self)
                         }
                     })
-                    
+
                     imageFound = true
                     break
                 }
             }
-            
+
             if (imageFound) {
                 // We only handle one image, so stop looking for more.
                 break
