@@ -16,44 +16,55 @@ class ActionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var imageFound = false
-        for item in self.extensionContext!.inputItems as! [NSExtensionItem] {
-            for provider in item.attachments! as! [NSItemProvider] {
-                if provider.hasItemConformingToTypeIdentifier(kUTTypeText as String) {
+        guard let extensionItems = extensionContext?.inputItems as? [NSExtensionItem] else {
+            fatalError()
+        }
 
-                    provider.loadItem(forTypeIdentifier: kUTTypeText as String, options: nil, completionHandler: { (query, error) in
-                        OperationQueue.main.addOperation {
-                            let storyboard = UIStoryboard(name: "Main", bundle: Bundle(for: DefineViewController.self))
-                            let viewController = storyboard.instantiateViewController(withIdentifier: "DefineViewController") as! DefineViewController
-                            viewController.wordID = query as? String
-                            self.addChildViewController(viewController)
-                            viewController.view.frame = self.containerView.bounds
-                            self.containerView.addSubview(viewController.view)
-                            self.didMove(toParentViewController: self)
-                        }
-                    })
+        handle(items: extensionItems)
+    }
 
-                    imageFound = true
-                    break
-                }
+    private func handle(items: [NSExtensionItem]) {
+
+        outer: for item in items {
+
+            guard let providers = item.attachments as? [NSItemProvider] else {
+                fatalError()
             }
 
-            if (imageFound) {
-                // We only handle one image, so stop looking for more.
-                break
+            for provider in providers {
+
+                guard provider.hasItemConformingToTypeIdentifier(kUTTypeText as String) else {
+                    continue
+                }
+
+                provider.loadItem(forTypeIdentifier: kUTTypeText as String, options: nil, completionHandler: { (query, error) in
+
+                    guard let query = query as? String else {
+                        fatalError()
+                    }
+
+                    OperationQueue.main.addOperation {
+                        self.startDefineScreen(with: query)
+                    }
+                })
+
+                break outer
             }
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func startDefineScreen(with query: String) {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle(for: DefineViewController.self))
+        let viewController = storyboard.instantiateViewController(withIdentifier: "DefineViewController") as! DefineViewController
+        viewController.wordID = query
+        viewController.view.frame = containerView.bounds
+        addChildViewController(viewController)
+        containerView.addSubview(viewController.view)
+        didMove(toParentViewController: self)
     }
 
     @IBAction func done() {
-        // Return any edited content to the host app.
-        // This template doesn't do anything, so we just echo the passed in items.
-        self.extensionContext!.completeRequest(returningItems: self.extensionContext!.inputItems, completionHandler: nil)
+        extensionContext?.completeRequest(returningItems: extensionContext?.inputItems)
     }
 
 }
