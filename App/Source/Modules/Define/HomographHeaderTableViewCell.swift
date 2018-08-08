@@ -12,7 +12,7 @@ class HomographHeaderTableViewCell: UITableViewCell {
 
     struct ViewModel: ViewModelProtocol {
         let word: String
-        let pronunciation: String
+        let pronunciation: String?
     }
 
     @IBOutlet weak var wordLabel: UILabel!

@@ -110,11 +110,7 @@ class RetrieveEntryEntryParser: Parser {
             // whose homograph numbers are 100, 101, 200, 201 and 500. In this case, homograph group 3 and 4 have no entries
             guard parsedLexicalEntries.count > 0 else { continue }
 
-            guard let _phoneticSpelling = phoneticSpelling else {
-                preconditionFailure("Homograph should have a phonetic spelling")
-            }
-
-            homographs.append(Homograph(word: headwordEntry.word, pronunciation: _phoneticSpelling, lexicalEntries: parsedLexicalEntries))
+            homographs.append(Homograph(word: headwordEntry.word, pronunciation: phoneticSpelling, lexicalEntries: parsedLexicalEntries))
         }
 
         return HeadwordEntry(homographs: homographs)

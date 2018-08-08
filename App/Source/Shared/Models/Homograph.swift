@@ -10,6 +10,6 @@ import Foundation
 
 struct Homograph {
     let word: String
-    let pronunciation: String
+    let pronunciation: String?
     let lexicalEntries: [LexicalEntry]
 }
