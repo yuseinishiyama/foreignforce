@@ -19,6 +19,9 @@ public struct Search: Endpoint {
     public init(sourceLanguage: Language = .en, query: String) {
 
         self.path = "search/\(sourceLanguage)"
-        self.parameters = ["q" : query, "prefix": "true"]
+        // If query consists of multiple words disable prefix search
+        //  e.g. take out -> take something out
+        let prefix = (query.split(separator: " ").count > 1) ? "false" : "true"
+        self.parameters = ["q" : query, "prefix": prefix]
     }
 }
